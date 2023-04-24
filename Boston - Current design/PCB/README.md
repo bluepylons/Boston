@@ -1,0 +1,65 @@
+# PCBs
+
+These are the PCB files. All PCBs so far have been manufactured at JLCPCB, so I include the JLCPCB SMT BOM and placement files (except for the V0.8-series, which are getting prototyped with Elecrow thanks to RNDKBD). Elecrow files are also provided for V0.6.1D and V0.7J. 
+
+The PCBs are compatible only with MX-format switches and PCB-mount stabilizers. Washers should not be necessary for screw-in stabilizers.
+
+These files require  KiCAD V7 to open.
+
+V0.7J is used for the 3D-printed version, while V0.6.1D is used for  the CNC version. V0.7J has the USB port and ESD protection on the main PCB, while V0.6.1D (for the aluminum version) has a 4-pin JST connector and is expected to use a C3 Unified Daughterboard. Both have identical key matrices and run the same firmware (though the red and green channels on the RGBLED are reversed between the two versions as different addressable RGBLEDs are used on each version). Both versions have been prototyped, though the optional through-hole backlight LEDs have not been tested.
+
+V0.8 is the next version 
+
+# Changelog
+
+## Current PCBs
+
+### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
+* V0.7J - May 16, 2022.  This added access holes to the PCB to allow access to the screws that hold the key separators on the 3D printed version. On V0.6.1J and earlier these screw heads are not accessible, and means that the key separators cannot be removed or adjusted after the PCB is soldered. Some components had to be moved around to achieve that. V0.7J also added a place to solder on pogo pins (or a piece of wire) for grounding the plate and top side screws on the 3D-printed case. This is prototyped and working. RNDKBD used this version for Round 2 of their group buy. 
+
+### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+* V0.6.1D - February 5, 2022. Fixed the incorrect silkscreen on the RGBLED (LED702), which had the arrow on pin 1 instead of pin 3. This was done by switching to Acheron's LED footprint instead of using KiCAD's default footprint. There is a very slight difference in the ground fill around LED702 (which is due to the Acheron footprint not having a keepout zone for ground fills, so I added one manually to keep the PCB as identical as posible to V0.6D). Prototyped and working (though backlight LEDs have not been tested) 
+
+## Works in Progress
+
+### J-variant (integrated USB port, used on the 3D-printed version)
+* V0.8.1JHA - ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8JHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+
+* V0.8.1JHI - ISO hotswap variant of V0.8.1JHA. Design not yet started.
+
+* V0.8J - the reset button has been moved to the top side of the board, underneath the right shift key (just like on the CNC version). Design is done and is awaiting prototyping. 
+
+### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+* V0.8.1DHA - ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8DHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+
+
+* V0.8.1DHI - same as above, but supporting ISO Enter and split left shift. Design not yet started.
+
+* V0.8D - adds a clamping diode to slightly improve ESD protection over V0.6.1D. Switches to the Molex Pico-EZmate connector for compatibility with the new [Unified S1 Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s) and [C4 daughterboard](https://unified-daughterboard.github.io/#/db-spec-c). Added reverse polarity protection as Molex Pico-EZmate cables often have the wrong pinout for use with Unified Daughterboards and can cause PCB damage.  Design done; awaiting prototyping. 
+
+Note that V0.7D was skipped to line up the versioning between the J- and D- variants.
+
+## Previous PCBs
+
+### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
+* V0.8JHA - ANSI hotswap variant of V0.8J. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Will have to be split up into ANSI and ISO versions. Initial draft of the design done; still need to error check. Design is done and is awaiting prototyping. 
+***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1JHA***
+
+* V0.6.1J - November 28, 2021. This removed a couple of loops on the backlight LEDs near the numpad, and added some more ground vias for EMI purposes. Prototyped and working (though backlight LEDs have not been tested). RNDKBD used this PCB for Round 1 of their group buy.  
+
+* V0.6J - October 15, 2021 - this version is designed to have all SMT parts be assemblable on JLCPCB. To achieve this, the 5V->3.3V conversion is done by a linear regulator rather than a switching regulator, and the LEDs are powered off 5V instead of 3.3V originally. Other changes include using Gondolindrim's improved STM32 reset circuit, and implementing EMI best-practices such as ground plane stitching and ground plane vias in case it needs to pass FCC/CE EMI testing. This has a return loop on the upper right numpad backlight LEDs, though it is unclear if this is an issue (especially if the backlight is not used), as this version was never prototyped.
+
+* V0.5.2 - October 6, 2020 - Removed a loop in the ground plane (which did not seem to affect functionality), and made some minor changes to the silkscreen. Increased thermal clearances around the RGBLED to make it easier to solder. Minor silkscreen fixes. Tested and working. People who bought Round 0 barebones kits received this PCB.  JLCPCB at the time was not able to solder on connectors, and was out of stock of STM32F072 microcontrollers, so those parts are not included on the manufacturing files and were soldere on by hand. JLCPCB also did not carry the fuse, the AP63203WU-7 buck controller, or the buck controller inductor, so those parts are not included in the manufacturing files for JLCPCB SMT, and were soldered on by hand. 
+
+* V0.5.1 - September 23, 2020 - this fixed the routing errors in V0.5, and slightly improved the silkscreen graphics. The grounding screw hole is now connected to ground via a ferrite bead. Tested and working. Beta testers received fixed V0.5 and V0.5.1 boards.
+
+* V0.5 - September 16, 2020 - added split space and WKL support, a grounding pad for the CNC case, changed silkscreen somewhat, and changed the microcontroller footprint to be able to take both LQFP-48 and UFQFPN48 due to shortages of LQFP48 STM32F072's. This had several routing errors and requires some fixes for all features to work.
+
+* V0.4 - August 11, 2020 - a complete redesign. Placed everything on a single PCB, with a centered USB-C port. The F-key clusters are moved slightly closer to the main alpha keys. Switched to SMD diodes. Designed for both a 3D-printed/FR4 case, and a CNC metal case. Working. 
+
+* V0.3 and earlier - these used a two-PCB design, with microcontroller, USB port, and associated components on the daughterboard, and a completely through-hole main PCB. Used with the earliest prototypes. Not compatible with the published case designs. The firmware is largely similar, though the matrix is different.
+
+### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+* V0.8DHA - ANSI hotswap variant. Adds hotswap sockets. Switches to the Molex Pico-EZmate connector for compatibility with the new [Unified S1 Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s) and [C4 daughterboard](https://unified-daughterboard.github.io/#/db-spec-c). Added reverse polarity protection as Molex Pico-EZmate cables often have the wrong pinout for use with Unified Daughterboards and can cause PCB damage. Also has some changes to the diodes to try to slightly improve ESD protection over V0.6.1D. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Design done; awaiting prototyping. ***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1DHA***
+
+* V0.6D - January 5, 2022. This is meant for the redesigned CNC version of Boston, and is meant to be used with a daughterboard (using the standard 4-pin JST connector). All ESD protection has been moved off to the daughterboard, moves the reset button to the top side of the PCB near Right Shift, and uses a reverse-mount RGBLED (meant to be used with a light pipe on the case) instead of a through-hole one. Otherwise very similar to V0.6.1J, and can run identical firmware as the matrix is identical. The silkscreen on the RGBLED (LED702) was incorrect (the arrow was on pin 1 instead of pin 3). Otherwise working. 

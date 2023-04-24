@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name "acheronConnectors")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_Connectors.pretty")(options "")(descr ""))
+  (lib (name "acheronComponents")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_Components.pretty")(options "")(descr ""))
+  (lib (name "acheronMountingHoles")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_MountingHoles.pretty")(options "")(descr ""))
+  (lib (name "acheron_MX")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_MX.pretty")(options "")(descr ""))
+  (lib (name "acheron_MXH")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_MXH.pretty")(options "")(descr ""))
+  (lib (name "acheron_MXH_metal_ring")(type "KiCad")(uri "${ALEXANDRIA}/footprints/acheron_MXH_MetalRings.pretty")(options "")(descr ""))
+  (lib (name "Boston-PCB-custom-footprints")(type "KiCad")(uri "C:/Users/James/Documents/GitHub/Boston/Boston - Current design/PCB/Libraries/Boston-PCB-custom-footprints.pretty")(options "")(descr ""))
+)

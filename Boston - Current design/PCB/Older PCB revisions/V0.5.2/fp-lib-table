@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name "acheronComponents")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Components.pretty")(options "")(descr ""))
+  (lib (name "acheronConnectors")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Connectors.pretty")(options "")(descr ""))
+  (lib (name "acheronHardware")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Hardware.pretty")(options "")(descr ""))
+  (lib (name "acheronLogos")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Logos.pretty")(options "")(descr ""))
+  (lib (name "acheronMountingHoles")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_MountingHoles.pretty")(options "")(descr ""))
+  (lib (name "acheronSwitchSlots")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_SwitchSlots.pretty")(options "")(descr ""))
+  (lib (name "acheron_MX")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_MX.pretty")(options "")(descr ""))
+)

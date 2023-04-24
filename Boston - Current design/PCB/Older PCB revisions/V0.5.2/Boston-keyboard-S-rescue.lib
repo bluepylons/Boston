@@ -1,0 +1,59 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MXSwitch-Acheron
+#
+DEF MXSwitch-Acheron SW 0 40 Y Y 1 F N
+F0 "SW" 0 0 50 H V C CNN
+F1 "MXSwitch-Acheron" 0 -150 39 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 250 250 -250 0 1 0 N
+P 2 0 1 0 -250 0 -350 0 N
+P 2 0 1 0 0 250 0 350 N
+X Col 1 -350 0 100 R 20 20 1 1 O N
+X Row 2 0 350 100 D 20 20 1 1 I N
+ENDDRAW
+ENDDEF
+#
+# Rotary_Encoder_Switch_Chassis-Acheron
+#
+DEF Rotary_Encoder_Switch_Chassis-Acheron SW 0 10 Y N 1 F N
+F0 "SW" 0 260 50 H V C CNN
+F1 "Rotary_Encoder_Switch_Chassis-Acheron" 0 -260 50 H V C CNN
+F2 "" -150 160 50 H I C CNN
+F3 "" 0 260 50 H I C CNN
+$FPLIST
+ RotaryEncoder*Switch*
+$ENDFPLIST
+DRAW
+A -15 -2 108 -899 899 0 1 10 N -15 -110 -15 105
+C -150 0 10 0 1 0 F
+C -15 0 75 0 1 10 N
+C 170 -40 5 0 1 10 N
+C 170 40 5 0 1 10 N
+S -200 200 200 -200 0 1 10 f
+P 2 0 1 10 -25 -70 -25 70 N
+P 2 0 1 10 -15 -70 -15 70 N
+P 2 0 1 10 -5 70 -5 -70 N
+P 2 0 1 10 150 0 135 0 N
+P 2 0 1 10 150 40 150 -40 N
+P 3 0 1 0 -200 -100 -150 -100 -150 -80 N
+P 3 0 1 0 -200 100 -150 100 -150 80 N
+P 3 0 1 10 10 -120 -20 -110 5 -95 N
+P 3 0 1 10 10 115 -20 105 5 90 N
+P 3 0 1 10 200 -100 170 -100 170 -40 N
+P 3 0 1 10 200 100 170 100 170 40 N
+P 4 0 1 0 -200 0 -150 0 -150 -40 -130 -80 N
+P 4 0 1 0 -170 0 -150 0 -150 40 -130 80 N
+X A A -300 100 100 R 50 50 1 1 P
+X B B -300 -100 100 R 50 50 1 1 P
+X C C -300 0 100 R 50 50 1 1 P
+X Shield S 0 -300 100 U 50 50 1 1 B
+X S1 S1 300 100 100 L 50 50 1 1 P
+X S2 S2 300 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

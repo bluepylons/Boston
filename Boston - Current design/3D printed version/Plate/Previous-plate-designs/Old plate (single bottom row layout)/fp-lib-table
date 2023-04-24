@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "acheronHardware")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Hardware.pretty")(options "")(descr ""))
+  (lib (name "acheronMountingHoles")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_MountingHoles.pretty")(options "")(descr ""))
+)

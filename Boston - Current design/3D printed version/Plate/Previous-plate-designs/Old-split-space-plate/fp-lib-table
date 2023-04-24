@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "acheronHardware")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_Hardware.pretty")(options "")(descr ""))
+  (lib (name "acheronMountingHoles")(type "KiCad")(uri "${ACHERONLIB}/footprints/acheron_MountingHoles.pretty")(options "")(descr ""))
+  (lib (name "Boston-3DP-plate-library")(type "KiCad")(uri "${BOSTONLIB}/Boston/Boston - Current design/3D printed version/Plate/Boston-3DP-plate-library/footprints")(options "")(descr ""))
+)

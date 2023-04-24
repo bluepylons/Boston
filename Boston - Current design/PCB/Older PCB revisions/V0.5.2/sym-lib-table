@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "acheronSymbols")(type "Legacy")(uri "${ACHERONLIB}/symbols/acheronSymbols.lib")(options "")(descr ""))
+  (lib (name "Boston-keyboard-rescue")(type "Legacy")(uri "${KIPRJMOD}/Boston-keyboard-rescue.lib")(options "")(descr ""))
+)
