@@ -2,8 +2,8 @@ SK6812MINI-E![PCB version](https://img.shields.io/badge/PCB%20Version-pre%20Alph
 
 # Boston Keyboard 
 
-![3D-printed/FR4 version](https://github.com/bluepylons/Boston/raw/master/graphics/3D-printed-prototype.JPG)
-![CNC version](https://github.com/bluepylons/Boston/blob/master/graphics/CNC/DSC_0317.JPG?raw=true)
+![3D-printed/FR4 version](https://github.com/bluepylons/Boston/raw/main/graphics/3D-printed-prototype.JPG)
+![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0317.JPG?raw=true)
 
 ## Introduction 
 Boston is a compact battleship with a complement of 18 programmable keys, in a footprint 2u narrower than a full-size, and only about 1.5u wider than a 96%. There is a 3D printed version and a CNC aluminum version. Hotswap PCBs for both are in development. All are open source. 
@@ -15,7 +15,7 @@ The name is a pun off Austin, since the layout is derived from it. I also grew u
 ## Supported layouts
 
 Soldered PCB:
-![Boston layouts](https://github.com/bluepylons/Boston/raw/master/graphics/bostonKLE.png)
+![Boston layouts](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png)
 
 ANSI hotswap PCB: (note the split space 2.75u and 2.25u keys are flipped around compared to the soldered version, and the right switch is north facing, to accommodate hotswap sockets)
 ![Boston ANSI hotswap layouts](https://github.com/bluepylons/Boston/raw/master/graphics/boston-hotswap-ANSI-KLE.png)
@@ -85,19 +85,19 @@ A draft ordering guide for the CNC version is available on the README under [the
 Renders done with [tracespace.io](https://tracespace.io/).
 
 V0.7J (integrated USB-C port and ESD protection - used on the 3D printed version):
-![PCB V0.7J top](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-top.png)
-![PCB V0.7J bottom](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-bottom.png)
+![PCB V0.7J top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-top.png)
+![PCB V0.7J bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-bottom.png)
 
 V0.6.1D (JST-SH connector for use with a USB-C daughterboard, such as the C3 Unified Daughterboard):
-![PCB V0.6.1D top](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-DB-top.png)
-![PCB V0.6.1D bottom](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-DB-bottom.png)
+![PCB V0.6.1D top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-DB-top.png)
+![PCB V0.6.1D bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-DB-bottom.png)
 
 ## Firmware
 All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, and V0.7J) have the same key matrix and therefore use the same firmware. However, the RGBLED on V0.6.1D has its red and green channels reversed compared to the other versions (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
 
-The compiled QMK firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/boston_default.bin). Source files are on the [QMK repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/boston). 
+The compiled QMK firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_default.bin). Source files are on the [QMK repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/boston). 
 
-The compiled [Vial](https://get.vial.today/) firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/boston_vial.bin). Source files are on the [Vial-QMK repo](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/boston). The current Vial build uses Vial v0.6.
+The compiled [Vial](https://get.vial.today/) firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_vial.bin). Source files are on the [Vial-QMK repo](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/boston). The current Vial build uses Vial v0.6.
 
 Firmware can be flashed using QMK Toolbox or DFU. On PCB versions V0.6 and newer, you need to long press the reset button (for several seconds) to access the DFU bootloader to allow for flashing - a short press only resets the MCU. 
 
