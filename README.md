@@ -18,7 +18,7 @@ Soldered PCB:
 ![Boston layouts](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png)
 
 ANSI hotswap PCB: (note the split space 2.75u and 2.25u keys are flipped around compared to the soldered version, and the right switch is north facing, to accommodate hotswap sockets)
-![Boston ANSI hotswap layouts](https://github.com/bluepylons/Boston/raw/master/graphics/boston-hotswap-ANSI-KLE.png)
+![Boston ANSI hotswap layouts](https://github.com/bluepylons/Boston/raw/main/graphics/boston-hotswap-ANSI-KLE.png)
 
 ISO hotswap PCB: TBD
 
@@ -43,7 +43,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 
 ### 3D Printed Version:
 * Printable on cheap hobby printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on an Ender 3, Biqu B1, Prusa i3, etc.) 
-* Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/master/graphics/3DP-bottom.JPG).
+* Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG).
 * Technically top mount, though an unusual implementation (screws come in from the top of the case and screw into threaded inserts on the plate - load path is identical to top mount)
 * Designed around an FR4 plate with soldered-in threaded inserts 
 
@@ -76,9 +76,9 @@ PCB:
 
 ## Ordering Guide
 
-A draft ordering guide for the 3D printed version is available on the README under [the folder for the 3D printed version](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/3D%20printed%20version). 
+A draft ordering guide for the 3D printed version is available on the README under [the folder for the 3D printed version](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version). 
 
-A draft ordering guide for the CNC version is available on the README under [the folder for the CNC version](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/CNC%20version). Assembly instructions for the CNC version are still being worked on.
+A draft ordering guide for the CNC version is available on the README under [the folder for the CNC version](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version). Assembly instructions for the CNC version are still being worked on.
 
 ## PCB Renders 
 

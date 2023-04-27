@@ -2,9 +2,9 @@
 
 These are the files for the 3D printed version. 
 
-![3D-printed, white](https://github.com/bluepylons/Boston/blob/master/graphics/3D-printed-prototype.JPG?raw=true)
-![3D-printed,purple](https://github.com/bluepylons/Boston/blob/master/graphics/3DP-top.JPG?raw=true)
-![3D-printed,purple,bottom](https://github.com/bluepylons/Boston/blob/master/graphics/3DP-bottom.JPG?raw=true)
+![3D-printed, white](https://github.com/bluepylons/Boston/blob/main/graphics/3D-printed-prototype.JPG?raw=true)
+![3D-printed,purple](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-top.JPG?raw=true)
+![3D-printed,purple,bottom](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG?raw=true)
 
 The master CAD assembly is Boston-3D-printed-case.stp. The case was done with a mix of Fusion 360 and later Atom3D (after I decided to stop paying for Fusion) - due to the mix of CAD programs used the master file is actually not particularly editable, so I decided to just provide it as a STEP file that can be opened in any CAD program.
 
@@ -54,8 +54,8 @@ You will need the following:
 
 # PCB
 
-![PCB V0.7J top](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-top.png)
-![PCB V0.7J bottom](https://github.com/bluepylons/Boston/raw/master/graphics/PCB-bottom.png)
+![PCB V0.7J top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-top.png)
+![PCB V0.7J bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-bottom.png)
 
 For the PCB - you can order an assembled PCB with the surface mount parts soldered on (minus through-hole parts such as the encoder, RGBLED, and reset switch) from a PCB fab such as JLCPCB or Elecrow.
 
@@ -63,46 +63,46 @@ For the PCB - you can order an assembled PCB with the surface mount parts solder
 
 JLCPCB is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts). In the community they tend to only be used for prototypes.
 
-To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.7J are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files). **Order at your own risk. V0.7J has been prototyped and is used in RNDKBD's Round 2 group buy, though the backlight LEDs on V0.7J have not been tested**
+To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.7J are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files). **Order at your own risk. V0.7J has been prototyped and is used in RNDKBD's Round 2 group buy, though the backlight LEDs on V0.7J have not been tested**
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
-![Step 1](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/1-JLCPCB-home.png?raw=true)
+![Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/1-JLCPCB-home.png?raw=true)
 
 Next, you want to upload the Gerber file for the PCB. You may need to manually input the PCB dimensions (394x154mm). 
 
-![Step 2](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
+![Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
 
 Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for SMT assembly in 1.6mm thickness - currently (October 5th, 2021), this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
 
-![Step 3](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/3-JLCPCB-options.png?raw=true)
+![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/3-JLCPCB-options.png?raw=true)
 
 Next, you want to scroll down and turn on SMT Assembly. Make sure the following options are selected:
 
-![Step 4](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/4-SMT.png?raw=true)
+![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4-SMT.png?raw=true)
 
 Press Confirm. Next, you want to upload the BOM and CPL files. 
 
-![Step 5](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/5-BOM-CPL.PNG?raw=true)
+![Step 5](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/5-BOM-CPL.PNG?raw=true)
 
 Make sure that all the components are selected. Any part that says "Inventory shortage" will not be installed, and you will have to substitute a compatible part, wait for the part to come back in stock, or if you're up to the challenge of SMT soldering, order the part separately and solder it on yourself. 
 
-![Step 6](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/6-BOM.PNG?raw=true)
+![Step 6](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/6-BOM.PNG?raw=true)
 
 The next page is a confirmation page. Note that the parts placement preview may be inaccurate (JLCPCB engineers will look over this and make any parts orientation corrections, so don't worry too much about this). 
 
-![Step 7](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/7-review.PNG?raw=true)
+![Step 7](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/7-review.PNG?raw=true)
 
 As the microcontroller is frequently out of stock due to the chip shortage, line number 20 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). You will name to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate.
 
 ## How to order on Elecrow
 Elecrow is a full-service PCB assembly shop, and one of the go-tos in the community for custom keyboard PCBs for the actual group buy sales. They can install any part (not just ones they stock) and generally have better quality surface finish, but is much slower (typically 3-4 week turn around time), and costs more (especially in small quantities). 
 
-To order from Elecrow, you will need to email service@elecrow.com with the [Gerber](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Gerbers-Boston-V07J.zip) and [SMT](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Elecrow%20SMT%20files/BostonV07J-Elecrow-files.xlsx) files and request a quote.
+To order from Elecrow, you will need to email service@elecrow.com with the [Gerber](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Gerbers-Boston-V07J.zip) and [SMT](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Elecrow%20SMT%20files/BostonV07J-Elecrow-files.xlsx) files and request a quote.
 
-On the [SMT file](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Elecrow%20SMT%20files/BostonV07J-Elecrow-files.xlsx), you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
+On the [SMT file](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files/Elecrow%20SMT%20files/BostonV07J-Elecrow-files.xlsx), you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
 
-![Elecrow](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Elecrow-specifications.png?raw=true)
+![Elecrow](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Elecrow-specifications.png?raw=true)
 
  
 Note - the provided Elecrow SMT files includes having them solder on the RGBLED (LED702), but without the spacer, so it will sit about 2mm lower. 
@@ -178,7 +178,7 @@ The RGBLED indicator uses an APA106-F5 through-hole RGBLED. This is resold by Sp
 
 Note that Worldsemi WS2812D-F5 does not work as the pinout is different. 
 
-This should be soldered with the 3D-printed [RGBLED spacer](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/3D%20printed%20version/STLs/RGB-LED-spacer.stl) in between the bottom of the LED and the PCB. You can solder it straight to the board without the spacer, but the LED will sit very, very low.
+This should be soldered with the 3D-printed [RGBLED spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/RGB-LED-spacer.stl) in between the bottom of the LED and the PCB. You can solder it straight to the board without the spacer, but the LED will sit very, very low.
 
 Remember to orient this correctly when soldering it to the PCB - it will not work if soldered backwards. The flat side of the LED should match with the "flat side" printed on the PCB.
 
@@ -195,7 +195,7 @@ The encoder used is Alps EC11E18244A5, the same one used on the Satisfaction75. 
 ### Lock LEDs and resistors
 Most standard 3mm LEDs should work, and are available in several different colors. A 1KΩ resistor is a pretty safe resistor size for the LEDs, but depending on the LED forward voltage, current draw, and desired brightness, you may want to adjust this up or down. Standard 1/4W resistors are suitable.
 
-The LEDs need to be soldered through the [3D-printed 3mm LED spacer](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/3D%20printed%20version/STLs/3mm-LED-spacer.stl) - this is described in the assembly instructions. 
+The LEDs need to be soldered through the [3D-printed 3mm LED spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/3mm-LED-spacer.stl) - this is described in the assembly instructions. 
 
 ### Pogo pins for grounding
 On PCB version V0.7J, there is a spot provided on the very right side of the PCB (footprint J707) to solder a pair of spring-loaded pogo pins to electrically ground the plate and the screws on the top of the case. This is to prevent static electricity from resetting the microcontroller. The pogo-pins used are Mill-Max 821-22-002-10-000101, available off [Mouser](https://www.mouser.com/ProductDetail/Mill-Max/821-22-002-10-000101?qs=iJx90KzHWBrJs2LQFpB68w%3D%3D&countrycode=US&currencycode=USD), [Digi-key](https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/821-22-002-10-000101/1146517?s=N4IgTCBcDaIBxgIwFoxmQBg%2BxHNd0RAF0BfIA), and other sources. Other 2-position 2.54mm pitch pogo pins that can support a 3.5mm board-to-board distance can potentially also work.
@@ -209,19 +209,19 @@ All FR4 parts are 1.6mm thick.
 
 Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" is selected so that the order number doesn't get printed somewhere you don't want. The Gerber files have the requisite "JLCJLCJLCJLC" text on them and placed in an unobstrusive location.
 
-![Remove Order Number](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
+![Remove Order Number](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
 
  Also, "Paper between PCBs" under "Advanced Options" is strongly recommended- otherwise there's a decent risk of FR4 parts showing up scratched. 
  
-![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
+![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
 
 ## Plate
-The universal plate Gerber files are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/3D%20printed%20version/Plate/Plate-soldered-universal-3DP/Manufacturing%20files)).
+The universal plate Gerber files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/Plate/Plate-soldered-universal-3DP/Manufacturing%20files)).
 
 Note that JLCPCB will usually charge an extra fee on plates - in the past it has been about $15 additional fee for 5 plates, but may have increased. This extra fee will be requested after you have submitted the order, and you will need to pay it for them to actually manufacture your order. 
 
 ## Bottom Panel
-The bottom panel Gerber files are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/3D%20printed%20version/Bottom/KiCAD%20files/Manufacturing%20files). 
+The bottom panel Gerber files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/Bottom/KiCAD%20files/Manufacturing%20files). 
 
 Definitely use a lead-free finish on this, as you will be touching this when carrying the board. All past bottoms have used HASL-Lead-Free for the finish, but there have been occasional quality issues (e.g. small features on the map were not covered in solder, and were bare copper). ENIG will probably work better, but is more expensive, and will be gold-colored instead of silver. 
 
@@ -229,7 +229,7 @@ Definitely use a lead-free finish on this, as you will be touching this when car
 
 You need 2 of these per board - they help keep the bumpons in place. 
 
-The bumpon holder Gerber files are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/3D%20printed%20version/Bumpon%20holders/Manufacturing%20files)
+The bumpon holder Gerber files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/Bumpon%20holders/Manufacturing%20files)
 
 # Mechanical Hardware
 
@@ -249,7 +249,7 @@ The Alps EC11E18244A5 encoder takes a 6mm knob with either a D-shaft or a set sc
 
 The knob needs to be smaller than 23mm in diameter or it will hit the Esc key. 
 
-I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
+I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
 
 | Kilo P/N     | Finish              |
 | ------------ | ------------------- |
@@ -259,11 +259,11 @@ I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have ver
 | OEDNI-75-4-7 | Black, matte        |
 
 # 3D printing
-You will need to 3D-print the parts in [the STL folder](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/3D%20printed%20version/STLs). (For the left key separator you need to print either the RGBLED or no RGBLED verison, depending on whether you soldered on the RGBLED on the PCB). More detailed instructions on 3D are available in the assembly instructions. The parts are designed to be FDM 3D printed, and can be printed without support material. 
+You will need to 3D-print the parts in [the STL folder](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs). (For the left key separator you need to print either the RGBLED or no RGBLED verison, depending on whether you soldered on the RGBLED on the PCB). More detailed instructions on 3D are available in the assembly instructions. The parts are designed to be FDM 3D printed, and can be printed without support material. 
 
 You can outsource the 3D printing to a service like Shapeways, but if you're printing more than a single case this isn't econommical versus just buying a budget 3D printer - a cheap $250 Ender 3 Pro or a Biqu B1 will print the case just fine. Or if you don't want to deal with that, try finding a friend or acquaintance with a 3D printer. Many public libraries also now have 3D printers also that are available for use. 
 # Assembly Instructions
 
-Draft assembly instructions are [here](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/3D%20printed%20version/Draft%20instructions%20(barebones%20kit).pdf)
+Draft assembly instructions are [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/Draft%20instructions%20(barebones%20kit).pdf)
 
 

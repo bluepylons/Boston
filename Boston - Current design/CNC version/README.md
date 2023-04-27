@@ -1,8 +1,8 @@
 # Boston CNC Version
 
-![CNC version](https://github.com/bluepylons/Boston/blob/master/graphics/CNC/DSC_0395_01.JPG?raw=true)
+![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0395_01.JPG?raw=true)
 
-These are the files for the CNC version of Boston. The PCB is in the [PCB](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB) directory however. 
+These are the files for the CNC version of Boston. The PCB is in the [PCB](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB) directory however. 
 
 # Ordering Guide for making your own Boston (draft)
 
@@ -63,9 +63,9 @@ Boston has a two piece case, consisting of the top and the bottom. It does not h
 
 There are two versions of the bottom case - the main version and the alternate version. The alternate version was actually what I designed first and prototyped, but it has very sharp edges on the bottom rear (near the rear bumpon) caused by the vertical faces, which are sharp enough to potentially cut into your skin. I changed the vertical faces to 45° beveled faces to eliminate those sharp edges. This version with the beveled 45° faces is the main version. Both versions have been prototyped.
 
-![Case bottom - main versus alternate 2](https://github.com/bluepylons/Boston/blob/master/graphics/CNC/Main-vs-alternate-bottom-2.png?raw=true)
+![Case bottom - main versus alternate 2](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/Main-vs-alternate-bottom-2.png?raw=true)
 
-![Case bottom - main versus alternate](https://github.com/bluepylons/Boston/blob/master/graphics/CNC/Main-vs-alternate-bottom.png?raw=true)
+![Case bottom - main versus alternate](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/Main-vs-alternate-bottom.png?raw=true)
 
 ## How to contact a machine shop to order the case 
 
@@ -75,14 +75,14 @@ To have the case made, you will need to contact a machine shop with a CNC machin
 
 You will need to send a "Request for Quote" email to them with the following files:
 
-* 3D files - you will need the .STEP files for the [Top](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-top.stp), and either the [Main Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB.stp) or the [Alternate Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB-alternate%20(sharp%20edges).stp). 
-* The mechanical drawings, which include the tapping instructions for the tapped (threaded) holes. [Top](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top.pdf), [Main Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB.pdf), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB-alternate.pdf)
-* If you want a raw as-machined finish with visible tool marks, or want to anodize directly over the tool marks, you may want to include the milling instructions for more pleasing tool marks. [Top](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top-AS-MACHINED-milling-instructions.png), [Main Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-AS-MACHINED-milling-instructions.png), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-alternate-AS-MACHINED-milling-instructions.png). If you are going for a bead-blasted finish, you do not need to include these. These are PNG images with picture illustrations, as many machine shops are overseas and do not speak English well. 
+* 3D files - you will need the .STEP files for the [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-top.stp), and either the [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB.stp) or the [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB-alternate%20(sharp%20edges).stp). 
+* The mechanical drawings, which include the tapping instructions for the tapped (threaded) holes. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top.pdf), [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB.pdf), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB-alternate.pdf)
+* If you want a raw as-machined finish with visible tool marks, or want to anodize directly over the tool marks, you may want to include the milling instructions for more pleasing tool marks. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top-AS-MACHINED-milling-instructions.png), [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-AS-MACHINED-milling-instructions.png), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-alternate-AS-MACHINED-milling-instructions.png). If you are going for a bead-blasted finish, you do not need to include these. These are PNG images with picture illustrations, as many machine shops are overseas and do not speak English well. 
 * In the body of the email, you want to specify the quantity, material, and the surface finish, as well as that you want these parts to be made by CNC machining. Materials and surface finish are discussed more in depth in the next sections.
 
 You will also need to specify a material and a finish, a color for the finish (if you are anodizing, e-coating, painting, powder coating, or Cerakoting), as well as the quantity you want to order. Here is an example email reaching out to a manufacturer for a quote:
 
-![Example email to manufacturer](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/example-email.PNG?raw=true)
+![Example email to manufacturer](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/example-email.PNG?raw=true)
 
 The manufacturer will get back to you with a quote. If you wish to proceed with the quote, let them know that you wish to proceed, and they will send you instructions for payment (often via Paypal or bank transfer) and ask for a shipping address. 
 
@@ -126,7 +126,7 @@ In addition to the material, you want to pick a surface finish. There are two pa
 
 **Note that any coating that adds appreciable (>0.03mm) thickness (such as Type III hard anodizing, powder coat, e-coat, paint, and Cerakote) will require the threaded holes and the RGBLED hole to be masked off. Standard (Type II) anodizing is usually thin enough that interference isn't an issue and masking holes should not be needed. 
 
-![RGBLED hole that needs to be masked ](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/RGBLED-hole-masking.png?raw=true)
+![RGBLED hole that needs to be masked ](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/RGBLED-hole-masking.png?raw=true)
 
 # Plate
 
@@ -135,15 +135,15 @@ Boston has a top mount plate. There are two versions of the plate - a fixed layo
 The plate should be made out of 1.4-1.6mm material (which is the official Cherry spec for having the switches click in properly). 
 
 **Fixed plate**:
-![Fixed Layout Plate](https://github.com/bluepylons/Boston/raw/master/graphics/CNC/Fixed-plate.PNG)
-![KLE of the fixed layout](https://github.com/bluepylons/Boston/raw/master/graphics/bostonKLE-fixed-layout-plate-support.PNG)
+![Fixed Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/Fixed-plate.PNG)
+![KLE of the fixed layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE-fixed-layout-plate-support.PNG)
 
 
 **Universal plate**:
-![Universal Layout Plate](https://github.com/bluepylons/Boston/raw/master/graphics/CNC/Universal-plate.PNG)
-![KLE of the universal layout](https://github.com/bluepylons/Boston/raw/master/graphics/bostonKLE.png)
+![Universal Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/Universal-plate.PNG)
+![KLE of the universal layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png)
 
-The plate files are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/CNC%20version/Plate). 
+The plate files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate). 
 
 If you are looking to have a plate laser cut or water jet (via a service such as [Sendcutsend](https://sendcutsend.com/) in the US, [Laserboost](https://www.laserboost.com/) in the EU, or elsewhere), you want to use the DXF files (.dxf). The units are in mm. You can upload it to their website. Many Chinese CNC machine shops have laser cutters, and can also make your plate in addition to your case if you send them the files. Make that sure the thickness of the material you choose is between 1.4mm and 1.6mm. 
 * Virtually all metals (aluminum, brass, steel, titanium etc ). can be laser cut. 
@@ -155,11 +155,11 @@ If you are looking to have the plate made out of FR4 or aluminum PCB material, y
 
 Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" is selected so that the order number doesn't get printed somewhere you don't want. The Gerber files have the requisite "JLCJLCJLCJLC" text on them and placed in an unobstrusive location.
 
-![Remove Order Number](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
+![Remove Order Number](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
 
  Also, "Paper between PCBs" under "Advanced Options" is strongly recommended- otherwise there's a decent risk of FR4 parts showing up scratched. 
  
-![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
+![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
 
 # Hardware
 
@@ -204,7 +204,7 @@ The Alps EC11E18244A5 rotary encoder used for the knob takes a 6mm knob with eit
 
 The knob needs to be smaller than 23mm in diameter or it will hit the Esc key. 
 
-I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
+I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
 
 | Kilo P/N     | Finish              |
 | ------------ | ------------------- |
@@ -216,44 +216,44 @@ I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have ver
 # PCBs
 
 # Main PCB
-The CNC version of Boston uses the [V0.6.1D PCB](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB/V0.6.1D) (D for Daughterboard) - this **not the same PCB as the 3D printed version** due to the daughterboard, though they use the same firmware as the matrix is identical.
+The CNC version of Boston uses the [V0.6.1D PCB](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D) (D for Daughterboard) - this **not the same PCB as the 3D printed version** due to the daughterboard, though they use the same firmware as the matrix is identical.
 
 For the PCB - you can order an assembled PCB (minus through-hole parts such as the encoder, RGBLED, and reset switch) from a PCB fab such as JLCPCB or Elecrow.
 
 ## Ordering on JLCPCB
 [JLCPCB](https://jlcpcb.com/) is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts) (though they recently announced "Global Parts Sourcing"). In the community they tend to only be used for prototypes.
 
-To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.6.1D are available [here](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files). 
+To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.6.1D are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files). 
 
 **Note that JLCPCB does not stock the SK6812 Mini-E RGBLED used for LED702**, and you will have to solder order this elsewhere and solder it on manually yourself. Adafruit sells it as the [Neopixel Reverse mount](https://www.adafruit.com/product/4960), and it is also available off [Digi-key](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4960/14302512) (but oddly enough, not Mouser). Line up the notch on the LED with the notch marking on the PCB when you are soldering it.
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
-![Step 1](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/1-JLCPCB-home.png?raw=true)
+![Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/1-JLCPCB-home.png?raw=true)
 
 Next, you want to upload the Gerber file for the PCB. You may need to manually input the PCB dimensions (393.5x147mm). 
 
-![Step 2](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
+![Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
 
 Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for SMT assembly in 1.6mm thickness - currently (March 18, 2022), this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
 
-![Step 3](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/3-JLCPCB-options-CNC.png?raw=true)
+![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/3-JLCPCB-options-CNC.png?raw=true)
 
 Next, you want to scroll down and turn on SMT Assembly. Make sure the following options are selected:
 
-![Step 4](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/4-SMT.png?raw=true)
+![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4-SMT.png?raw=true)
 
 Press Confirm. Next, you want to upload the BOM and CPL files. 
 
-![Step 5](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/5-BOM-CPL.PNG?raw=true)
+![Step 5](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/5-BOM-CPL.PNG?raw=true)
 
 Make sure that all the components are selected. Any part that says "Inventory shortage" will not be installed, and you will have to substitute a compatible part, wait for the part to come back in stock, or if you're up to the challenge of SMT soldering, order the part separately and solder it on yourself. 
 
-![Step 6](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/6-BOM-CNC.PNG?raw=true)
+![Step 6](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/6-BOM-CNC.PNG?raw=true)
 
 The next page is a confirmation page. Note that the parts placement preview may be inaccurate (JLCPCB engineers will look over this and make any parts orientation corrections, so don't worry too much about this). 
 
-![Step 7](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/7-checkout-CNC.PNG?raw=true)
+![Step 7](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/7-checkout-CNC.PNG?raw=true)
 
 As the microcontroller is frequently out of stock due to the chip shortage, line number 16 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). At different times some microcontroller variants may be cheaper than the others (for example, on August 29, 2022, the STM32F072CBT6 is $4.50 and the STM32F072CBU6 is $9.52, whereas during other times -CBU6 has been significantly cheaper than the -CBT6). You will need to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate.
 
@@ -316,11 +316,11 @@ This is a 74LVC1T45 level shifter in an SOT23-6 (SOT26) package.
 
 Elecrow is a full-service PCB assembly shop, and one of the go-tos in the community for custom keyboard PCBs for the actual group buy sales. They can install any part (not just ones they stock) and generally have better quality surface finish, but is much slower (typically 3-4 week turn around time), and costs more (especially in small quantities). 
 
-To order from Elecrow, you will need to email service@elecrow.com with the [Gerber](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Gerbers-V06-1D.zip) and [SMT](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files) files and request a quote. **Note - the Elecrow files have not been tested**
+To order from Elecrow, you will need to email service@elecrow.com with the [Gerber](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Gerbers-V06-1D.zip) and [SMT](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files) files and request a quote. **Note - the Elecrow files have not been tested**
 
-On the [SMT file](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files), you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
+On the [SMT file](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files), you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
 
-![Elecrow](https://github.com/bluepylons/Boston/blob/master/graphics/CNC%20ordering%20guide/Elecrow-specifications-CNC.png?raw=true)
+![Elecrow](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/Elecrow-specifications-CNC.png?raw=true)
 
 Elecrow will install the RGBLED (LED702), unlike JLCPCB, so you do not need to buy it separately and solder it on yourself. 
 
@@ -339,7 +339,7 @@ The encoder used is [Alps EC11E18244A5](https://octopart.com/ec11e18244a5-alps-7
 [LCSC](https://lcsc.com/product-detail/Rotary-Encoders_ALPSALPINE-EC11E18244A5_C255515.html) is the cheapest source of these encoders if you are running a group buy. They are run by the same parent company as JLCPCB, though unfortunately they cannot combine shipping. 
 
 ### LED spacer
-For the lock LEDs, you will need to 3D print a [small spacer](https://github.com/bluepylons/Boston/tree/master/Boston%20-%20Current%20design/CNC%20version/Case/STL%20(3D%20print)). Units are in mm.  You can use an online printing service like [Shapeways](https://www.shapeways.com/) or [Craftcloud](https://craftcloud3d.com/), find a friend with a 3D printer, or purchase your own 3D printer to print this with. Your local library may have a 3D printer that may be available to use. The machine shop you use for the case may also offer 3D printing services. The spacer is designed to be printed using FDM printing, but other printing methods (SLA, SLS) probably also work. On my prototype I printed this out of PLA on a cheap $250 Ender 3 printer, with 0.2mm layer height.
+For the lock LEDs, you will need to 3D print a [small spacer](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Case/STL%20(3D%20print)). Units are in mm.  You can use an online printing service like [Shapeways](https://www.shapeways.com/) or [Craftcloud](https://craftcloud3d.com/), find a friend with a 3D printer, or purchase your own 3D printer to print this with. Your local library may have a 3D printer that may be available to use. The machine shop you use for the case may also offer 3D printing services. The spacer is designed to be printed using FDM printing, but other printing methods (SLA, SLS) probably also work. On my prototype I printed this out of PLA on a cheap $250 Ender 3 printer, with 0.2mm layer height.
 
 ### Lock LEDs and resistors
 Most standard 3mm LEDs should work, and are available in several different colors. A 1KΩ resistor is a pretty safe resistor size for the LEDs, but depending on the LED forward voltage, current draw, and desired brightness, you may want to adjust this up or down. Standard 1/4W resistors are suitable.
@@ -358,20 +358,20 @@ To connect the daughterboard and the main PCB, you will need a 4-pin JST-SH capa
 
 ## Daughterboard holder
 
-![Daughterboard Holder](https://github.com/bluepylons/Boston/blob/master/graphics/CNC/daughterboard-holder.JPG?raw=true)
+![Daughterboard Holder](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/daughterboard-holder.JPG?raw=true)
 
 To mount the daughterboard low on the board, the daughterboard is screwed onto a daughterboard holder that then mounts onto the case bottom. This allows the daughterboard to be held upside down, which allows for it to be mounted much lower. 
 
-The daughterboard holder is a bare PCB that can be ordered from JLCPCB, Elecrow, PCBway, or another PCB manufacturing service using the Gerber files available [here](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Daughterboard%20holder/Daughterboard-holder-gerbers.zip).  It does not need any SMT assembly. 
+The daughterboard holder is a bare PCB that can be ordered from JLCPCB, Elecrow, PCBway, or another PCB manufacturing service using the Gerber files available [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Daughterboard%20holder/Daughterboard-holder-gerbers.zip).  It does not need any SMT assembly. 
 
 The daughterboard holder is 1.6mm thick. 
 
 Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" is selected so that the order number doesn't get printed somewhere you don't want. The Gerber files have the requisite "JLCJLCJLCJLC" text on them and placed in an unobstrusive location.
 
-![Remove Order Number](https://github.com/bluepylons/Boston/blob/master/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
+![Remove Order Number](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
 
 Four PEM KF2-M2-ET threaded inserts are pressed in and soldered into the holes on the daughterboard holder. Four M2x5 screws are then used to screw the daughterboard in, and the assembly is screwed into the case bottom using M3x5 screws. 
 
 # Build instructions
 
-[See here](https://github.com/bluepylons/Boston/blob/master/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md). The text is complete, though some photographes still need to be taken.
+[See here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md). The text is complete, though some photographes still need to be taken.
