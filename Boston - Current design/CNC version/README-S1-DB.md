@@ -1,4 +1,4 @@
-# WORK IN PROGRESRS - DO NOT REFER TO THIS GUIDE YET. REFER TO THE MAIN README.MD FOR NOW
+# WORK IN PROGRESS - DO NOT REFER TO THIS GUIDE YET. REFER TO THE MAIN README.MD FOR NOW
 # Boston CNC Version
 
 ![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0395_01.JPG?raw=true)
