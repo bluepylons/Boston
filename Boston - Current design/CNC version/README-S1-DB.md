@@ -63,8 +63,8 @@ These are recommended for the hotswap variant for holding the plate and PCB toge
 ## Parts needed only if ordering the PCB through JLCPCB
 
 | Description                                        | Qty per board | Type                                               |
+| -------------------------------------------------- | ------------- | -------------------------------------------------- |
 | 6x6mm tact switch, through-hole, 5mm high          | 1             | Off-the-shelf                                      |
-| SK6812mini-E RGBLED                                | 1             | Off-the-shelf                                      |
 
 ## Tools needed 
 | Description                                                                                      |  Used for                                                           |
@@ -211,12 +211,10 @@ The current hotswap ANSI PCB is [V0.8.1DHA](https://github.com/bluepylons/Boston
 ## Soldered PCB
 The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D)
 
-## Ordering on JLCPCB
+## Ordering on JLCPCB 
 [JLCPCB](https://jlcpcb.com/) is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts) (though they recently announced "Global Parts Sourcing"). In the community they tend to only be used for prototypes.
 
 To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). These files are available under the "Manufacturing Files" foler of the PCB. 
-
-**Note that JLCPCB does not offer the SK6812 Mini-E RGBLED used for LED702 for Economic PCB Assembly**, and you will have to solder order this elsewhere and solder it on manually yourself. Adafruit sells it as the [Neopixel Reverse mount](https://www.adafruit.com/product/4960), and it is also available off [Digi-key](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4960/14302512) (but oddly enough, not Mouser). Line up the notch on the LED with the notch marking on the PCB when you are soldering it.
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
@@ -226,13 +224,13 @@ Next, you want to upload the Gerber file for the PCB. You may need to manually i
 
 ![Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
 
-Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for SMT assembly in 1.6mm thickness - as of March 18, 2022, this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
+Here, you want to change the specifications to the following. 
 
-![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/3-JLCPCB-options-CNC.png?raw=true)
+![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/3a-JLCPCB-options-standard.png?raw=true)
 
-Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected:
+Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected. 
 
-![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4-SMT.png?raw=true)
+![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4a-SMT-standard.png?raw=true)
 
 Press Confirm. Next, you want to upload the BOM and CPL files. 
 
@@ -246,7 +244,7 @@ The next page is a confirmation page. Note that the parts placement preview may 
 
 ![Step 7](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/7-checkout-CNC.PNG?raw=true)
 
-As the microcontroller is frequently out of stock due to the chip shortage, line number 16 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). At different times some microcontroller variants may be cheaper than the others (for example, on August 29, 2022, the STM32F072CBT6 is $4.50 and the STM32F072CBU6 is $9.52, whereas during other times -CBU6 has been significantly cheaper than the -CBT6). You will need to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate.
+As the microcontroller is frequently out of stock due to the chip shortage, line number 16 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). At different times some microcontroller variants may be cheaper than the others (for example, on August 29, 2022, the STM32F072CBT6 is $4.50 and the STM32F072CBU6 is $9.52, whereas during other times -CBU6 has been significantly cheaper than the -CBT6). In the BOM and CPL spreadsheet you will need to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate. The line for the microcontroller is highlighted in yellow in the BOM and CPL files.
 
 ### Compatible MCUs 
 
@@ -320,7 +318,7 @@ For JLCPCB, you will need to solder on the through-hole parts for the PCB yourse
 
 The reset switch (next to the Right Shift key) uses a 5mm tall 6x6mm SPST NO through-hole tact switch. This is widely available from several vendors - I have used Wealth Metal [TC-0103](https://www.taydaelectronics.com/tact-switch-6x6mm-5mm-through-hole-spst-no.html), but TE 1825910-6, E-switch TL1105AF100Q, Omron B3F-1022, C&K PTS645SK50-2 LFS and numerous other parts should work (though it has not been tested). 
 
-This is soldered onto the top side of the PCB, and is accessible through the plate when the Right Shift keycap is removed.
+This is soldered onto the top side of the PCB next toe the Right Shift key, and is accessible through the plate when the Right Shift keycap is removed.
 
 ### Encoder
 The encoder used is [Alps EC11E18244A5](https://octopart.com/ec11e18244a5-alps-757484?r=sp), the same one used on the Satisfaction75. Other EC11-style encoders may work, but may need changes to various QMK parameters (ENCODER_RESOLUTION in config.h, and possibly reversing ENCODERS_PAD_A and ENCODERS_PAD_B) to work correctly.
@@ -386,19 +384,17 @@ I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have ver
 | OEDNI-75-3-7 | Silver, matte       |
 | OEDNI-75-4-7 | Black, matte        |
 
-
-
 ## Daughterboard
 
 The CNC version of Boston now uses the [S-series Unified Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s), and is meant for use with PCB revisions V0.8 and newer. Various vendors sell this daughterboard, such as [Cannonkeys](https://cannonkeys.com/products/unified-s1-daughterboard-and-molex-cable) and [RNDKBD](https://rndkbd.com/products/unified-daughterboard?variant=42772031242474). You can also find manufacturing files for it on their website. 
 
-Note that older PCBs (V0.6.1D and older) were meant to be used with the the older C3 Daughterboard, which as a different connector (a JST SM0connector instead of a Molex PicoEZmate connector). You may need to find or make an adapter cable if you are using a V0.6.1D or older PCB with a case meant for the S1 Daughterboard. 
+Note that older PCBs (V0.6.1D and older) were meant to be used with the the older C3 Daughterboard, which as a different connector (a JST SM connector instead of a Molex PicoEZmate connector). You may need to find or make an adapter cable if you are using a V0.6.1D or older PCB with a case meant for the S1 Daughterboard. You can buy a 
 
 ### Unified Daughterboard Cable
 
-To connect the daughterboard and the main PCB, you will need a Molex PicoEZmate cable with [the correct pinout](https://unified-daughterboard.github.io/#/info-consumer?id=pinout) for Unified Daughterboards and that is at least 75mm long. The cables sold by keyboard vendors should be the correct ones.
+To connect the daughterboard and the main PCB, you will need a Molex PicoEZmate cable with [the correct pinout](https://unified-daughterboard.github.io/#/info-consumer?id=pinout) for Unified Daughterboards and that is at least 75mm long. The cables sold by keyboard vendors that come with their daughterboards should be the correct ones.
 
-**Note that the PicoEZmate cables that Molex sells (36920-04xx) do not have the correct pinout for use with Unified Daughterboards, and may damage your PCB**
+**Note that the PicoEZmate cables that Molex sells (part numbers 36920-04xx) do not have the correct pinout for use with Unified Daughterboards, and may damage your PCB**
 
 If you need to make a cable, the Unified Daughterboard Project [suggests](https://unified-daughterboard.github.io/#/info-vendor?id=prototype-cables) buying pre-crimped wires and cable housings and making your own cables with the correct pinouts. You will need the following to make a cable; this will result in a long 300mm cable. Simply insert the pre-crimped wire ends into the connector housing until it clicks. 
 
@@ -409,5 +405,4 @@ If you need to make a cable, the Unified Daughterboard Project [suggests](https:
 
 # Build instructions
 
-Build instructions for V0.8D is a work in progress 
-Work in progress 
+Build instructions for V0.8D is a work in progress.
