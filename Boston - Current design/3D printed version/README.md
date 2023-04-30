@@ -63,7 +63,7 @@ For the PCB - you can order an assembled PCB with the surface mount parts solder
 
 JLCPCB is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts). In the community they tend to only be used for prototypes.
 
-To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.7J are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files). **Order at your own risk. V0.7J has been prototyped and is used in RNDKBD's Round 2 group buy, though the backlight LEDs on V0.7J have not been tested**
+To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the PCB assembly bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.7J are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.7J/Manufacturing%20files). **Order at your own risk. V0.7J has been prototyped and is used in RNDKBD's Round 2 group buy, though the backlight LEDs on V0.7J have not been tested**
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
@@ -73,11 +73,11 @@ Next, you want to upload the Gerber file for the PCB. You may need to manually i
 
 ![Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
 
-Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for SMT assembly in 1.6mm thickness - currently (October 5th, 2021), this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
+Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for Economic PCB Assembly in 1.6mm thickness - currently (April 30, 2023), this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
 
 ![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/3-JLCPCB-options.png?raw=true)
 
-Next, you want to scroll down and turn on SMT Assembly. Make sure the following options are selected:
+Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected:
 
 ![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4-SMT.png?raw=true)
 
