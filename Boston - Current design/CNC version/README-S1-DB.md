@@ -26,7 +26,7 @@ This is the ordering guide for the CNC version of Boston.
 | PCB                                                | 1             | Custom (PCB)                                       | Several variants                                                                                                        | 
 | LED spacer (for the lock LEDs)                     | 1             | Custom (3D-printed)                                | Different from the one for the 3DP Boston                                                                               |
 | S1 Unified (or compatible) Daughterboard           | 1             | Off-the-shelf or custom                            | Later S-series (e.g. S1.1) should work                                                                                  |
-| S1 Uniified Daughterboard cable (>75mm long)       | 1             | Off-the-shelf or custom                            | Make sure the [pinout is correct](https://unified-daughterboard.github.io/#/info-consumer?id=buying-replacement-cables) |
+| S1 Unified Daughterboard cable (>75mm long)        | 1             | Off-the-shelf or custom                            | Make sure the [pinout is correct](https://unified-daughterboard.github.io/#/info-consumer?id=buying-replacement-cables) |
 | 3mm LEDs for lock LEDs                             | 3             | Off-the-shelf                                      | Pick a color you like!                                                                                                  |
 | Alps EC11E18244A5 rotary encoder                   | 1             | Off-the-shelf                                      | Other rotary encoders may work, but may need firmware tweaks                                                            |
 | Knob suitable for 6mm D-shaft                      | 1             | Off-the-shelf                                      |                                                                                                                         |
@@ -53,12 +53,14 @@ For a standard ANSI build (using the fixed layout plate) you need 121 switches, 
 
 ## Parts recommended for the hotswap variant 
 
-| Description                                        | Qty per board | Type                                                   |
-| -------------------------------------------------- | ------------- | ------------------------------------------------------ |
-| M2 x 3.5mm threaded standoff for hotswap boards    | 10            | Off-the-shelf (available from KBDfans)                 |
-| M2x3 screws                                        | 20            | Off-the-shelf (available from KBDfans)                 |
+| Description                                            | Qty per board | Type          | Notes                                                                                                                                           |
+| ------------------------------------------------------ | ------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| M2x0.4 3.5mm threaded standoff for hotswap boards      | 10            | Off-the-shelf | Available as a [13-pack from KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit)                                |
+| M2x0.4 3mm Philips-head pan head screws                | 10-20         | Off-the-shelf | The KBDfans kit comes with 13 of them, but you will need another 7 if you aren't countersinking the plate                                       |
+| M2x0.4 3mmm flat head screw                            | 0-10          | Off-the-shelf | Only needed if you're countersinking the plate, and the KBDfans comes with enough, so you shouldn't need to buy these if buying the KBDfans kit |
 
 These are recommended for the hotswap variant for holding the plate and PCB together, though you might be fine just relying on the switches to hold the plate and PCB together.
+
 
 ## Parts needed only if ordering the PCB through JLCPCB
 
@@ -72,6 +74,12 @@ These are recommended for the hotswap variant for holding the plate and PCB toge
 | 2.5mm hex key or bit ("Allen key")                                                               | All M3 screws                                                       |
 | Soldering iron and solder                                                                        | For soldering everything                                            |
 | Flush cutters                                                                                    | For cutting legs off soldered LEDs and resistors                    |
+
+## Tools recommended for the hotswap variant only
+| Description                                                                                      |  Used for                                                           |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| Philips #1 screwdriver                                                                           | The optional M2 screws that attach the plate to the PCB             |
+| Switch puller                                                                                    | Removing switches                                                   |
 
 # Case
 
@@ -343,13 +351,24 @@ These need to be soldered through the LED spacer discussed above.
 
 ## Screws 
 
-You will need the following screws. Part numbers for [McMaster-Carr](https://www.mcmaster.com) are provided, though you can easily find fasteners off other sources. McMaster also may not ship outside the United States.
+You will need the following screws for all variants. Part numbers for [McMaster-Carr](https://www.mcmaster.com) are provided, though you can easily find fasteners off other sources. McMaster also may not ship outside the United States.
 
-| Description                                                           | Qty per board | McMaster-Carr P/N | Note                                                                                                                                          | 
-| --------------------------------------------------------------------- | ------------- | ----------------- |---------------------------------------------------------------------------------------------------------------------------------------------- |
-| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 16            | 91292A110         | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard  to the case bottom.       |
-| M3x0.5, 10mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A113         | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
-| M3x0.5, 16mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A115         | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
+| Description                                                           | Qty per board | McMaster-Carr P/N    | Note                                                                                                                                          | 
+| --------------------------------------------------------------------- | ------------- | -------------------- |---------------------------------------------------------------------------------------------------------------------------------------------- |
+| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 12            | 91292A110 100-pack) | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard  to the case bottom.        |
+| M3x0.5, 10mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A113 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
+| M3x0.5, 16mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A115 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
+
+## Screws for the hotswap variant 
+If you are putting together a hotswap board, standoffs to hold the PCB and plate together are strongly recommendedthough you might be fine just relying on the switches to hold the plate and PCB together. The only known regular source of these is from KBDfans, unless you get them custom made with a standoff manufacturer.
+
+| Description                                            | Qty per board                                | Link or Part Number                                                                            | Notes                                               |
+| -----------------------------------------------------  | -------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| M2x0.4 3.5mm standoffs                                 | 10                                           | [KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit) (13-pack) | KBDfans kit comes with other screws                 |  
+| M2x0.4 3mm long DIN 7985 pan head screw                | 10 (countersunk plate) or 20 (regular plate) | McMaster-Carr 95836A103 (100-pack)                                                             | Above KBDfans kit comes with 13 of them             |
+| M2x0.4 3mm long DIN 965 flat-head screw                | 10 (countersunk plate) or 0 (regular plate)  | McMaster-Carr 92010A784 (100-pack)                                                             | Above KBDfans kit comes with 13 of them             |
+
+If you are countersinking your hotswap plate, you should only need to buy a single 13-pack of the KBDfans standoff kit as it comes with all the required screws. If you are not countersinking the plate, you will need to buy some additional M2x0.4 3mm long pan head screws.
 
 ## Rubber feet 
 Boston uses standard circular, dome-shaped rubber feet. The smaller feet go in the front while the larger feet go in the back. These are available in a few colors.
