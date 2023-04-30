@@ -230,7 +230,7 @@ Here, you want to change the specifications to the following.
 
 Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected. 
 
-![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4a-SMT-standard.png?raw=true)
+![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/4a-SMT-standard.png?raw=true)
 
 Press Confirm. Next, you want to upload the BOM and CPL files. 
 
