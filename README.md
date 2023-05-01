@@ -1,5 +1,3 @@
-SK6812MINI-E![PCB version](https://img.shields.io/badge/PCB%20Version-pre%20Alpha-green.svg?style=flat) ![Prototype version](https://img.shields.io/badge/Prototype%20Version-pre%20Alpha-green.svg?style=flat) ![Firmware](https://img.shields.io/badge/Firmware-Passing-green.svg?style=flat)
-
 # Boston Keyboard 
 
 ![3D-printed/FR4 version](https://github.com/bluepylons/Boston/raw/main/graphics/3D-printed-prototype.JPG)
