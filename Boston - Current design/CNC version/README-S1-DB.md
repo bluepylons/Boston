@@ -214,7 +214,7 @@ You can order an assembled PCB (minus switches, LEDs, and rotary encoder) from a
 Note that **the CNC version of Boston does not use the same PCBs as the 3D printed version** due to the daughterboard, though they use the samae firmware as the key matrix is identical. All PCB variants with a -D suffix ("D" for "daughterboard) are for the CNC variant.
 
 ## Hotswap PCB 
-The current hotswap ANSI PCB is [V0.8.1DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.1DHA)
+The current hotswap ANSI PCB is [V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)
 
 ## Soldered PCB
 The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D)

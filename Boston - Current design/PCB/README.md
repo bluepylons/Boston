@@ -4,11 +4,11 @@ These are the PCB files. All PCBs so far have been manufactured at JLCPCB, so I 
 
 The PCBs are compatible only with MX-format switches and PCB-mount stabilizers. Washers should not be necessary for screw-in stabilizers.
 
-These files require  KiCAD V7 to open.
+These files require  KiCAD V7 to open. These files use the [Alexandria (Acheron) library](https://github.com/AcheronProject/AlexandriaLibrary) from Gondolindrim's [Acheron Project](https://acheronproject.com/). To configure that library correctly in KiCAD, you will need to go to Preferences > Configure Paths, and add "ALEXANDRIA" to the Name column and the location of the Alexandria library folder in Path column. 
 
 V0.7J is used for the 3D-printed version, while V0.6.1D is used for  the CNC version. V0.7J has the USB port and ESD protection on the main PCB, while V0.6.1D (for the aluminum version) has a 4-pin JST connector and is expected to use a C3 Unified Daughterboard. Both have identical key matrices and run the same firmware (though the red and green channels on the RGBLED are reversed between the two versions as different addressable RGBLEDs are used on each version). Both versions have been prototyped, though the optional through-hole backlight LEDs have not been tested.
 
-V0.8 is the next version 
+V0.8 is the next version that's currently being worked on. This switches over to a 4-pin Molex Pico-EZmate for use the newer S1 daughterboard. 
 
 # Changelog
 
@@ -17,23 +17,22 @@ V0.8 is the next version
 ### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
 * V0.7J - May 16, 2022.  This added access holes to the PCB to allow access to the screws that hold the key separators on the 3D printed version. On V0.6.1J and earlier these screw heads are not accessible, and means that the key separators cannot be removed or adjusted after the PCB is soldered. Some components had to be moved around to achieve that. V0.7J also added a place to solder on pogo pins (or a piece of wire) for grounding the plate and top side screws on the 3D-printed case. This is prototyped and working. RNDKBD used this version for Round 2 of their group buy. 
 
-### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
-* V0.6.1D - February 5, 2022. Fixed the incorrect silkscreen on the RGBLED (LED702), which had the arrow on pin 1 instead of pin 3. This was done by switching to Acheron's LED footprint instead of using KiCAD's default footprint. There is a very slight difference in the ground fill around LED702 (which is due to the Acheron footprint not having a keepout zone for ground fills, so I added one manually to keep the PCB as identical as posible to V0.6D). Prototyped and working (though backlight LEDs have not been tested) 
+### D-variant (uses a daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+* V0.6.1D - February 5, 2022. Has a JST connector for use with the C3 Unified Daughterboard. Fixed the incorrect silkscreen on the RGBLED (LED702), which had the arrow on pin 1 instead of pin 3. This was done by switching to Acheron's LED footprint instead of using KiCAD's default footprint. There is a very slight difference in the ground fill around LED702 (which is due to the Acheron footprint not having a keepout zone for ground fills, so I added one manually to keep the PCB as identical as posible to V0.6D). Prototyped and working (though backlight LEDs have not been tested) 
 
 ## Works in Progress
 
 ### J-variant (integrated USB port, used on the 3D-printed version)
-* V0.8.1JHA - ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8JHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+* V0.8.2JHA - ANSI hotswap variant for the 3D printed version. This does not support backlight LEDs. Flipped the spacebar stab footprints so that the stab wire no longer hits the plate. Fixed some minor silkscreen issues.
 
-* V0.8.1JHI - ISO hotswap variant of V0.8.1JHA. Design not yet started.
+* V0.8.2JHI - ISO hotswap variant of V0.8.2JHA. Design not yet started.
 
 * V0.8J - the reset button has been moved to the top side of the board, underneath the right shift key (just like on the CNC version). Design is done and is awaiting prototyping. 
 
-### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
-* V0.8.1DHA - ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8DHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+### D-variant (uses a Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+* V0.8.2DHA - ANSI hotswap variant for the CNC version. Has a Molex Pico-EZmate connector for use with the Unified S1 or C4 daughterboards. Flipped the spacebar stab footprints so that the stab wire no longer hits the plate like on V0.8.1DHA
 
-
-* V0.8.1DHI - same as above, but supporting ISO Enter and split left shift. Design not yet started.
+* V0.8.2DHI - same as above, but supporting ISO Enter and split left shift. Design not yet started.
 
 * V0.8D - adds a clamping diode to slightly improve ESD protection over V0.6.1D. Switches to the Molex Pico-EZmate connector for compatibility with the new [Unified S1 Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s) and [C4 daughterboard](https://unified-daughterboard.github.io/#/db-spec-c). Added reverse polarity protection as Molex Pico-EZmate cables often have the wrong pinout for use with Unified Daughterboards and can cause PCB damage.  Design done; awaiting prototyping. 
 
@@ -42,8 +41,12 @@ Note that V0.7D was skipped to line up the versioning between the J- and D- vari
 ## Previous PCBs
 
 ### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
-* V0.8JHA - ANSI hotswap variant of V0.8J. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Will have to be split up into ANSI and ISO versions. Initial draft of the design done; still need to error check. Design is done and is awaiting prototyping. 
-***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1JHA***
+
+* V0.8.1JHA - April 5, 2023. ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8JHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+***Note - this has an error where the spacebar stabilizers also are upside down relative to the plate and the stab wire will hit the plate and cause noise, though everything still works and you can file small notches into the stab cutouts to get rid of the noise***
+
+* V0.8JHA - March 27, 2023 ANSI hotswap variant of V0.8J. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Will have to be split up into ANSI and ISO versions. Initial draft of the design done; still need to error check. Design is done and is awaiting prototyping. 
+***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1JHA. The spacebar stabilizers also are upside down relative to the plate and the stab wire will hit the plate and cause noise, though everything still works and you can file small notches into the plate to get rid of the noise***
 
 * V0.6.1J - November 28, 2021. This removed a couple of loops on the backlight LEDs near the numpad, and added some more ground vias for EMI purposes. Prototyped and working (though backlight LEDs have not been tested). RNDKBD used this PCB for Round 1 of their group buy.  
 
@@ -59,7 +62,11 @@ Note that V0.7D was skipped to line up the versioning between the J- and D- vari
 
 * V0.3 and earlier - these used a two-PCB design, with microcontroller, USB port, and associated components on the daughterboard, and a completely through-hole main PCB. Used with the earliest prototypes. Not compatible with the published case designs. The firmware is largely similar, though the matrix is different.
 
-### D-variant (uses a C3 Daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
-* V0.8DHA - ANSI hotswap variant. Adds hotswap sockets. Switches to the Molex Pico-EZmate connector for compatibility with the new [Unified S1 Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s) and [C4 daughterboard](https://unified-daughterboard.github.io/#/db-spec-c). Added reverse polarity protection as Molex Pico-EZmate cables often have the wrong pinout for use with Unified Daughterboards and can cause PCB damage. Also has some changes to the diodes to try to slightly improve ESD protection over V0.6.1D. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Design done; awaiting prototyping. ***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1DHA***
+### D-variant (uses a daughterboard, used on the CNC version, and Technofrikus' 3D printed version)
+
+* V0.8.1DHA - April 5, 2023. ANSI hotswap variant of V0.8J. This does not support backlight LEDs. Fixed an issue on V0.8DHA where there was a spot of exposed solder mask underneath F11 tht can cause +3.3V to short to ground easily.
+***Note - this has an error where the spacebar stabilizers also are upside down relative to the plate and the stab wire will hit the plate and cause noise, though everything still works and you can file small notches into the stab cutouts to get rid of the noise***
+
+* V0.8DHA - March 28, 2023. ANSI hotswap variant. Adds hotswap sockets. Switches to the Molex Pico-EZmate connector for compatibility with the new [Unified S1 Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s) and [C4 daughterboard](https://unified-daughterboard.github.io/#/db-spec-c). Added reverse polarity protection as Molex Pico-EZmate cables often have the wrong pinout for use with Unified Daughterboards and can cause PCB damage. Also has some changes to the diodes to try to slightly improve ESD protection over V0.6.1D. To make routing the hotswap sockets easier I eliminated the optional through-hole backlight LEDs (as they're not useful on a hotswap board anyways). Design done; awaiting prototyping. ***Note - this has an error where there is a piece of exposed solder mask underneath F11 that can cause +3.3V to short to ground easily. This is fixed in V0.8.1DHA. The spacebar stabilizers also are upside down relative to the plate and the stab wire will hit the plate and cause noise, though everything still works and you can file small notches into the plate to get rid of the noise***
 
 * V0.6D - January 5, 2022. This is meant for the redesigned CNC version of Boston, and is meant to be used with a daughterboard (using the standard 4-pin JST connector). All ESD protection has been moved off to the daughterboard, moves the reset button to the top side of the PCB near Right Shift, and uses a reverse-mount RGBLED (meant to be used with a light pipe on the case) instead of a through-hole one. Otherwise very similar to V0.6.1J, and can run identical firmware as the matrix is identical. The silkscreen on the RGBLED (LED702) was incorrect (the arrow was on pin 1 instead of pin 3). Otherwise working. 
