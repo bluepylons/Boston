@@ -10,7 +10,7 @@ This is the ordering guide for the CNC version of Boston.
 
 **Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts** 
 
-** This is for the older version that uses a C3 Unified Daughterboard. There is a newer design that uses  the new S1 daughterboard. This version is being prototyped by RNDKBD, and is awaiting confirmation that everything works. See README-S1-DB for the draft guide for that version.**
+**This is for the older version that uses a C3 Unified Daughterboard. There is a newer design that uses  the new S1 daughterboard. This version is being prototyped by RNDKBD, and is awaiting confirmation that everything works. See [README-S1-DB.md](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/README-S1-DB.md) for the draft guide for that version.**
 
 # What you will need:
 

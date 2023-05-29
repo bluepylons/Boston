@@ -11,9 +11,8 @@ This is the ordering guide for the CNC version of Boston.
 
 **Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts. Even components that have been prototyped may still contain errors. ** 
 
-# What you will need:
-
 **This is for the future S1 daughterboard version. This version is being prototyped by RNDKBD, and is awaiting confirmation that everything works. Please see the main README.md for the ordering guide for the current variant that uses the C3 Unified Daughterboard**
+# What you will need:
 
 ### Parts:
 
