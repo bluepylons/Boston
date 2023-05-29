@@ -255,11 +255,11 @@ As the microcontroller is frequently out of stock due to the chip shortage, line
 
 ### Compatible MCUs 
 
-Boston uses a 128kb STM32F072CB-series microcontroller, and can accept either the LQFP-48 (STM32F072CxTx) or 48-UFQFPN (STM32F072CxUx ) versions.
+Boston uses a 128kb STM32F072CB-series microcontroller, and can accept either the LQFP-48 (STM32F072CxTx) or 48-UFQFPN (STM32F072CxUx ) versions. THis is Line 
 
 Any of the following microcontrollers will work, and support all features. 
 
-**Compatible MCUs**
+**Compatible MCUs - JLCPCB BOM Line #19**
 | Microcontroller     | JLCPCB (LCSC) part number     |
 | ------------------- | ----------------------------- |
 | STM32F072CBU6       | C92504                        |
@@ -291,7 +291,7 @@ Other versions of the STM32F072 (which have different footprints or pin counts),
 
 This is here for reference in case some parts are out of stock.
 
-**U702 - BOM Line #17**
+**U702 - JLCPCB BOM Line #17**
 This is a SOT-223 linear regulator to drop the 5V down to 3.3V. Since ceramic capacitors are used the output, and some linear regulators are unstable with ceramic capacitors as their ESR is too low, the linear regulator needs to be explicitly compatible with low-ESR output capacitors.
 
 | Part                                                  | JLCPCB (LCSC) part number |
@@ -299,7 +299,7 @@ This is a SOT-223 linear regulator to drop the 5V down to 3.3V. Since ceramic ca
 | Diodes Inc AZ1117IH-3.3TRG1 (default)                 | C108495                   |
 | TI TLV1117LV33DCYR                                    | C15578                    |
 
-**U705 - BOM Line #18**
+**U705 - JLCPCB BOM Line #18**
 This is a 74LVC1T45 level shifter in an SOT23-6 (SOT26) package. 
 
 | Part                                 | JLCPCB (LCSC) part number |
@@ -423,4 +423,4 @@ If you need to make a cable, the Unified Daughterboard Project [suggests](https:
 
 # Build instructions
 
-Build instructions for V0.8D is a work in progress.
+Build instructions are currently [a work in progress](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide-S1-DB.md).
