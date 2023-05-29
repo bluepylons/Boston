@@ -17,7 +17,7 @@ V0.8 is the next version that's currently being worked on. This switches over to
 ### CNC version PCBs
 | Version   | Type     | Daughterboard connector               | Supported layouts | Design status          | Elecrow Files Status   | JLCPCB Files Status                                             |
 | --------- | -------- | ------------------------------------- | ----------------- | ---------------------- | ---------------------- | --------------------------------------------------------------- |
-| V0.6.1D   | Soldered | JST SH (for UDB C3 and earlier)       | All               | Done and prototyped    | Done, not prototyped   | Done and prototyped (no RGBLED), done not prototyped (RGBLED    | 
+| V0.6.1D   | Soldered | JST SH (for UDB C3 and earlier)       | All               | Done and prototyped    | Done, not prototyped   | Done and prototyped (no RGBLED), not prototyped (RGBLED)        | 
 | V0.8D     | Soldered | Molex Pico-EZmate (for UDB S1 and C4) | All               | Done, being prototyped | Done, being prototyped | Done, not prototyped                                            | 
 | V0.8.2DHA | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ANSI              | Done, being prototyped | Done, being prototyped | Done, not prototyped                                            | 
 | V0.8.2DHI | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ISO               | Initial draft done     | Not yet started        | Not yet started                                                 | 
