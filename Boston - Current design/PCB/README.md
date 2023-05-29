@@ -14,6 +14,22 @@ V0.8 is the next version that's currently being worked on. This switches over to
 
 ## Current PCBs
 
+### CNC version PCBs
+| Version   | Type     | Daughterboard connector               | Supported layouts | Design status          | Elecrow Files Status   | JLCPCB Files Status  |
+| --------- | -------- | ------------------------------------- | ----------------- | ---------------------- | ---------------------- | -------------------- |
+| V0.6.1D   | Soldered | JST SH (for UDB C3 and earlier)       | All               | Done and prototyped    | Done, not prototyped   | Done (no RGBLED)     | 
+| V0.8D     | Soldered | Molex Pico-EZmate (for UDB S1 and C4) | All               | Done, being prototyped | Done, being prototyped | Done, not prototyped | 
+| V0.8.2DHA | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ANSI              | Done, being prototyped | Done, being prototyped | Not yet started      | 
+| V0.8.2DHI | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ISO               | In-progress            | Not yet started        | Not yet started      | 
+
+### 3DP version PCBs
+| Version   | Type     | Supported layouts | Reset button location | Design status          | Elecrow Files Status   | JLCPCB Files Status  |
+| --------- | -------- | ----------------- | --------------------- | ---------------------- | ---------------------- | -------------------- |
+| V0.7J     | Soldered | All               | Bottom                | Done and prototyped    | Done and prototyped    | Done and prototyped  | 
+| V0.8J     | Soldered | All               | Top                   | Done, being prototyped | Done, being prototyped | Not yet started      | 
+| V0.8.2JHA | Hotswap  | ANSI              | Top                   | Done, being prototyped | Done, being prototyped | Not yet started      | 
+| V0.8.2JHI | Hotswap  | ISO               | Top                   | Not yet started        | Not yet started        | Not yet started      | 
+
 ### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
 * V0.7J - May 16, 2022.  This added access holes to the PCB to allow access to the screws that hold the key separators on the 3D printed version. On V0.6.1J and earlier these screw heads are not accessible, and means that the key separators cannot be removed or adjusted after the PCB is soldered. Some components had to be moved around to achieve that. V0.7J also added a place to solder on pogo pins (or a piece of wire) for grounding the plate and top side screws on the 3D-printed case. This is prototyped and working. RNDKBD used this version for Round 2 of their group buy. 
 
