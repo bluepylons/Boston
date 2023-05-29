@@ -15,12 +15,12 @@ V0.8 is the next version that's currently being worked on. This switches over to
 ## Current PCBs
 
 ### CNC version PCBs
-| Version   | Type     | Daughterboard connector               | Supported layouts | Design status          | Elecrow Files Status   | JLCPCB Files Status  |
-| --------- | -------- | ------------------------------------- | ----------------- | ---------------------- | ---------------------- | -------------------- |
-| V0.6.1D   | Soldered | JST SH (for UDB C3 and earlier)       | All               | Done and prototyped    | Done, not prototyped   | Done (no RGBLED)     | 
-| V0.8D     | Soldered | Molex Pico-EZmate (for UDB S1 and C4) | All               | Done, being prototyped | Done, being prototyped | Done, not prototyped | 
-| V0.8.2DHA | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ANSI              | Done, being prototyped | Done, being prototyped | Not yet started      | 
-| V0.8.2DHI | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ISO               | In-progress            | Not yet started        | Not yet started      | 
+| Version   | Type     | Daughterboard connector               | Supported layouts | Design status          | Elecrow Files Status   | JLCPCB Files Status                                             |
+| --------- | -------- | ------------------------------------- | ----------------- | ---------------------- | ---------------------- | --------------------------------------------------------------- |
+| V0.6.1D   | Soldered | JST SH (for UDB C3 and earlier)       | All               | Done and prototyped    | Done, not prototyped   | Done and prototyped (no RGBLED), done not prototyped (RGBLED    | 
+| V0.8D     | Soldered | Molex Pico-EZmate (for UDB S1 and C4) | All               | Done, being prototyped | Done, being prototyped | Done, not prototyped                                            | 
+| V0.8.2DHA | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ANSI              | Done, being prototyped | Done, being prototyped | Done, not prototyped                                            | 
+| V0.8.2DHI | Hotswap  | Molex Pico-EZmate (for UDB S1 and C4) | ISO               | In-progress            | Not yet started        | Not yet started                                                 | 
 
 ### 3DP version PCBs
 | Version   | Type     | Supported layouts | Reset button location | Design status          | Elecrow Files Status   | JLCPCB Files Status  |
