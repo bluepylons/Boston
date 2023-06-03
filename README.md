@@ -32,7 +32,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 * Uses keys found in GMK base kits (except for the programmable keys)
 * RGBLED layer-status indicator light 
 * ISO enter key, ISO left shift, split backspace, split numpad 0, split space, and WKL bottom row support 
-* Optional through-hole LED backlight (dimmable as a single block only) - soldered version only.
+* Optional through-hole LED backlight (dimmable as a single block only) - soldered version only. This hasn't been tested in the newer PCBs but probably still work. 
 * USB-C
 * STM32F072 controller running QMK. Circuitry is derived from the Austin. 
 * Uses Gondolindrim/Acheron's [single-button reset circuit](http://acheronproject.com/images/reset_article/reset2_tighter.svg)
@@ -48,7 +48,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 ### CNC Version:
 * 2-piece CNC machined case (no weight)
 * Traditional top mount 
-* Uses a C3 daughterboard for the USB-C port connection 
+* Uses a C3 daughterboard for the USB-C port connection (a newer version using the S1 daughterboard is in the works, and V0.8 and newer PCBs use the Molex Pico-EZmate connectors on the S1 and C4 daughterboards)
 * Low USB-C port parallel to desk 
 
 ## Status
@@ -66,7 +66,7 @@ Cases:
 
 PCB:
 
-**V0.8 series** - in development. 
+**V0.8 series** - PCB design is done but awaiting prototyping. 
 
 **V0.7J** (3DP version) - prototyped and working (except optional backlight LED feature has not been tested)
 
@@ -91,11 +91,11 @@ V0.6.1D (JST-SH connector for use with a USB-C daughterboard, such as the C3 Uni
 ![PCB V0.6.1D bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-DB-bottom.png)
 
 ## Firmware
-All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, and V0.7J) have the same key matrix and therefore use the same firmware. However, the RGBLED on V0.6.1D has its red and green channels reversed compared to the other versions (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
+All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, V0.7J, and the V0.8 line, both hotswap and soldred) have the same key matrix and therefore use the same firmware. However, the RGBLED on the -D series for the CNC version has its red and green channels reversed compared to the other versions (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
 
 The compiled QMK firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_default.bin). Source files are on the [QMK repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/boston). 
 
-The compiled [Vial](https://get.vial.today/) firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_vial.bin). Source files are on the [Vial-QMK repo](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/boston). The current Vial build uses Vial v0.6.
+The compiled [Vial](https://get.vial.today/) firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_vial.bin). Source files are on the [Vial-QMK repo](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/boston). The current Vial build uses Vial V0.6. This is the recommended firmware. 
 
 Firmware can be flashed using QMK Toolbox or DFU. On PCB versions V0.6 and newer, you need to long press the reset button (for several seconds) to access the DFU bootloader to allow for flashing - a short press only resets the MCU. 
 
