@@ -51,6 +51,10 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 * Uses a C3 daughterboard for the USB-C port connection (a newer version using the S1 daughterboard is in the works, and V0.8 and newer PCBs use the Molex Pico-EZmate connectors on the S1 and C4 daughterboards)
 * Low USB-C port parallel to desk 
 
+## Current Errata
+
+For all PCB versions - if you use the 1u numpad + and = key options instead of 2u numpad +, the 1u + and 1u = keys are swapped in firmware and on the PCB compared to the KLE (physically pressing the upper 1u key actuates the lower 1u key in firmware and vice-versa). For now, just swap the key assignments in Vial and you should be good. 
+
 ## Status
 Due to [complications around electromagnetic compatibility testing regulations](https://www.keebtalk.com/t/your-custom-keyboard-is-probably-illegal-a-long-post-on-radio-interference-testing-regulations-and-keyboards/16104), and my current personal circumstances, I decided to open-source the files for the project rather than running a group buy or sale. You can use the files to make one for yourself, as long as you comply with the CERN OHL-W license. 3rd-party group buys or sales are permitted under the license (I will not be directly involved in any 3rd party sales). [RNDKBD](https://rndkbd.com/) currently sells the 3D printed version as an in-stock item (printed to order in a variety of different colors). There has also been at least one small 3rd-party private buy for the CNC version.
 
