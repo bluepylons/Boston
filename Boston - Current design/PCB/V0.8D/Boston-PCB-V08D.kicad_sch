@@ -8991,6 +8991,11 @@
     (effects (font (size 1.2 1.2)) (justify left bottom))
     (uuid 19d19e1a-af2a-4187-b4c9-ef6ac2f62776)
   )
+  (text "SW123 and SW124-2 were accidentally \nswapped in the physical PCB layout. \nThe firmware will be changed to \nreflect this."
+    (at 694.69 254 0)
+    (effects (font (size 3.175 3.175)) (justify left bottom))
+    (uuid 1b258d7e-3dd8-4ac6-9760-a9c43c3803f8)
+  )
   (text "RCtrl (1u)" (at 430.53 233.68 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1b7726d3-f0fe-48c2-9195-fbd00095cde1)

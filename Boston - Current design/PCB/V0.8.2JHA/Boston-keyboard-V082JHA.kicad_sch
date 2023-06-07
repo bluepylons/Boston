@@ -7866,6 +7866,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f934e008-79e9-471d-a260-331502943c15)
   )
+  (text "SW123 and SW124-2 were accidentally \nswapped in the physical PCB layout. \nThe firmware will be changed to \nreflect this."
+    (at 694.69 259.08 0)
+    (effects (font (size 3.175 3.175)) (justify left bottom))
+    (uuid fabe2f83-7073-481e-af28-92378eda739c)
+  )
   (text "Esc" (at 44.45 86.36 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid fc3702f5-0df4-4d0f-8075-f3d684651d99)
