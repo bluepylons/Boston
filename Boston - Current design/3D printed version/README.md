@@ -264,6 +264,7 @@ I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have ver
 You will need to 3D-print the parts in [the STL folder](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs). (For the left key separator you need to print either the RGBLED or no RGBLED verison, depending on whether you soldered on the RGBLED on the PCB). More detailed instructions on 3D are available in the assembly instructions. The parts are designed to be FDM 3D printed, and can be printed without support material. 
 
 You can outsource the 3D printing to a service like Shapeways, but if you're printing more than a single case this isn't econommical versus just buying a budget 3D printer - a cheap $250 Ender 3 Pro or a Biqu B1 will print the case just fine. Or if you don't want to deal with that, try finding a friend or acquaintance with a 3D printer. Many public libraries also now have 3D printers also that are available for use. 
+
 # Assembly Instructions
 
 Draft assembly instructions are [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/Draft%20instructions%20(barebones%20kit).pdf)
