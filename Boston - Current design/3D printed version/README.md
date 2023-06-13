@@ -16,6 +16,8 @@ This is how to order the parts to make a 3D-printed Boston.
 
 **Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts** 
 
+** This is for the older PCB V0.7 and older designs; the newer V0.8 PCBs (which include hotswap variants) are currently being tested but are not included in this guide, and the V0.8 line use slightly different plates and bottom panels (as they move their reset button to the top side of the PCB). This guide will eventually be updated for those designs once those designs are verified.**
+
 You will need the following:
 
 ## What You Will Need (summary):
@@ -216,12 +218,12 @@ Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" 
 ![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
 
 ## Plate
-The universal plate Gerber files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/Plate/Plate-soldered-universal-3DP/Manufacturing%20files)).
+The universal plate Gerber files are available [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/Plate/Plate-soldered-universal-3DP/Manufacturing%20files/Gerbers-3DP-soldered-plate.zip).
 
 Note that JLCPCB will usually charge an extra fee on plates - in the past it has been about $15 additional fee for 5 plates, but may have increased. This extra fee will be requested after you have submitted the order, and you will need to pay it for them to actually manufacture your order. 
 
 ## Bottom Panel
-The bottom panel Gerber files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/Bottom/KiCAD%20files/Manufacturing%20files). 
+The bottom panel Gerber files are available [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/Bottom%20(with%20reset%20hole%20-%20for%20V07J%20and%20older)/KiCAD%20files/Manufacturing%20files/Gerbers-bottom.zip). 
 
 Definitely use a lead-free finish on this, as you will be touching this when carrying the board. All past bottoms have used HASL-Lead-Free for the finish, but there have been occasional quality issues (e.g. small features on the map were not covered in solder, and were bare copper). ENIG will probably work better, but is more expensive, and will be gold-colored instead of silver. 
 
