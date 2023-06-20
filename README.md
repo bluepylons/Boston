@@ -124,6 +124,9 @@ The KiCAD files are done using KiCAD V7.
 Technofrikus designed an alternative 3D-printed case derived from the files of the CNC version, and also designed a case with a 4° typing angle. The files for those are [available on Technofrikus' GitHub](https://github.com/Technofrikus/Boston-Case).
 ![Technofrikus' 3D-printed version](https://github.com/Technofrikus/Boston-Case/blob/main/Photos/DSCF7709%201.jpg?raw=true)
 
+DatGameh designed a 0.5° version of the 3D printed case, using parts for the 3DP version. The files are [available on DatGameh's Github](https://github.com/DatGameh/Pretty-Flat-Boston-Case). 
+
+
 ## Acknowledgements
 
 Many thanks to:
