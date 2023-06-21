@@ -1,3 +1,7 @@
 # Plate files for the 3D-printed version
 
 These are the FR4 plate files.These can be manufactured at any PCB fab. 
+
+Plate-hotswap-ANSI supports [these layouts](https://github.com/bluepylons/Boston/raw/main/graphics/boston-hotswap-ANSI-KLE.png) and is meant for use with the hotswap PCB (and includes holes for 3.5mm M2 standoffs such as [these](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit) between the plate and PCB to hold the PCB in place without any switches). The hotswap plate can also be used with the soldered PCB, except split space is not supported with the soldered PCB (as 2.75u and 2.25u split space are swapped between the hotswap and soldered versions as it was otherwise impossible to also support a standard 6.25u spacebar on the hotswap version without swapping the two).
+
+Plate-soldered-universal-3DP supports [these layouts](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png) and is meant for use with the soldered PCB. It supports every layout that the soldered PCB supports. You can also use it with the hotswap PCB, except you are relying on the switches in the sockets to hold the PCB, and also split space is not supported when using it with the hotswap PCB.
