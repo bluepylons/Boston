@@ -15,7 +15,7 @@ The name is a pun off Austin, since the layout is derived from it. I also grew u
 Soldered PCB:
 ![Boston layouts](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png)
 
-ANSI hotswap PCB: (note the split space 2.75u and 2.25u keys are flipped around compared to the soldered version, and the right switch is north facing, to accommodate hotswap sockets)
+ANSI hotswap PCB: (note the split space 2.75u and 2.25u keys are flipped around compared to the soldered version - this was necessary to split both split space and standard 6.25u space on the same PCB with hotswap sockets)
 ![Boston ANSI hotswap layouts](https://github.com/bluepylons/Boston/raw/main/graphics/boston-hotswap-ANSI-KLE.png)
 
 ISO hotswap PCB: TBD
