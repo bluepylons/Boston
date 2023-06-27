@@ -157,9 +157,9 @@ There are several variants of the plate, and different plates for the hotswap an
 
 ![KLE of the hotswap ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ANSI-KLE.png?raw=true) 
 
-The hotswap ANSI plate supports all the layouts supported on the hotswap ANSI PCB ([V0.8.1DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.1DHA)). It also has holes for the 3.5mm standoffs between the PCB and plate, to hold the assembly together when there are no switches installed. 
+The hotswap ANSI plate supports all the layouts supported on the hotswap ANSI PCB ([V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)). It also has holes for the 3.5mm standoffs between the PCB and plate, to hold the assembly together when there are no switches installed. 
 
-Note that the hotswap layoutreverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
+Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
 
 If you are getting the plate CNC machined, there is a version of the hotswap ANSI plate with countersunk holes for the PCB-plate standoffs if you want to use countersunk screws for a flush finish. Send the [countersinking instructions](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk-countersinking-instructions.pdf) to the manufacturer along with the [3D .STEP file](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk.stp)
 
@@ -167,7 +167,7 @@ All of the files for the hotswap ANSI plate are [here](https://github.com/bluepy
 
 ** Soldered plate (universal layout) **
 
-The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8J](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8J))
+The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8J](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D))
 
 All of the files for the soldered universal layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Universal-plate-soldered).
 
