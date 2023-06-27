@@ -423,7 +423,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../../../Case/Atom3D/Boston-M-Universal-plate.step",
+      "step": "../Boston-M-Universal-plate-soldered.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
