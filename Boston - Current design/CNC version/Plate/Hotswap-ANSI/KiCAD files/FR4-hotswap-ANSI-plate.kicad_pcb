@@ -5856,7 +5856,7 @@
     (stroke (width 0.1) (type solid)) (layer "User.2") (tstamp ff94cd02-ab8d-4e29-b597-9c816ae9c583))
   (gr_arc (start 247.506249 92.225) (mid 247.359805 92.578571) (end 247.006249 92.725)
     (stroke (width 0.1) (type solid)) (layer "User.2") (tstamp ffa3a335-4b4f-42a0-accb-e74c70dabb34))
-  (gr_text "Boston (Metal Version) - ANSI Hotswap Plate V0.1 - March 4, 2023\nDesigned by Pylon - open source at http://github.com/bluepylons/Boston" (at 264.318972 14.287512) (layer "B.SilkS") (tstamp 2d032450-73c0-4bf7-a478-f1724aa2eaac)
+  (gr_text "Boston (Metal Version) - ANSI Hotswap Plate V0.20 - June 27, 2023\nDesigned by Pylon - open source at http://github.com/bluepylons/Boston" (at 264.318972 14.287512) (layer "B.SilkS") (tstamp 2d032450-73c0-4bf7-a478-f1724aa2eaac)
     (effects (font (size 1.4 1.4) (thickness 0.3)) (justify left mirror))
   )
   (gr_text "JLCJLCJLCJLC" (at 373.1 14.4) (layer "B.SilkS") (tstamp c6efdf47-39f7-4314-90e3-0fef47f9d81f)
