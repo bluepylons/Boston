@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,7.0.1*%
-%TF.CreationDate,2023-03-27T00:24:39-04:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.5*%
+%TF.CreationDate,2023-06-29T00:41:08-04:00*%
 %TF.ProjectId,3DP-FR4-plate-top-reset-cutout,3344502d-4652-4342-9d70-6c6174652d74,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 7.0.1) date 2023-03-27 00:24:39*
+G04 Created by KiCad (PCBNEW 7.0.5) date 2023-06-29 00:41:08*
 %MOMM*%
 %LPD*%
 G01*
