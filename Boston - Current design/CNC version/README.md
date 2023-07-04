@@ -136,9 +136,9 @@ Boston has a top mount plate. There are two versions of the plate - a fixed layo
 
 The plate should be made out of 1.4-1.6mm material (which is the official Cherry spec for having the switches click in properly). 
 
-**Fixed plate**:
-![Fixed Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/Fixed-plate.PNG)
-![KLE of the fixed layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE-fixed-layout-plate-support.PNG)
+**Fixed ANSI plate**:
+![Fixed Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/ANSI-fixed-plate.PNG)
+![KLE of the fixed layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE-ANSI-fixed-layout-plate-support.PNG)
 
 
 **Universal plate**:
