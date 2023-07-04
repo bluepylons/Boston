@@ -12,6 +12,7 @@ This is the ordering guide for the CNC version of Boston.
 **Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts. Even components that have been prototyped may still contain errors. ** 
 
 **This is for the future S1 daughterboard version. This version is being prototyped by RNDKBD, and is awaiting confirmation that everything works. Please see the main README.md for the ordering guide for the current variant that uses the C3 Unified Daughterboard**
+
 # What you will need:
 
 ### Parts:
@@ -44,13 +45,13 @@ This is the ordering guide for the CNC version of Boston.
 
 For a standard ANSI build (using the fixed layout plate) you need 121 switches, 6 2u stabilizers, and 1 6.25u stabilizer. 
 
-## Parts needed only for the soldered PCB variant 
+## Additional parts needed only for the soldered PCB variant 
 
 | Description                                        | Qty per board | Type                                                   |
 | -------------------------------------------------- | ------------- | ------------------------------------------------------ |
 | 1KΩ 1/4W through-hole resistor for lock LEDs       | 3             | Off-the-shelf                                          |
 
-## Parts recommended for the hotswap variant 
+## Additional parts recommended for the hotswap variant 
 
 | Description                                            | Qty per board | Type          | Notes                                                                                                                                           |
 | ------------------------------------------------------ | ------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,7 +62,7 @@ For a standard ANSI build (using the fixed layout plate) you need 121 switches, 
 These are recommended for the hotswap variant for holding the plate and PCB together, though you might be fine just relying on the switches to hold the plate and PCB together.
 
 
-## Parts needed only if ordering the PCB through JLCPCB
+## Additional parts needed only if ordering the PCB through JLCPCB
 
 | Description                                        | Qty per board | Type                                               |
 | -------------------------------------------------- | ------------- | -------------------------------------------------- |
@@ -74,7 +75,7 @@ These are recommended for the hotswap variant for holding the plate and PCB toge
 | Soldering iron and solder                                                                        | For soldering everything                                            |
 | Flush cutters                                                                                    | For cutting legs off soldered LEDs and resistors                    |
 
-## Tools recommended for the hotswap variant only
+## Additional tools recommended for the hotswap variant only
 | Description                                                                                      |  Used for                                                           |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | Philips #1 screwdriver                                                                           | The optional M2 screws that attach the plate to the PCB             |
@@ -103,7 +104,7 @@ You will also need to specify a material and a finish, a color for the finish (i
 
 The manufacturer will get back to you with a quote. If you wish to proceed with the quote, let them know that you wish to proceed, and they will send you instructions for payment (often via Paypal or bank transfer) and ask for a shipping address. 
 
-With a Chinese shop, expect to pay $300-$600 for a single case machined out of aluminum (and about $60-$150 for shipping - note that some machine shops inflate their shipping costs). Expect higher for a US or EU shop. The price each usually goes down if you order more (even 3-5 units can lower the price significantly for each board over ordering just 1). 
+With a Chinese shop, expect to pay $300-$700 for a single case machined out of aluminum (and about $60-$150 for shipping - note that some machine shops inflate their shipping costs). Expect higher for a US or EU shop. The price each usually goes down if you order more (even 3-5 units can lower the price significantly for each board over ordering just 1). 
 
 
 ## Material
@@ -161,21 +162,28 @@ The hotswap ANSI plate supports all the layouts supported on the hotswap ANSI PC
 
 Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
 
-If you are getting the plate CNC machined, there is a version of the hotswap ANSI plate with countersunk holes for the PCB-plate standoffs if you want to use countersunk screws for a flush finish. Send the [countersinking instructions](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk-countersinking-instructions.pdf) to the manufacturer along with the [3D .STEP file](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk.stp)
+If you are getting the plate CNC machined, there is a version of the hotswap ANSI plate with countersunk holes for the standoffs if you want to use countersunk screws for a flush finish. Send the [countersinking instructions](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk-countersinking-instructions.pdf) to the manufacturer along with the [3D .STEP file](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk.stp). Some laser cutting services also offer countersinking, like [Sendcutsend](https://sendcutsend.com/services/countersinking/). 
 
 All of the files for the hotswap ANSI plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI). 
 
+** Hotswap ISO **
+![KLE of the hotswap ISO layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ISO-KLE.png?raw=true) 
+
+The hotswap ISO plate supports all the layouts supported on the hotswap ISO PCB [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI)
+
+Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
+
 ** Soldered plate (universal layout) **
 
-The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8J](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D))
+The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D))
 
-All of the files for the soldered universal layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Universal-plate-soldered).
+All of the files for the soldered universal layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Soldered-universal).
 
-** Soldered plate (fixed layout) 
+** Soldered plate (ANSI fixed layout) ** 
 
-This accommodates only the [standard ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE-fixed-layout-plate-support.PNG?raw=true) (with a non-stepped Caps Lock key). This results in easier asseembly and an easier-to-clean plate  over the universal plate.
+This accommodates only the [standard ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE-ANSI-fixed-layout-plate-support.PNG?raw=true) (with a non-stepped Caps Lock key). This results in easier asseembly and an easier-to-clean plate  over the universal plate.
 
-All of the files for the solderedfixed layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Fixed-layout-soldered).
+All of the files for the solderedfixed layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Soldered-ANSI-fixed-layout).
 
 ## Getting the plate manufactured 
 
@@ -185,6 +193,8 @@ There are a couple of ways to get the plate manufactured. The plate should be ma
 Virtually all metals (aluminum, brass, steel, titanium, etc.) can be cut using a powerful laser, as well as certain plastics (POM and PP). This will usually be the most cost-effective option for a metal, POM, or PP plate. To get a plate cut, you want to use the DXF (.dxf) file. Units are in mm.
 
 [Sendcutsend](https://sendcutsend.com/) in the US and [Laserboost](https://www.laserboost.com/) in the EU are popular laser cutting services. Many Chinese CNC machine shops, including popular keyboard manufactuerers like Gaojie and Dadesin also offer laser cutting if you want them to make your plate for you as well. 
+
+For the hotswap plate, some laser-cutting services offer countersinking. They may either offer it through their web interface, or you may have to manually request it. Attach the countersinking instructions for the respective plate file. 
 
 #### Waterjet cutting
 This is rarely used for keyboard plates as it's not as cost effective as laser-cutting, but is also an option as well if you have access to one. This uses the same DXF (.dxf) file.
@@ -212,8 +222,11 @@ You can order an assembled PCB (minus switches, LEDs, and rotary encoder) from a
 
 Note that **the CNC version of Boston does not use the same PCBs as the 3D printed version** due to the daughterboard, though they use the samae firmware as the key matrix is identical. All PCB variants with a -D suffix ("D" for "daughterboard) are for the CNC variant.
 
-## Hotswap PCB 
+## Hotswap ANSI PCB 
 The current hotswap ANSI PCB is [V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)
+
+## Hotswap ISO PCB 
+The current hotswap ANSI PCB is [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI)
 
 ## Soldered PCB
 The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D)
@@ -221,7 +234,7 @@ The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/ma
 ## Ordering on JLCPCB 
 [JLCPCB](https://jlcpcb.com/) is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts) (though they recently announced "Global Parts Sourcing"). In the community they tend to only be used for prototypes.
 
-To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). These files are available under the "Manufacturing Files" foler of the PCB. 
+To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). These files are available under the "Manufacturing Files" folder of the PCB (**NOTE - some PCB versions do not yet have their JLCPCB files ready yet **)
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
@@ -354,11 +367,11 @@ You will need the following screws for all variants. Part numbers for [McMaster-
 
 | Description                                                           | Qty per board | McMaster-Carr P/N    | Note                                                                                                                                          | 
 | --------------------------------------------------------------------- | ------------- | -------------------- |---------------------------------------------------------------------------------------------------------------------------------------------- |
-| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 12            | 91292A110 100-pack) | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard  to the case bottom.        |
+| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 12            | 91292A110 100-pack)  | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard  to the case bottom.        |
 | M3x0.5, 10mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A113 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
 | M3x0.5, 16mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A115 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
 
-## Screws for the hotswap variant 
+## Additional screws for the hotswap variant 
 If you are putting together a hotswap board, standoffs to hold the PCB and plate together are strongly recommendedthough you might be fine just relying on the switches to hold the plate and PCB together. The only known regular source of these is from KBDfans, unless you get them custom made with a standoff manufacturer.
 
 | Description                                            | Qty per board                                | Link or Part Number                                                                            | Notes                                               |
