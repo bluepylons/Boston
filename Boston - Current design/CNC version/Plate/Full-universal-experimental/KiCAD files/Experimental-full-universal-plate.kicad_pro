@@ -407,7 +407,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FR4-hotswap-ANSI-plate.kicad_pro",
+    "filename": "Experimental-full-universal-plate.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -443,7 +443,7 @@
       "idf": "",
       "netlist": "./",
       "specctra_dsn": "",
-      "step": "../../../../../../../Boston - keyboard/V08J-fitcheck/Hotswap-ANSI-plate-test.stp",
+      "step": "../../../../../../../../Downloads/Experimental-full-universal-plate-sharp-corners.stp",
       "vrml": ""
     },
     "page_layout_descr_file": ""

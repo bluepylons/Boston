@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "Keebio")(type "KiCad")(uri "${BOSTONLIB}/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "AcheronSlots")(type "KiCad")(uri "${BOSTONLIB}/AcheronLibrary/footprints/acheron_MX_PlateSlots.pretty")(options "")(descr ""))
+  (lib (name "Boston-plate-custom-footprints")(type "KiCad")(uri "${BOSTONLIB}/Boston/Boston - Current design/Metal version/Plate/Fixed-layout/KiCAD files/Boston-plate-custom-footprints.pretty")(options "")(descr ""))
+)
