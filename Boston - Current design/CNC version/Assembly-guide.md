@@ -76,16 +76,16 @@ To flash the firmware, you'll have to install a few pieces of software.
 If you are on Windows, you'll want to install drivers. This can be done with a tool called [Zadig](https://zadig.akeo.ie/). 
 
 a.) Install and open Zadig:
-![Zadig Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Zadig-1.PNG?raw=true)
+![Zadig Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Zadig-1.PNG?raw=true)
 
 b.) Select "List All Devices" in the Options Menu :
-![Zadig Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Zadig-2.PNG?raw=true)
+![Zadig Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Zadig-2.PNG?raw=true)
 
 c.) Select "STM32 Bootloader" in the dropdown menu:
-![Zadig Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Zadig-3.PNG?raw=true)
+![Zadig Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Zadig-3.PNG?raw=true)
 
 d.) Select WinUSB here:
-![Zadig Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Zadig-4.PNG?raw=true)
+![Zadig Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Zadig-4.PNG?raw=true)
 
 e.) Click the Replace Driver button. This will install the driver. 
 
@@ -102,14 +102,14 @@ b.) Connect the daughterboard to your computer. The PCB and daughterboard will r
 c.) Open QMK Toolbox. 
 
 d.) Hold down the reset button for at least 5 seconds, and then release it. In QMK Toolbox, "STM32 DFU device connected" should appear in yellow.
-![QMK Toolbox Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/QMK-Toolbox-1.PNG?raw=true)
+![QMK Toolbox Step 1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/QMK-Toolbox-1.PNG?raw=true)
 
 e.) Press "Open" in QMK Toolbox and navigate to the location of your .bin firmware file. 
-![QMK Toolbox Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/QMK-Toolbox-2.PNG?raw=true)
+![QMK Toolbox Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/QMK-Toolbox-2.PNG?raw=true)
 
 
 f.) Press the Flash button. Do not disconnect the keyboard until it is done flashing, or you may permanently brick your keyboard. 
-![QMK Toolbox Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/QMK-Toolbox-3.PNG?raw=true)
+![QMK Toolbox Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/QMK-Toolbox-3.PNG?raw=true)
 
 
 ## 1.6 - Testing your PCB 
@@ -121,14 +121,14 @@ Disconnect the daughterboard from the PCB once you're done.
 
 First, solder on the 3 1KΩ resistors onto the positions for R200, R201, and R202. 1KΩ is a comfortable value, but if you want your LEDs brighter or dimmer you may wish to use different resistors. Resistors are not directional and will work soldered in either direction.
 
-![Resistors](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Resistors.JPG?raw=true)
+![Resistors](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Resistors.JPG?raw=true)
 
 Next up, we want to do the lock LEDs. Note that LEDs are directional and will not light up if soldered in backwards. The longer leg on an LED is +. Make sure this matches up with the + symbols on the PCBs.
-![LED-legs-labelled](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/LED-legs-labelled.JPG?raw=true)
+![LED-legs-labelled](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/LED-legs-labelled.JPG?raw=true)
 
 Solder the lock LEDs through the LED spacer as shown - the LED spacer only fits on one way. 
-![LEDs in spacer](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/LED-in-spacer.JPG?raw=true)
-![LEDs soldered on](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/LEDS-installed.JPG?raw=true)
+![LEDs in spacer](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/LED-in-spacer.JPG?raw=true)
+![LEDs soldered on](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/LEDS-installed.JPG?raw=true)
 
 
 ## 1.8 - Soldering on the rotary encoder 
@@ -145,12 +145,12 @@ Peel the backing paper off the rubber feet and stick them in the circular pocket
 ## 2.2 - Installing the RGBLED light pipe 
 
 a.) Press the light pipe into the hole meant for the light pipe on the upper left of the case top. 
-![Light pipe installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Light-pipe-installation.JPG?raw=true)
+![Light pipe installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Light-pipe-installation.JPG?raw=true)
 
 b.) Flip the case top over. Slip the rubber light pipe retainer onto the back of the light pipe, and move it down so that it prevents the light pipe from falling out. If you want, you can glue the RGBLED light pipe and retainer, using hot glue, epoxy, or another adhesive. 
-![Light pipe retainer installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Light-pipe-retainer-installation.JPG?raw=true)
+![Light pipe retainer installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Light-pipe-retainer-installation.JPG?raw=true)
 
-![Light pipe retainer installed](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Light-pipe-retainer-installed.JPG?raw=true)
+![Light pipe retainer installed](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Light-pipe-retainer-installed.JPG?raw=true)
 
 # Part 3 - Preparing the daughterboard and daughterboard holder
 
@@ -159,7 +159,7 @@ b.) Flip the case top over. Slip the rubber light pipe retainer onto the back of
 The PEM KF2-M2-ET threaded inserts need to be pressed into and then soldered to the daughterboard holder PCB. There are a couple of methods to press in the threaded inserts. 
 
 Note that the threaded inserts should be pressed into the side with the silver rings around the holes for them. If you press them in the wrong side you won't be able to solder them in place.
-![Pressed in threaded insert](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/PEM-nut-pressed-in.jpg?raw=true)
+![Pressed in threaded insert](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-pressed-in.jpg?raw=true)
 
 ### Method 1 - C-clamp or vise 
 a.) Using a C-clamp or vise, press the threaded inserts into the daughterboard holder. Ensure that they are fully seated. 
@@ -192,15 +192,15 @@ a.) A soft hammer is ideal to avoid damaging or denting the threaded insert - ot
 ## 3.2 - Soldering on the threaded inserts
 
 a.) Make sure that the inserts are fully seated:
-![Check that the insert is fully seated](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/PEM-nut-flushness-check.jpg?raw=true)
+![Check that the insert is fully seated](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-flushness-check.jpg?raw=true)
 
 b.) Temporarily screw the M2x5 screws into the threaded inserts to protect the threads. This is to prevent solder from entering the threads. 
-![With screws temporarily in place](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/PEM-nut-with-screws.jpg?raw=true) 
+![With screws temporarily in place](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-with-screws.jpg?raw=true) 
 
 c.) Solder the threaded inserts. You only need enough solder on so that the threaded inserts won't twist or come off. 
 
 d.) Remove the screws.
-![Soldered](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/PEM-nut-soldered.jpg?raw=true) 
+![Soldered](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-soldered.jpg?raw=true) 
 
 ## 3.3 - Installing the daughterboard onto the daughterboard holder
 
@@ -208,10 +208,10 @@ Screw the daughterboard onto the daughterboard holder using the M2x5 screws - th
 
 ## 3.4 - Installing the daughterboard onto the bottom case 
 a.) Plug the JST cable into the daughterboard. 
-![Daughterboard with cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Daughterboard-w-cable.JPG?raw=true) 
+![Daughterboard with cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Daughterboard-w-cable.JPG?raw=true) 
 
 b.) Using M3x5 screws, screw the daugherboard holder into the bottom case. 
-![Daughterboard and daughterboard holder installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Daughterboard-installation.JPG?raw=true)
+![Daughterboard and daughterboard holder installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Daughterboard-installation.JPG?raw=true)
 
 # Part 4 - Switches and stabilizers 
 
@@ -238,19 +238,19 @@ Solder all your switches.
 ## 5.1 - Installing the plate and PCB assembly
 
 Screw the plate to the top case using the M3 x 5mm screws. 
-![Screwing in the plate](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Screwing-in-plate.JPG?raw=true)
+![Screwing in the plate](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Screwing-in-plate.JPG?raw=true)
 
 
 ## 5.2 - Connecting the daughterboard
 
 With the top case and PCB near the bottom case (avoid accidentally tugging on the daughterboard cable as this can damage the cable or rip the connector off the daughterboard or PCB) - connect the daughterboard cable to the PCB. 
 
-![Connecting the JST cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Plugging-in.JPG?raw=true)
+![Connecting the JST cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Plugging-in.JPG?raw=true)
 
 ## 5.3 - Screwing together
 
 Again, being careful to avoid tugging on the daughterboard cable - set the case top onto the case bottom. Flip everything over. Place M3x10 screws on the front four screw holes, and M3x16 screws on the rear four screw holes. Tighten those screws to screw the top and bottom cases together. 
-![Screwing case together](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly%20guide/Screwing-case-together.JPG?raw=true)
+![Screwing case together](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Screwing-case-together.JPG?raw=true)
 ## 5.4 - Installing your knob and keycaps. 
 
 Next, flip the keyboard back over and install your keycaps and knob. 
