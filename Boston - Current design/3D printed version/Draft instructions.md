@@ -37,18 +37,30 @@ Appendix:
   
 # What's in the box
 * The PCB
-* The FR4 fiberglass plate
+[picture of the PCB]
+* The FR4 fiberglass plate 
+![FR4 fiberglass plate](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-FR4-plate.jpg?raw=true)
 * The FR4 bottom panel
+![FR4 bottom panel](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-FR4-bottom.jpg?raw=true)
 * 3x 3mm LEDs
+![3mm LEDs](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-3mm-LEDs.jpg?raw=true)
 * (soldered version only) 3x 1KΩ resistors 
+![1K resistors](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-1K-resistors.jpg?raw=true)
 * A rotary encoder. Your vendor may also include a knob.
+![Encoder](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-encoder.jpg?raw=true)
 * 15 M3x10mm screws
+![M3x10mm screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3x10-screws.jpg?raw=true)
 * 8 M3x6mm screws 
+![M3x6mm screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3x6-screws.jpg?raw=true)
 * 11 M3 PEM KF2-M3-ET threaded inserts
+![PEM KF2-M3-ET threaded inserts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-PEM-KF2-M3-ET.jpg?raw=true)
 * 12 M3 hex nuts
+![M3 hex nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3-hex-nut.jpg?raw=true)
 * 14 M2x5mm self-tapping screws 
+![M2x5mm self-tapping screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M2x5-self-tapping-screws.jpg?raw=true)
 * A reset switch (note on some PCBs this is already soldered on, and won’t be included as a result)
-* A set of spring loaded pins (note on some PCBs this is already soldered on, and won’t be included as a result)
+![Reset switch](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-reset-switch.jpg?raw=true)
+* (soldered version only) A set of spring loaded pins (note on some PCBs this is already soldered on, and won’t be included as a result)
 * (hotswap version only) 10 M2 3.5mm long standoffs
 * (hotswap version only) 20 M2x3mm screws 
 
@@ -97,6 +109,7 @@ You may also want to adjust the Z-seam setting to prevent seams from being in hi
 
 For the key separators, the following orientation is recommended, with the rounded edges facing up. 
 
+![Key separators](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/3D-printing-key-separators.png?raw=true)
 # Part 1 - Putting Together The Plate and Key Separators 
 
 ## 1.1 - Soldering the threaded inserts into the plate
