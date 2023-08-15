@@ -35,39 +35,54 @@ Appendix:
   * Use a fume extractor while soldering, or solder in a well-ventilated space. Flux fumes can be hazardous and can cause long-term lung issues. 
 * Do not overtighten the screws! This can strip the head or the threads and cause other damage.
   
-# What's in the box
-* The PCB
-[picture of the PCB]
-* The FR4 fiberglass plate 
+# What you should have:
+* The PCB:
+[pic]
+* The FR4 fiberglass plate: 
 ![FR4 fiberglass plate](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-FR4-plate.jpg?raw=true)
-* The FR4 bottom panel
+* The FR4 bottom panel:
 ![FR4 bottom panel](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-FR4-bottom.jpg?raw=true)
-* 3x 3mm LEDs
+* 3x 3mm LEDs:
 ![3mm LEDs](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-3mm-LEDs.jpg?raw=true)
-* (soldered version only) 3x 1KΩ resistors 
+* (soldered version only) 3x 1KΩ resistors:
 ![1K resistors](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-1K-resistors.jpg?raw=true)
 * A rotary encoder. Your vendor may also include a knob.
 ![Encoder](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-encoder.jpg?raw=true)
-* 15 M3x10mm screws
+* 15 M3x10mm screws:
 ![M3x10mm screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3x10-screws.jpg?raw=true)
-* 8 M3x6mm screws 
+* 8 M3x6mm screws:
 ![M3x6mm screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3x6-screws.jpg?raw=true)
-* 11 M3 PEM KF2-M3-ET threaded inserts
+* 11 M3 PEM KF2-M3-ET threaded inserts:
 ![PEM KF2-M3-ET threaded inserts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-PEM-KF2-M3-ET.jpg?raw=true)
-* 12 M3 hex nuts
+* 12 M3 hex nuts:
 ![M3 hex nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M3-hex-nut.jpg?raw=true)
-* 14 M2x5mm self-tapping screws 
+* 14 M2x5mm self-tapping screws:
 ![M2x5mm self-tapping screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-M2x5-self-tapping-screws.jpg?raw=true)
-* A reset switch (note on some PCBs this is already soldered on, and won’t be included as a result)
+* A reset switch (note on some PCBs this is already soldered on, and won’t be included as a result):
 ![Reset switch](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-reset-switch.jpg?raw=true)
-* (soldered version only) A set of spring loaded pins (note on some PCBs this is already soldered on, and won’t be included as a result)
-* (hotswap version only) 10 M2 3.5mm long standoffs
-* (hotswap version only) 20 M2x3mm screws 
+* (soldered version only) A set of spring loaded pins (note on some PCBs this is already soldered on, and won’t be included as a result):
+[pic of spring loaded pins]
+* (hotswap version only) 10 M2 3.5mm long standoffs:
+[pic of 3.5mm long standoffs]
+* (hotswap version only) 20 M2x3mm screws: 
+[pic of M2x3mm screws]
 
 If you purchased the kit from a vendor, please inform your vendor if any of the above is missing. 
 
 # 3D printed parts
-Your vendor might have included these, or you may need to print these yourself. See [Part 0 - 3D printing the case parts](#part-0---3d-printing-the-case-parts) for the list of parts.
+Your vendor might have included these, or you may need to print these yourself. See [Part 0 - 3D printing the case parts](#part-0---3d-printing-the-case-parts) for information on how to print these parts.
+
+* The left and right case halves:
+![3D printed case halves](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-case-halves.JPG?raw=true)
+
+* The left key separator:
+![3D printed left key separator](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-3DP-Left-key-separator.png?raw=true)
+
+* The right key separator:
+![3D printed right key separator](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-3DP-Right-key-separator.png?raw=true)
+
+* The 3D-printed spacer for the lock LEDs:
+![3D printed lock LED spacer](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-3DP-lock-LED-spacer.png?raw=true)
 
 # Parts you'll need to assemble the keyboard
 * MX-compatible switches. Depending on the layout you choose, you will need between 119 and 127 switches. 
@@ -93,32 +108,35 @@ Your vendor might have included these, or you may need to print these yourself. 
 * Make sure the pins are straight before inserting the switch 
 * Support the back side of the hotswap socket when inserting switches. 
 
-[graphic]
+[graphic on how to support hotswap switches]
 
 # Part 0 - 3D printing the case parts 
 
-You will need to 3D-print the following parts. STL files for 3D printing are available on Github [here]. You will need a 3D printer with a minimum 200mm x 150mm bed x 210mm tall.
-
-* The 3D-printed case, which comes in 4 pieces: the left half, right half , left-key-separator, and right-key-separator:
-
-* The 3D-printed spacer for the lock LEDs
+You will need to 3D-print the parts listed in [# 3D printed parts](#-3D-printed-parts). STL files for 3D printing are available on Github [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs). You will need a 3D printer with a minimum 200mm x 150mm bed x 210mm tall.
 
 For the left and right case halves, printing with the long side facing up, like so, is recommended.
+![Case halve orientation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/3D-printing-orientation.png?raw=true)
 
 You may also want to adjust the Z-seam setting to prevent seams from being in highly visible places. Generally, you should try to locate the Z-seam at the bottom of the case, preferably in an inside corner.
 
-For the key separators, the following orientation is recommended, with the rounded edges facing up. 
+For the key separators, the following orientation is recommended, with the rounded edges facing up: 
+![Key separators orientation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/3D-printing-key-separators.png?raw=true)
 
-![Key separators](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/3D-printing-key-separators.png?raw=true)
 # Part 1 - Putting Together The Plate and Key Separators 
 
 ## 1.1 - Soldering the threaded inserts into the plate
 
 Flip the plate over so that the underside of the plate is facing you. Press in the PEM threaded inserts into the 11 holes on the plate. 
 
+![Pushing PEM nuts in](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-inserting-threaded-inserts.jpg?raw=true)
+
 If it’s too hard to push the inserts in, you can use one of the M3x6 screws to pull the insert in, using a T10 Torx screwdriver. Remove the screw when the insert is all the way in.
 
-With the inserts pushed in, double check that they’re on the correct side - they should be on the bottom of the plate, not the top. Also, make sure the inserts are all of the way in and fully seated. Then solder, them in place:
+![Pulling PEM nuts in](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-pulling-in-threaded-inserts.jpg?raw=true)
+![Pulled in PEM nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-screwed-in-threaded-insert.jpg?raw=true)
+
+With the inserts pushed in, double check that they’re on the correct side - they should be on the bottom of the plate, not the top. Also, make sure the inserts are all of the way in and fully seated. Then, solder them in place:
+![Soldered in PEM nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-soldered-threaded-insert.jpg?raw=true)
 
 It may take some time for your soldering iron to get the nut and plate hot enough to get the solder to flow well. Also, avoid getting solder on the threads. If you get solder on the threads, try running an M3 screw through to clear solder off the threads. If that doesn’t work, you’ll need an M3 tap to remove the solder from the threads.
 
@@ -126,13 +144,17 @@ It may take some time for your soldering iron to get the nut and plate hot enoug
 
 Attach the M2 3.5mm long standoffs onto the bottom of the plate using the M2x3mm screws, onto the following marked holes on the plate:
 
-[Plate-standoff-positions.png]
+![Soldered in PEM nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-standoff-positions.png?raw=true)
+
+[pic of plate with screwed in standoffs]
 
 # Part 2 - Attaching and aligning the key separators
 
 *On PCBs older than V0.7, the key separators cannot be adjusted after the switches are soldered on without desoldering all your switches. Make sure you get this right before soldering anything!* 
 
-Next, grab the 3D-printed left-key-separator and right-key-separator pieces, and the M2x5 self-tapping screws.. These pieces need to attach to the plate before the switches are soldered in.
+Next, grab the 3D-printed left-key-separator and right-key-separator pieces, and the M2x5 self-tapping screws. These pieces need to attach to the plate before the switches are soldered in.
+
+![Key separators](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-key-separator-parts.png?raw=true)
 
 Attach the key separators to the plate using the M2x5 self-tapping screws, via the small holes located in the plate. Use a T6 Torx screwdriver for this. Make sure the screws go in straight! **Do not tighten these all the way - leave them about a ½ turn loose, since we’ll need to adjust and align these in a little bit.** There are 14 screws that need to be attached in total - 6 on the left separator, and 8 on the right separator. 
 
