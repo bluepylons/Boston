@@ -37,7 +37,7 @@ Appendix:
   
 # What You Should Have:
 * The PCB:
-[pic]
+[image needed of PCB]
 * The FR4 fiberglass plate: 
 ![FR4 fiberglass plate](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-FR4-plate.jpg?raw=true)
 * The FR4 bottom panel:
@@ -61,11 +61,11 @@ Appendix:
 * A reset switch (note on some PCBs this is already soldered on, and won’t be included as a result):
 ![Reset switch](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Parts-reset-switch.jpg?raw=true)
 * (soldered version only) A set of spring loaded pins (note on some PCBs this is already soldered on, and won’t be included as a result. You can also substitute this with a short piece of wire):
-[pic of spring loaded pins]
+[image needed of spring loaded pins]
 * (hotswap version only) 10 M2 3.5mm long standoffs:
-[pic of 3.5mm long standoffs]
+[image needed of 3.5mm long standoffs]
 * (hotswap version only) 20 M2x3mm screws: 
-[pic of M2x3mm screws]
+[image needed of M2x3mm screws]
 
 If you purchased the kit from a vendor, please inform your vendor if any of the above is missing. 
 
@@ -146,7 +146,7 @@ Attach the M2 3.5mm long standoffs onto the bottom of the plate using the M2x3mm
 
 ![Soldered in PEM nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-standoff-positions.png?raw=true)
 
-[pic of plate with screwed in standoffs]
+[image needed of plate with screwed in standoffs]
 
 # Part 2 - Attaching and Aligning the Key Separators
 
@@ -262,7 +262,7 @@ Install all the stabilizers according to the instructions from their manufacture
 
 Screw the PCB onto the plate via the 10 standoffs on the plate that were previously attached in Step 1.2. 
 
-[image]
+[image needed]
 
 # 4.4 - Testing Your Stabilizers 
 
