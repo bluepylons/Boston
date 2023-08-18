@@ -108,7 +108,7 @@ Your vendor might have included these, or you may need to print these yourself. 
 * Make sure the pins are straight before inserting the switch 
 * Support the back side of the hotswap socket when inserting switches. 
 
-[graphic on how to support hotswap switches]
+[image needed on how to support hotswap switches - similar to Novelkey's [diagram](https://cdn.shopify.com/s/files/1/3099/8088/files/Group_686_2x_cd694deb-8455-4dc1-82ed-5332ea2de4f6.png?v=1634837791) on [their instruction guides](https://novelkeys.com/pages/howto)]
 
 # Part 0 - 3D Printing the Case Parts 
 
