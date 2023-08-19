@@ -67,7 +67,7 @@ Appendix:
 * (hotswap version only) 20 M2x3mm screws: 
 [image needed of M2x3mm screws]
 
-If you purchased the kit from a vendor, please inform your vendor if any of the above is missing. 
+If you purchased the kit from a vendor, note that some of the components may have already been soldered on. Please inform your vendor if any of the above is missing. 
 
 # 3D-Printed Parts
 Your vendor might have included these, or you may need to print these yourself. See [Part 0 - 3D printing the case parts](#part-0---3d-printing-the-case-parts) for information on how to print these parts.
@@ -228,7 +228,7 @@ If your PCB did not come with the reset switch soldered on, solder it onto the b
 
 ![Reset switch](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/PCB-reset-switch.jpg?raw=true)
 
-# 3.6 - Soldering on the Spring-Loaded Pins 
+# 3.6 - (Soldered PCB only) Soldering on the Spring-Loaded Pins 
 
 If you are using PCB V0.7 or newer, solder on the spring-loaded pins, which are soldered to the top side of the PCB on the right side of the keyboard. This is used to electrically ground the plate and the screws on the top of the case so that static shocks do not reset the keyboard microcontroller. If you do not have the spring loaded pins, you can solder a small wire to where the spring loaded pin goes and solder the other end of the wire to the corresponding area on the plate. 
 
