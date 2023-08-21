@@ -4,7 +4,11 @@
 
 ## To Do
 
-* Instructions on how to solder per-key LEDs 
+* Instructions on how to solder per-key LEDs (soldered version only - the hotswap version does not have the per-key LEDs)
+
+## Errata
+
+* If you are using split 1u numpad + and =, the + and = are reversed in Vial, QMK, and in the key diagram. For now just assign the key you want to + to =, and vice versa.
 
 # Table of Contents
 
@@ -22,6 +26,7 @@ Appendix:
 * Boston is an open-source keyboard project. Follow these assembly instructions at your own risk. 
 * Please read the entirety of this guide before you begin. The assembly process for the 3D-printed version of Boston is a bit atypical.
 * The 3D printed key separators must be installed onto the plate before the switches are soldered on. If you have the plate and PCB but do not have the 3D printed parts yet - do not solder your switches on yet.  
+* If you purchased a kit from a vendor, some of the steps may have already been done for you by the vendor. 
 * Do not use strong chemicals such as acetone to wipe down any part of the case or PCB. This may cause damage. 
 * The PCB has an ESD protection chip to provide some protection when it is fully assembled, but cannot protect the keyboard while you are building it. Please observe basic procedures to prevent damage from electrostatic discharge (ESD) while handling the PCB or assembling the keyboard.
     * Wear a properly-grounded ESD wrist strap while you are assembling the board.
@@ -339,8 +344,74 @@ After all this, install the knob and keycaps. Plug the keyboard into a computer 
 
 ![You are done!](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Keyboard-done.jpg?raw=true)
 
-# Appendix 1 - Flashing Firmware
+# Appendix 1 - Remapping keys 
 
-# Appendix 2 - Default Firmware Key Assignments
+If you purchased your keyboard from a vendor, your keyboard comes with a default keymap and [Vial](https://get.vial.today/) 0.6 firmware installed. [Vial](https://get.vial.today/) is an open-source alternative to VIA, and allows you to remap keys without reflashing your keyboard. Instructions on how to use Vial are [here](https://get.vial.today/manual/first-use.html)
 
-The knob is set for volume. Press the knob for mute. 
+These are the default key assignments:
+![Default key assignments](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Default-key-assignments.png?raw=true)
+
+
+# Appendix 2 - Flashing Firmware 
+
+If you bought the PCB directly from a PCB fab, or if you wish to flash a different firmware other than Vial, please follow the following steps. You’ll also need a second keyboard for the flashing process.
+
+## 2.1 - Gabbing the .bin fFle
+
+Before flashing, you will need to have the .bin file for your firmware. Make sure that the .bin file is compiled for the Boston. The 3D-printed Boston and the CNC version of the Boston use the same firmware files. 
+
+* The default Vial .bin file is avialable on Github [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_vial.bin). 
+* If you are compiling QMK or Vial, the .bin file should be produced when compilation is done. Often, this file is in your Home folder or wherever the output of your compiler is set to. 
+* The Vial source files are on [Vial's Github repo](https://github.com/vial-kb/vial-qmk/tree/vial/keyboards/boston). Likewise, the QMK source files are on [QMK's Github repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/boston)
+* Instructions for setting up a QMK build environment are available from QMK [here](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs_getting_started.md)
+
+## 2.2 - Installing Drivers and QMK Toolbox 
+
+You’ll need to install drivers to communicate with the keyboard’s microcontroller properly. This can be done with a tool called [Zadig](https://zadig.akeo.ie/) on Windows. It is unclear if this is needed for other OS'es (such as Linux or MacOS)
+
+Open Zadig:
+![Zadig-1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Zadig-1-open.png?raw=true)
+
+Select “List All Devices” in the Options Menu 
+![Zadig-2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Zadig-2-List-All-Devices.png?raw=true)
+
+Select “STM32 Bootloader” in the dropdown menu:
+![Zadig-3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Zadig-3-STM32-Bootloader.png?raw=true)
+
+Select WinUSB here:
+![Zadig-4](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Zadig-4-WinUSB.png?raw=true)
+
+Click the "Replace Driver" button.
+
+Wou will also needed to download [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases) for your OS. 
+
+## 2.2 - Finding the Reset Button 
+
+The reset button location varies depending on the version you have. On PCB V0.7 and older, the reset button is located on the underside of the PCB. You can press it by inserting an unbent paperclip or a small screwdriver through the following hole on the bottom panel and pushing the switch. 
+
+![Reset button location on V0.7J and older](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Reset-button-location-old.jpg?raw=true)
+
+On PCB V0.8 and newer, the reset button is on the top side of the PCB, next to the Right Shift key. You will need to take off the Right Shift keycap to access it.
+
+[image needed of new reset button location]
+
+## 2.3 - Pressing the Reset Button to Enter Bootloader Mode 
+
+Plg your keyboard in. 
+
+If you have a PCB variant older than V0.6 (such as V0.5.2), a simple press of the reset button is sufficient to enter Bootloader mode.
+
+On PCB variants V0.6 and newer, hold down the reset button for at least 5 seconds to Enter bootloader mode.
+
+## 2.4 - Opening QMK Toolbox 
+
+Open QMK Toolbox. “STM32 DFU device connected” should appear in yellow. If that text isn’t there, press the reset switch on your keyboard according to the instruction earlier. 
+![QMK-Toolbox-1](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/QMK-Toolbox-1.png?raw=true)
+
+Press “Open” and navigate to the location of your .bin file.
+![QMK-Toolbox-2](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/QMK-Toolbox-2.png?raw=true)
+
+Press the Flash button. Do not disconnect the keyboard until it is done flashing, or you may permanently brick your keyboard.
+![QMK-Toolbox-3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/QMK-Toolbox-3.png?raw=true)
+
+Once your flash is complete, your keyboard with the .bin file you flashed should be ready for use!
