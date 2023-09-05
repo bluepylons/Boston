@@ -149,7 +149,9 @@ It may take some time for your soldering iron to get the nut and plate hot enoug
 
 Attach the M2 3.5mm long standoffs onto the bottom of the plate using the M2x3mm screws, onto the following marked holes on the plate:
 
-![Soldered in PEM nuts](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-standoff-positions.png?raw=true)
+![Standoff locations](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Plate-standoff-positions.png?raw=true)
+
+![Screwed in standoffs](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Screwed-in-standoffs.jpg?raw=true)
 
 [image needed of plate with screwed in standoffs]
 
@@ -393,7 +395,7 @@ The reset button location varies depending on the version you have. On PCB V0.7 
 
 On PCB V0.8 and newer, the reset button is on the top side of the PCB, next to the Right Shift key. You will need to take off the Right Shift keycap to access it.
 
-[image needed of new reset button location]
+![Reset button location on V0.8 and newer](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/New-reset-button-location.jpg?raw=true)
 
 ## 2.3 - Pressing the Reset Button to Enter Bootloader Mode 
 
