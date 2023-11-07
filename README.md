@@ -70,7 +70,7 @@ Cases:
 
 PCB:
 
-**V0.8 series** - PCB design is done but awaiting prototyping. 
+**V0.8 series** - PCB has been prototyped and tested by Andy of RNDKBD.
 
 **V0.7J** (3DP version) - prototyped and working (except optional backlight LED feature has not been tested)
 
@@ -86,13 +86,13 @@ A draft ordering guide for the CNC version is available on the README under [the
 
 Renders done with [tracespace.io](https://tracespace.io/).
 
-V0.7J (integrated USB-C port and ESD protection - used on the 3D printed version):
-![PCB V0.7J top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-top.png)
-![PCB V0.7J bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-bottom.png)
+V0.8J (integrated USB-C port and ESD protection - used on the 3D printed version):
+![PCB V0.8J top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-top.png)
+![PCB V0.8J bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-bottom.png)
 
-V0.6.1D (JST-SH connector for use with a USB-C daughterboard, such as the C3 Unified Daughterboard):
-![PCB V0.6.1D top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-DB-top.png)
-![PCB V0.6.1D bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-DB-bottom.png)
+V0.8D (Molex Pico-EZmate connector for use with UDB S1 and C4 daughterboards):
+![PCB V0.8D top](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-V08D-top.png)
+![PCB V0.8D bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-V08D-bottom.png)
 
 ## Firmware
 All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, V0.7J, and the V0.8 line, both hotswap and soldred) have the same key matrix and therefore use the same firmware. However, the RGBLED on the -D series for the CNC version has its red and green channels reversed compared to the other versions (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
