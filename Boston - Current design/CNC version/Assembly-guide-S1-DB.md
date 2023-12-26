@@ -144,7 +144,6 @@ b.) Flip the case top over. Slip the rubber light pipe retainer onto the back of
 
 # Part 3 - Installing the Daughterboard 
 
-Screw the 
 a.) Plug the daughterboard cable into the daughterboard. 
 [image]
 
