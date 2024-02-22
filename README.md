@@ -40,7 +40,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 * Approximately 6.5° typing angle 
 
 ### 3D Printed Version:
-* Printable on cheap hobby printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on an Ender 3, Biqu B1, Prusa i3, etc.) 
+* Printable on cheap hobby printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on a Bambu P1S or X1C, Ender 3, Biqu B1, Prusa i3, etc.) 
 * Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG).
 * Technically top mount, though an unusual implementation (screws come in from the top of the case and screw into threaded inserts on the plate - load path is identical to top mount)
 * Designed around an FR4 plate with soldered-in threaded inserts 
@@ -48,12 +48,12 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 ### CNC Version:
 * 2-piece CNC machined case (no weight)
 * Traditional top mount 
-* Uses a C3 daughterboard for the USB-C port connection (a newer version using the S1 daughterboard is in the works, and V0.8 and newer PCBs use the Molex Pico-EZmate connectors on the S1 and C4 daughterboards)
+* Uses a Unified S1 daughterboard (older versions use the C3 daughterboard)
 * Low USB-C port parallel to desk 
 
 ## Current Errata
 
-For all PCB versions - if you use the 1u numpad + and = key options instead of 2u numpad +, the 1u + and 1u = keys are swapped in firmware and on the PCB compared to the KLE (physically pressing the upper 1u key actuates the lower 1u key in firmware and vice-versa). For now, just swap the key assignments in Vial and you should be good. 
+For all PCB versions - if you use the 1u numpad + and = key options instead of 2u numpad +, the 1u + and 1u = keys are swapped in firmware and on the PCB compared to the KLE (physically pressing the upper 1u key actuates the lower 1u key in firmware and vice-versa). For now, just swap the key assignments in Vial and you should be good. I may fix this eventually in the QMK and Vial files but it's a low priority for me.
 
 ## Status
 Due to [complications around electromagnetic compatibility testing regulations](https://www.keebtalk.com/t/your-custom-keyboard-is-probably-illegal-a-long-post-on-radio-interference-testing-regulations-and-keyboards/16104), and my current personal circumstances, I decided to open-source the files for the project rather than running a group buy or sale. You can use the files to make one for yourself, as long as you comply with the CERN OHL-W license. 3rd-party group buys or sales are permitted under the license (I will not be directly involved in any 3rd party sales). [RNDKBD](https://rndkbd.com/) currently sells the 3D printed version as an in-stock item (printed to order in a variety of different colors). There has also been at least one small 3rd-party private buy for the CNC version.
@@ -95,7 +95,7 @@ V0.8D (Molex Pico-EZmate connector for use with UDB S1 and C4 daughterboards):
 ![PCB V0.8D bottom](https://github.com/bluepylons/Boston/raw/main/graphics/PCB-V08D-bottom.png)
 
 ## Firmware
-All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, V0.7J, and the V0.8 line, both hotswap and soldred) have the same key matrix and therefore use the same firmware. However, the RGBLED on the -D series for the CNC version has its red and green channels reversed compared to the other versions (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
+All PCBs from V0.4 onward (including V0.5.2, V0.6.1D, V0.6.1J, V0.7J, and the V0.8 line, both hotswap and soldered) have the same key matrix and therefore use the same firmware. However, the RGBLED on the CNC variant PCBs (the -D variants) has its red and green channels reversed compared to the 3DP version PCBs (-J variants) (as unfortunately the SK6812 mini-E RGBLED used on V0.6.1D and the APA106 RGBLED used on the others have different orders for the red, green, and blue channels). 
 
 The compiled QMK firmware .bin file is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_default.bin). Source files are on the [QMK repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/boston). 
 

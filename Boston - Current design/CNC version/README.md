@@ -1,3 +1,4 @@
+# WORK IN PROGRESS - DO NOT REFER TO THIS GUIDE YET. REFER TO THE MAIN README.MD FOR NOW
 # Boston CNC Version
 
 ![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0395_01.JPG?raw=true)
@@ -6,80 +7,94 @@ These are the files for the CNC version of Boston. The PCB is in the [PCB](https
 
 # Ordering Guide for making your own Boston (draft)
 
-This is the ordering guide for the CNC version of Boston. 
+This is the ordering guide for the CNC version of Boston.  
 
-**Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts** 
+**Order parts at your own risk. These files are provided as-is, and I am not responsible for any losses, harm, or damage incurred by following this guide, by ordering parts, by using the files provided, by using the resultant parts or assembled keyboard, or from any mistakes or errors in the files, ordering guide, or resultant parts. Even components that have been prototyped may still contain errors. ** 
 
-**This is for the older version that uses a C3 Unified Daughterboard. There is a newer design that uses  the new S1 daughterboard. This version is being prototyped by RNDKBD, and is awaiting confirmation that everything works. See [README-S1-DB.md](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/README-S1-DB.md) for the draft guide for that version.**
+**This is for the S1 daughterboard version. The older variant uses the C3 Unified Daughterboard; see README-C3-DB.md for that version**
 
 # What you will need:
 
 ### Parts:
 
-# 
-| Description                                        | Qty per board | Type                                                   | Variants |
-| -------------------------------------------------- | ------------- | ------------------------------------------------------ | -------- |
-| Case top                                           | 1             | Custom (CNC machined)                                  |          |
-| Case bottom                                        | 1             | Custom (CNC machined)                                  | Yes (3)  |
-| Plate                                              | 1             | Custom (PCB, laser cut, waterjet cut, or CNC machined) | Yes (3)  |
-| PCB                                                | 1             | Custom (PCB)                                           | Yes (3+) |
-| SK6812 Mini-E RGBLED (if using JLCPCB for the PCB) | 1             | Off-the-shelf                                          |          |
-| Daughterboard holder PCB                           | 1             | Custom (PCB)                                           |
-| LED spacer (for the lock LEDs - 3D printed)        | 1             | Custom (3D-printed)                                    |
-| C3 Unified (or compatible) Daughterboard           | 1             | Off-the-shelf or custom                                |
-| JST cable (>75mm long)                             | 1             | Off-the-shelf or custom                                |
-| M2x0.4 5mm socket head cap screw                   | 4             | Off-the-shelf                                          |
-| M3x0.5 5mm socket head cap screw                   | 14            | Off-the-shelf                                          |
-| M3x0.5 10mm socket head cap screw                  | 4             | Off-the-shelf                                          |
-| M3x0.5 16mm socket head cap screw                  | 4             | Off-the-shelf                                          |
-| PEM KF2-M2-ET threaded insert                      | 4             | Off-the-shelf                                          |
-| VCC LFC037CTP Light Pipe                           | 1             | Off-the-shelf                                          |
-| VCC RTN125 Light Pipe Retainer                     | 1             | Off-the-shelf                                          |
-| Alps EC11E18244A5 rotary encoder                   | 1             | Off-the-shelf                                          |
-| 6x6mm tact switch, 5mm high                        | 1             | Off-the-shelf                                          |
-| Knob suitable for 6mm D-shaft                      | 1             | Off-the-shelf                                          |
-| 3mm LED for lock LEDs                              | 3             | Off-the-shelf                                          |
-| 1KΩ through-hole resistor for lock LEDs            | 3             | Off-the-shelf                                          |
-| 3/4" dia x 3/8" tall rubber dome feet              | 2             | Off-the-shelf                                          |               
-| 3/8" dia x 5/32" tall rubber dome feet             | 2             | Off-the-shelf                                          |
+## Parts needed for all variants
+| Description                                        | Qty per board | Type                                               | Notes                                                                                                                   |
+| -------------------------------------------------- | ------------- | ---------------------------------------------------| ----------------------------------------------------------------------------------------------------------------------- |
+| Case top                                           | 1             | Custom (CNC machined)                              |                                                                                                                         |
+| Case bottom                                        | 1             | Custom (CNC machined)                              |                                                                                                                         |
+| Plate                                              | 1             | Custom (PCB, laser cut, waterjet, or CNC machined) | Several variants                                                                                                        |
+| PCB                                                | 1             | Custom (PCB)                                       | Several variants                                                                                                        | 
+| LED spacer (for the lock LEDs)                     | 1             | Custom (3D-printed)                                | Different from the one for the 3DP Boston                                                                               |
+| S1 Unified (or compatible) Daughterboard           | 1             | Off-the-shelf or custom                            | Later S-series (e.g. S1.1) should work                                                                                  |
+| S1 Unified Daughterboard cable (>75mm long)        | 1             | Off-the-shelf or custom                            | Make sure the [pinout is correct](https://unified-daughterboard.github.io/#/info-consumer?id=buying-replacement-cables) |
+| 3mm LEDs for lock LEDs                             | 3             | Off-the-shelf                                      | Pick a color you like!                                                                                                  |
+| Alps EC11E18244A5 rotary encoder                   | 1             | Off-the-shelf                                      | Other rotary encoders may work, but may need firmware tweaks                                                            |
+| Knob suitable for 6mm D-shaft                      | 1             | Off-the-shelf                                      |                                                                                                                         |
+| M3x0.5 10mm socket head cap screw                  | 4             | Off-the-shelf                                      |                                                                                                                         |
+| M3x0.5 16mm socket head cap screw                  | 4             | Off-the-shelf                                      |                                                                                                                         |
+| M3x0.5 5mm socket head cap screw                   | 12            | Off-the-shelf                                      |                                                                                                                         |        
+| 3/4" dia x 3/8" tall rubber dome feet              | 2             | Off-the-shelf                                      |                                                                                                                         |               
+| 3/8" dia x 5/32" tall rubber dome feet             | 2             | Off-the-shelf                                      |                                                                                                                         |
+| VCC LFC037CTP Light Pipe                           | 1             | Off-the-shelf                                      |                                                                                                                         |
+| VCC RTN125 Light Pipe Retainer                     | 1             | Off-the-shelf                                      |                                                                                                                         |
 
 | Description                                  | Qty per board                                 | 
 | -------------------------------------------- | --------------------------------------------- | 
 | MX-style switches                            | 119-127 (depending on layout)                 |  
 | Stabilizers (PCB mount)                      | 2-8 2u, 0-1 6.25u or 7u (depending on layout) |
 
-For a standard ANSI build (using the fixed layout plate) you need 121 switches, 6 2u stabilizers, and 1 6.25u stabilizer.
+For a standard ANSI build (using the fixed layout plate) you need 121 switches, 6 2u stabilizers, and 1 6.25u stabilizer. 
 
-### Tools:
+## Additional parts needed only for the soldered PCB variant 
+
+| Description                                        | Qty per board | Type                                                   |
+| -------------------------------------------------- | ------------- | ------------------------------------------------------ |
+| 1KΩ 1/4W through-hole resistor for lock LEDs       | 3             | Off-the-shelf                                          |
+
+## Additional parts recommended for the hotswap variant 
+
+| Description                                            | Qty per board | Type          | Notes                                                                                                                                           |
+| ------------------------------------------------------ | ------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| M2x0.4 3.5mm threaded standoff for hotswap boards      | 10            | Off-the-shelf | Available as a [13-pack from KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit)                                |
+| M2x0.4 3mm Philips-head pan head screws                | 10-20         | Off-the-shelf | The KBDfans kit comes with 13 of them, but you will need another 7 if you aren't countersinking the plate                                       |
+| M2x0.4 3mmm flat head screw                            | 0-10          | Off-the-shelf | Only needed if you're countersinking the plate, and the KBDfans comes with enough, so you shouldn't need to buy these if buying the KBDfans kit |
+
+These are recommended for the hotswap variant for holding the plate and PCB together, though you might be fine just relying on the switches to hold the plate and PCB together.
+
+## Additional parts needed only if ordering the PCB through JLCPCB
+
+| Description                                        | Qty per board | Type                                               |
+| -------------------------------------------------- | ------------- | -------------------------------------------------- |
+| 6x6mm tact switch, through-hole, 5mm high          | 1             | Off-the-shelf                                      |
+
+## Tools needed 
 | Description                                                                                      |  Used for                                                           |
 | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | 2.5mm hex key or bit ("Allen key")                                                               | All M3 screws                                                       |
-| T6 Torx, #1 Philips, 1.3mm, or 1.5mm hex key or bit                                              | M2x5 screws (depends on what screws you buy) for the daughterboard  |
 | Soldering iron and solder                                                                        | For soldering everything                                            |
 | Flush cutters                                                                                    | For cutting legs off soldered LEDs and resistors                    |
-| Large pliers, locking pliers ("Vise grips"), C-clamp, a vise, or oversized (~7mm dia) M2 washer  | For pressing the PEM threaded inserts into the daughterboard holder | 
+
+## Additional tools recommended for the hotswap variant only
+| Description                                                                                      |  Used for                                                           |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| Philips #1 screwdriver                                                                           | The optional M2 screws that attach the plate to the PCB             |
+| Switch puller                                                                                    | Removing switches                                                   |
 
 # Case
 
 Boston has a two piece case, consisting of the top and the bottom. It does not have a weight (though, if you have mechanical design and CAD skills, it should be pretty easy to add an internal weight to the design). 
 
-There are two versions of the bottom case - the main version and the alternate version. The alternate version was actually what I designed first and prototyped, but it has very sharp edges on the bottom rear (near the rear bumpon) caused by the vertical faces, which are sharp enough to potentially cut into your skin. I changed the vertical faces to 45° beveled faces to eliminate those sharp edges. This version with the beveled 45° faces is the main version. Both versions have been prototyped.
-
-![Case bottom - main versus alternate 2](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/Main-vs-alternate-bottom-2.png?raw=true)
-
-![Case bottom - main versus alternate](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/Main-vs-alternate-bottom.png?raw=true)
-
 ## How to contact a machine shop to order the case 
 
 To have the case made, you will need to contact a machine shop with a CNC machine. These are informally referred to as "manus" by the mechanical keyboard community.
 
-[Dadesin](https://dadesin.en.alibaba.com/) is a popular high-quality Chinese one, though expensive and somewhat backed up right now. I used [SuNPe](https://sunpe.com/) (also in China) for my prototypes, though the quality was middling. A friend ran a small private group buy through [Gaojie](https://www.gj-prototype.com) and had good results. There are numerous other ones. You can also reach out to a local CNC machine shop.  Note that usually there is a tradeoff between cost and quality, with cheaper shops often being lower quality or sloppier with their machining (and more prone to mistakes, like forgetting to machine features or forgetting to tap holes). 
+[Dadesin](https://dadesin.en.alibaba.com/) is a popular high-quality Chinese one, though expensive. I used [SuNPe](https://sunpe.com/) (also in China) for my prototypes, though the quality was middling. A friend ran a small private group buy through [Gaojie](https://www.gj-prototype.com) and had good results. There are numerous other ones. You can also reach out to a local CNC machine shop.  Note that usually there is a tradeoff between cost and quality, with cheaper shops often being lower quality or sloppier with their machining (and more prone to mistakes, like forgetting to machine features or forgetting to tap holes). 
 
 You will need to send a "Request for Quote" email to them with the following files:
 
-* 3D files - you will need the .STEP files for the [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-top.stp), and either the [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB.stp) or the [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-C3-DB-alternate%20(sharp%20edges).stp). 
-* The mechanical drawings, which include the tapping instructions for the tapped (threaded) holes. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top.pdf), [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB.pdf), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-C3-DB-alternate.pdf)
-* If you want a raw as-machined finish with visible tool marks, or want to anodize directly over the tool marks, you may want to include the milling instructions for more pleasing tool marks. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top-AS-MACHINED-milling-instructions.png), [Main Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-AS-MACHINED-milling-instructions.png), [Alternate Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-alternate-AS-MACHINED-milling-instructions.png). If you are going for a bead-blasted finish, you do not need to include these. These are PNG images with picture illustrations, as many machine shops are overseas and do not speak English well. 
+* 3D files - you will need the 3D .STEP files for the [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-top.stp), and the [bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/STEP/Boston-bottom-S1-UDB.stp)
+* The mechanical drawings, which include the tapping instructions for the tapped (threaded) holes. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top.pdf), [Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-S1-UDB.pdf)
+* If you want a raw as-machined finish with visible tool marks, or want to anodize directly over the tool marks, you may want to include the milling instructions for more pleasing tool marks. [Top](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-top-AS-MACHINED-milling-instructions.png), [Bottom](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Case/Manufacturing%20drawings/Boston-bottom-AS-MACHINED-milling-instructions.png) If you are going for a bead-blasted finish, you do not need to include these. These are PNG images with picture illustrations, as many machine shops are overseas and do not speak English well. 
 * In the body of the email, you want to specify the quantity, material, and the surface finish, as well as that you want these parts to be made by CNC machining. Materials and surface finish are discussed more in depth in the next sections.
 
 You will also need to specify a material and a finish, a color for the finish (if you are anodizing, e-coating, painting, powder coating, or Cerakoting), as well as the quantity you want to order. Here is an example email reaching out to a manufacturer for a quote:
@@ -88,7 +103,7 @@ You will also need to specify a material and a finish, a color for the finish (i
 
 The manufacturer will get back to you with a quote. If you wish to proceed with the quote, let them know that you wish to proceed, and they will send you instructions for payment (often via Paypal or bank transfer) and ask for a shipping address. 
 
-With a Chinese shop, expect to pay $300-$600 for a single case machined out of aluminum (and about $60-$150 for shipping - note that some machine shops inflate their shipping costs). Expect higher for a US or EU shop. The price each usually goes down if you order more (even 3-5 units can lower the price significantly for each board over ordering just 1). 
+With a Chinese shop, expect to pay $300-$700 for a single case machined out of aluminum (and about $60-$150 for shipping - note that some machine shops inflate their shipping costs). Expect higher for a US or EU shop. The price each usually goes down if you order more (even 3-5 units can lower the price significantly for each board over ordering just 1). 
 
 
 ## Material
@@ -122,9 +137,9 @@ In addition to the material, you want to pick a surface finish. There are two pa
 * **Polished** - this involves buffing out the case using either a polishing wheel or a tumbling process. I'm not very familiar with this, but you can ask your machine shop.
 
 ### Coatings:
-* **Anodized** - almost all aluminum on consumer electronics (including custom keyboards) are anodized, usually over a fine bead-blasted finish. Anodizing generates a protective layer of aluminum oxide on the outside of the part, which is much harder than the underlying raw aluminum. This significantly improves the scratch resistance, and also protects the aluminum from corrosion. This layer of aluminum oxide can be clear (showing the underlying silver aluminum), or be dyed a wide range of different colors ([except for white](https://www.bluebuddhaboutique.com/blog/2011/09/no-white-anodized-aluminum/)). However, if you're going for a shiny as-machiend or polished finish, it does dull the aluminum a bit. There are a couple of types of anodizing, but Type II (cosmetic anodizing) is the most common, and what you probably want as it is inexpensive, and available in a wide variety of colors. Type III (Hard Anodizing) is occasionally done but uncommon in consumer electronics - Type III generates a much thicker layer of aluminum oxide than Type II, resulting in a dark gray, black, or bronze-brown color. This results in very good wear and scratch resistance, but costs more, can interfere with threaded holes, and is generally unnecessary for keyboards. Note that many machine shops outsource their anodizing, though some (e.g. Dadesin) anodize in-house. If you want to read up more on anodizing, [this](http://www.omwcorp.com/wp-content/uploads/2018/02/Understanding-and-Specifying-Anodizing-1.pdf) is a good document to go over (thanks to Croktopus for finding the document). 
+* **Anodized** - almost all aluminum on consumer electronics (including custom keyboards) are anodized, usually over a fine bead-blasted finish. Anodizing generates a protective layer of aluminum oxide on the outside of the part, which is much harder than the underlying raw aluminum. This significantly improves the scratch resistance, and also protects the aluminum from corrosion. This layer of aluminum oxide can be clear (showing the underlying silver aluminum), or be dyed a wide range of different colors ([except for white](https://www.bluebuddhaboutique.com/blog/2011/09/no-white-anodized-aluminum/)). However, if you're going for a shiny as-machined or polished finish, it can dull the aluminum a bit. There are a couple of types of anodizing, but Type II (cosmetic anodizing) is the most common, and what you probably want as it is inexpensive, and available in a wide variety of colors. Type III (Hard Anodizing) is occasionally done but uncommon in consumer electronics - Type III generates a much thicker layer of aluminum oxide than Type II, resulting in a dark gray, black, or bronze-brown color. This results in very good wear and scratch resistance, but costs more, can interfere with threaded holes, and is generally unnecessary for keyboards. Note that many machine shops outsource their anodizing, though some (e.g. Dadesin) anodize in-house. If you want to read up more on anodizing, [this](http://www.omwcorp.com/wp-content/uploads/2018/02/Understanding-and-Specifying-Anodizing-1.pdf) is a good document to go over (thanks to Croktopus for finding the document). 
 * **Raw aluminum** - this means not using any coating whatsoever and leaving the bare metal exposed. Note that raw aluminum is easily scratched (and will most likely arrive from the machine shop with scratches from shipping and handling), so this is a fairly uncommon finish. It may also discolor from corrosion. However, paired with an as-machined or polished finish texture, it can be extremely shiny and reflective. All of my prototypes had a raw finish.   
-* **E-coat**, **paint**, **powder coat**, or **Cerakote** - I am not familiar with ordering these finishes, but they show up on keyboards from time to time. 
+* **E-coat**, **paint**, **powder coat**, or **Cerakote** - I am not familiar with ordering these finishes, but they show up on keyboards from time to time, and are available in a wide variety of colors. Your machine shop might not be able to handle these, and you may need to find a third party painter, powder coater, or Cerakote applicator. 
 
 **Note that any coating that adds appreciable (>0.03mm) thickness (such as Type III hard anodizing, powder coat, e-coat, paint, and Cerakote) will require the threaded holes and the RGBLED hole to be masked off. Standard (Type II) anodizing is usually thin enough that interference isn't an issue and masking holes should not be needed. 
 
@@ -132,28 +147,65 @@ In addition to the material, you want to pick a surface finish. There are two pa
 
 # Plate
 
-Boston has a top mount plate. There are two versions of the plate - a fixed layout version that accommodates only the standard ANSI layout (with a non-stepped Caps Lock key), and a universal layout that should accommodate any of the layouts (split space, ISO, etc.) that the PCB supports. Both plates have been prototyped. 
+Boston has a traditional top mount plate. 
 
-The plate should be made out of 1.4-1.6mm material (which is the official Cherry spec for having the switches click in properly). 
+There are several variants of the plate, and different plates for the hotswap and soldered plates. 
 
-**Fixed ANSI plate**:
-![Fixed Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/ANSI-fixed-plate.PNG)
-![KLE of the fixed layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE-ANSI-fixed-layout-plate-support.PNG)
+## Plate Variants 
 
+** Hotswap ANSI **
 
-**Universal plate**:
-![Universal Layout Plate](https://github.com/bluepylons/Boston/raw/main/graphics/CNC/Universal-plate.PNG)
-![KLE of the universal layout](https://github.com/bluepylons/Boston/raw/main/graphics/bostonKLE.png)
+![KLE of the hotswap ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ANSI-KLE.png?raw=true) 
 
-The plate files are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate). 
+The hotswap ANSI plate supports all the layouts supported on the hotswap ANSI PCB ([V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)). It also has holes for the 3.5mm standoffs between the PCB and plate, to hold the assembly together when there are no switches installed. 
 
-If you are looking to have a plate laser cut or water jet (via a service such as [Sendcutsend](https://sendcutsend.com/) in the US, [Laserboost](https://www.laserboost.com/) in the EU, or elsewhere), you want to use the DXF files (.dxf). The units are in mm. You can upload it to their website. Many Chinese CNC machine shops have laser cutters, and can also make your plate in addition to your case if you send them the files. Make that sure the thickness of the material you choose is between 1.4mm and 1.6mm. 
-* Virtually all metals (aluminum, brass, steel, titanium etc ). can be laser cut. 
-* Some plastics (such as POM) laser cut well. 
+Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
 
-If you are looking to have the plate CNC machined, you want to use the STEP (.stp) file. Again, the units are in mm. CNC machining is necessary for some materials like polycarbonate and carbon fiber. 
+If you are getting the plate CNC machined, there is a version of the hotswap ANSI plate with countersunk holes for the standoffs if you want to use countersunk screws for a flush finish. Send the [countersinking instructions](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk-countersinking-instructions.pdf) to the manufacturer along with the [3D .STEP file](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI/Hotswap-ANSI-plate-countersunk.stp). Some laser cutting services also offer countersinking, like [Sendcutsend](https://sendcutsend.com/services/countersinking/). 
 
-If you are looking to have the plate made out of FR4 or aluminum PCB material, you want to use the .zip Gerber files. This will have to be ordered as a PCB, and can be uploaded to any PCB supplier (JLCPCB, Elecrow, PCBway, AllPCB, etc.). Note that some PCB manufacturers (e.g. JLCPCB) charge an additional fee for plates due to the amount of milling required compared to a typical PCB. Choose 1.6mm for the PCB thickness. 
+All of the files for the hotswap ANSI plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI). 
+
+** Hotswap ISO **
+![KLE of the hotswap ISO layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ISO-KLE.png?raw=true) 
+
+The hotswap ISO plate supports all the layouts supported on the hotswap ISO PCB [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI). (note this PCB is not yet done)
+
+Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
+
+** Soldered plate (universal layout) **
+
+The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D))
+
+All of the files for the soldered universal layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Soldered-universal).
+
+** Soldered plate (ANSI fixed layout) ** 
+
+This accommodates only the [standard ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE-ANSI-fixed-layout-plate-support.PNG?raw=true) (with a non-stepped Caps Lock key). This results in easier asseembly and an easier-to-clean plate  over the universal plate.
+
+All of the files for the solderedfixed layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Soldered-ANSI-fixed-layout).
+
+## Getting the plate manufactured 
+
+There are a couple of ways to get the plate manufactured. The plate should be made out of 1.4-1.6mm material (which is the official Cherry spec for having the switches click in properly).
+
+### Laser cutting
+Virtually all metals (aluminum, brass, steel, titanium, etc.) can be cut using a powerful laser, as well as certain plastics (POM and PP). This will usually be the most cost-effective option for a metal, POM, or PP plate. To get a plate cut, you want to use the DXF (.dxf) file. Units are in mm.
+
+[Sendcutsend](https://sendcutsend.com/) in the US and [Laserboost](https://www.laserboost.com/) in the EU are popular laser cutting services. Many Chinese CNC machine shops, including popular keyboard manufactuerers like Gaojie and Dadesin also offer laser cutting if you want them to make your plate for you as well. 
+
+For the hotswap plate, some laser-cutting services offer countersinking. They may either offer it through their web interface, or you may have to manually request it. Attach the countersinking instructions for the respective plate file. 
+
+#### Waterjet cutting
+This is rarely used for keyboard plates as it's not as cost effective as laser-cutting, but is also an option as well if you have access to one. This uses the same DXF (.dxf) file.
+
+### CNC machining
+CNC machining is preferred for some materials like polycarbonate and carbon fiber, which cannot be laser cut. You can ask the same manufacturer as the case to CNC machine the plate for you. 
+
+If you are looking to have the plate CNC machined, you want to use the STEP (.stp or .step) file. Again, the units are in mm. 
+
+### As a printed circuit board (FR4 and aluminum only)
+
+If you are looking to have the plate made out of FR4 or aluminum PCB material, you want to use the .zip Gerber files. This will have to be ordered as a PCB, and can be uploaded to any PCB supplier (JLCPCB, Elecrow, PCBway, AllPCB, etc.). Note that some PCB manufacturers (e.g. JLCPCB) charge an additional fee for plates due to the amount of machining required. Choose 1.6mm for the PCB thickness. 
 
 Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" is selected so that the order number doesn't get printed somewhere you don't want. The Gerber files have the requisite "JLCJLCJLCJLC" text on them and placed in an unobstrusive location.
 
@@ -163,71 +215,25 @@ Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" 
  
 ![Paper Between PCBs](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Paper-between-PCBs.PNG?raw=true)
 
-# Hardware
-
-## Screws 
-
-You will need the following screws. Part numbers for [McMaster-Carr](https://www.mcmaster.com) are provided, though you can easily find fasteners off other sources. McMaster also may not ship outside the United States.
-
-| Description                                                           | Qty per board | McMaster-Carr P/N | Notes                                                                                                                                                                | 
-| --------------------------------------------------------------------- | ------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 14            | 91292A110         | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard holder to the case bottom.                        |
-| M3x0.5, 10mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A113         | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                                                 |
-| M3x0.5, 16mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A115         | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                                                 |
-| M2x0.4, 5mm long ISO 7045 button head screw, Torx T6, stainless steel | 4             | 90362A136         | Other M2 screw types (e.g. ISO 7380 button head) or driver types (e.g. Philips #2) would also work ok. Used to attach the daugterhboard to the daughterboard holder. |
-
-## PEM nuts (threaded inserts)
-
-The daughterboard holder uses PEM KF2-M2-ET tin-plated threaded inserts, which are pressed in and soldered onto the holes the daughterboard holder. You will need 4 of these. They're available off [Mouser](https://www.mouser.com/ProductDetail/PEM/KF2-M2-ET?qs=l4Gc20tDgJIwDb1wwu7XpQ%3D%3D), [McMaster-Carr](https://www.mcmaster.com/95117A477/), and elsewhere. 
-
-You can press these in with large pliers (though this tends to scratch the other side of the PCB), with Vise-grip style locking pliers, a C-clamp, or with a vise. A hammer might work but you risk damaging the threads. You also may also be able to pull the insert into the hole using an M2 screw and an over-sized M2 washer (e.g. McMaster-Carr 91116A240), though this likely only works with a Torx M2 screw (as the hex and Philips head versions strip too easily). 
-
-## Rubber feet 
-Boston uses standard circular, dome-shaped rubber feet. These are available in several colors. 
-
-| Description                         | Qty per board | McMaster-Carr P/N | Other Compatible parts                                                                                    | 
-| ----------------------------------  | ------------- | ----------------- | --------------------------------------------------------------------------------------------------------- |
-| 3/4" dia x 3/8" tall rubber feet    | 2             | 95495K73          | 3M SJ5017 (black, gray, or white), 3M SJ5317 (clear)                                                      |
-| 3/8" dia x 5/32" tall rubber feet   | 2             | 95495K39          | 3M SJ5406 (white), 3M SJ5306 (clear), Essentra RBS-12BK (black), Essentra RBS-12 (clear)                  |
-
-
-## Light Pipe
-Boston uses a clear light pipe to transmit the RGBLED indicator light next to the knob. These use the following parts, which are available off numerous electronics distributors (Digi-key, Mouser, Newark, etc.). 
-
-| Description                                                                             | Qty per board |  Notes     | 
-| --------------------------------------------------------------------------------------- | ------------- | ---------- |
-| [VCC LFC037CTP Light Pipe](https://octopart.com/lfc037ctp-vcc-54190594?r=sp)            | 1             |            |
-| [VCC RTN125 Light Pipe Retainer](https://octopart.com/rtn125-vcc-54190599?r=sp)         | 1             |            |
-
-The light pipe goes through the hole next to the knob. The retainer (which is a smaller rubber ring) is stuck on via the back to prevent the light pipe from falling off. If you so desire, you could also glue the light pipe in.
-
-## Knobs
-The Alps EC11E18244A5 rotary encoder used for the knob takes a 6mm knob with either a D-shaft or a set screw. This is a common size for guitars and audio equipment. 1/4" knobs can work but may be loose. 1/4" to 6mm adapters available from various sources if you want to use a 1/4" knob. 
-
-The knob needs to be smaller than 23mm in diameter or it will hit the Esc key. 
-
-I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
-
-| Kilo P/N     | Finish              |
-| ------------ | ------------------- |
-| OEDNI-75-1-7 | Silver, satin gloss |
-| OEDNI-75-2-7 | Black, satin gloss  |
-| OEDNI-75-3-7 | Silver, matte       |
-| OEDNI-75-4-7 | Black, matte        |
-
 # PCBs
 
-# Main PCB
-The CNC version of Boston uses the [V0.6.1D PCB](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D) (D for Daughterboard) - this **not the same PCB as the 3D printed version** due to the daughterboard, though they use the same firmware as the matrix is identical.
+You can order an assembled PCB (minus switches, LEDs, and rotary encoder) from a PCB fab such as JLCPCB or Elecrow.
 
-For the PCB - you can order an assembled PCB (minus through-hole parts such as the encoder, RGBLED, and reset switch) from a PCB fab such as JLCPCB or Elecrow.
+Note that **the CNC version of Boston does not use the same PCBs as the 3D printed version** due to the daughterboard, though they use the samae firmware as the key matrix is identical. All PCB variants with a -D suffix ("D" for "daughterboard) are for the CNC variant.
 
-## Ordering on JLCPCB
+## Hotswap ANSI PCB 
+The current hotswap ANSI PCB is [V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)
+
+## Hotswap ISO PCB 
+The current hotswap ANSI PCB is [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI)
+
+## Soldered PCB
+The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D)
+
+## Ordering on JLCPCB 
 [JLCPCB](https://jlcpcb.com/) is cheap and fast, but doesn't have the best cosmetic finish, and their SMT assembly is limited to parts [they stock](https://jlcpcb.com/parts) (though they recently announced "Global Parts Sourcing"). In the community they tend to only be used for prototypes.
 
-To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). The files for PCB revision V0.6.1D are available [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files). 
-
-**Note that JLCPCB does not offer the SK6812 Mini-E RGBLED used for LED702 for Economic PCB Assembly**, and you will have to solder order this elsewhere and solder it on manually yourself. Adafruit sells it as the [Neopixel Reverse mount](https://www.adafruit.com/product/4960), and it is also available off [Digi-key](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4960/14302512) (but oddly enough, not Mouser). Line up the notch on the LED with the notch marking on the PCB when you are soldering it.
+To order a PCB from JLCPCB, you will need the Gerber files (which defines the bare PCB), the SMT bill of materials (BOM file, which is a list of parts that are to be soldered to the PCB), and the component placement file (CPL, which defines where those parts go). These files are available under the "Manufacturing Files" folder of the PCB (**NOTE - some PCB versions do not yet have their JLCPCB files ready yet **)
 
 First, you want to go to [JLCPCB](https://jlcpcb.com/), and press "Order Now".
 
@@ -237,13 +243,13 @@ Next, you want to upload the Gerber file for the PCB. You may need to manually i
 
 ![Step 2](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/2-add-gerbers.png?raw=true)
 
-Here, you want to change the specifications to the following. PCB Color and Surface Finish needs to be a combo supported for Economic PCB Assembly in 1.6mm thickness - currently (April 30, 2023), this would be Green in any finish, Black in any finish except ENIG, and Blue, Red, and White with HASL-Leaded. 
+Here, you want to change the specifications to the following. 
 
-![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/3-JLCPCB-options-CNC.png?raw=true)
+![Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/3a-JLCPCB-options-standard.png?raw=true)
 
-Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected:
+Next, you want to scroll down and turn on PCB Assembly. Make sure the following options are selected. 
 
-![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/4-SMT.png?raw=true)
+![Step 4](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/4a-SMT-standard.png?raw=true)
 
 Press Confirm. Next, you want to upload the BOM and CPL files. 
 
@@ -257,15 +263,15 @@ The next page is a confirmation page. Note that the parts placement preview may 
 
 ![Step 7](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/7-checkout-CNC.PNG?raw=true)
 
-As the microcontroller is frequently out of stock due to the chip shortage, line number 16 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). At different times some microcontroller variants may be cheaper than the others (for example, on August 29, 2022, the STM32F072CBT6 is $4.50 and the STM32F072CBU6 is $9.52, whereas during other times -CBU6 has been significantly cheaper than the -CBT6). You will need to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate.
+As the microcontroller is frequently out of stock due to the chip shortage, line number 16 (for designator U701) can be changed for different compatible MCUs (see the "Compatible MCUs" section below for a list of MCUs that will work). At different times some microcontroller variants may be cheaper than the others (for example, on August 29, 2022, the STM32F072CBT6 is $4.50 and the STM32F072CBU6 is $9.52, whereas during other times -CBU6 has been significantly cheaper than the -CBT6). In the BOM and CPL spreadsheet you will need to change the Comment field for that line to the name of the microcontroller you want to use, and change the Footprint and LCSC Part Number as appropriate. The line for the microcontroller is highlighted in yellow in the BOM and CPL files.
 
 ### Compatible MCUs 
 
-Boston uses a 128kb STM32F072CB-series microcontroller, and can accept either the LQFP-48 (STM32F072CxTx) or 48-UFQFPN (STM32F072CxUx ) versions.
+Boston uses a 128kb STM32F072CB-series microcontroller, and can accept either the LQFP-48 (STM32F072CxTx) or 48-UFQFPN (STM32F072CxUx ) versions. This is Line #19 on the JLCPCB BOM files. Due to fluctuations in price some variants may be cheaper over time. 
 
 Any of the following microcontrollers will work, and support all features. 
 
-**Compatible MCUs**
+**Compatible MCUs - JLCPCB BOM Line #19**
 | Microcontroller     | JLCPCB (LCSC) part number     |
 | ------------------- | ----------------------------- |
 | STM32F072CBU6       | C92504                        |
@@ -297,15 +303,15 @@ Other versions of the STM32F072 (which have different footprints or pin counts),
 
 This is here for reference in case some parts are out of stock.
 
-**U702 - BOM Line #17**
+**U702 - JLCPCB BOM Line #17**
 This is a SOT-223 linear regulator to drop the 5V down to 3.3V. Since ceramic capacitors are used the output, and some linear regulators are unstable with ceramic capacitors as their ESR is too low, the linear regulator needs to be explicitly compatible with low-ESR output capacitors.
 
-| Part                                              | JLCPCB (LCSC) part number |
+| Part                                                  | JLCPCB (LCSC) part number |
 | ----------------------------------------------------- | ------------------------- |
 | Diodes Inc AZ1117IH-3.3TRG1 (default)                 | C108495                   |
 | TI TLV1117LV33DCYR                                    | C15578                    |
 
-**U705 - BOM Line #18**
+**U705 - JLCPCB BOM Line #18**
 This is a 74LVC1T45 level shifter in an SOT23-6 (SOT26) package. 
 
 | Part                                 | JLCPCB (LCSC) part number |
@@ -318,22 +324,20 @@ This is a 74LVC1T45 level shifter in an SOT23-6 (SOT26) package.
 
 Elecrow is a full-service PCB assembly shop, and one of the go-tos in the community for custom keyboard PCBs for the actual group buy sales. They can install any part (not just ones they stock) and generally have better quality surface finish, but is much slower (typically 3-4 week turn around time), and costs more (especially in small quantities). 
 
-To order from Elecrow, you will need to email service@elecrow.com with the [Gerber](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Gerbers-V06-1D.zip) and [SMT](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files) files and request a quote. **Note - the Elecrow files have not been tested**
+To order from Elecrow, you will need to email service@elecrow.com with the Gerber files and the files from the "Elecrow SMT files" folder for your respective PCB. They will get back to you with a quote.
 
-On the [SMT file](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.6.1D/Manufacturing%20files/Elecrow%20SMT%20files), you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
+On the spreadsheet (.xlsx) file, you will need to edit the first tab to specify your quantity, color, and surface finish. Elecrow's available colors and surface finishes are posted on their [PCB ordering page](https://www.elecrow.com/pcb-manufacturing.html)
 
 ![Elecrow](https://github.com/bluepylons/Boston/blob/main/graphics/CNC%20ordering%20guide/Elecrow-specifications-CNC.png?raw=true)
 
-Elecrow will install the RGBLED (LED702), unlike JLCPCB, so you do not need to buy it separately and solder it on yourself. 
-
 ## Through Hole parts on the Main PCB
-For both Elecrow and JLCPCB, you will need to solder on the through-hole parts for the PCB yourself. 
 
 ### Reset Switch
+For JLCPCB, you will need to solder on the through-hole parts for the PCB yourself. Elecrow will solder this on for you, so this isn't necessary for Elecrow. 
 
 The reset switch (next to the Right Shift key) uses a 5mm tall 6x6mm SPST NO through-hole tact switch. This is widely available from several vendors - I have used Wealth Metal [TC-0103](https://www.taydaelectronics.com/tact-switch-6x6mm-5mm-through-hole-spst-no.html), but TE 1825910-6, E-switch TL1105AF100Q, Omron B3F-1022, C&K PTS645SK50-2 LFS and numerous other parts should work (though it has not been tested). 
 
-This is soldered onto the top side of the PCB, and is accessible through the plate when the Right Shift keycap is removed.
+This is soldered onto the top side of the PCB next toe the Right Shift key, and is accessible through the plate when the Right Shift keycap is removed.
 
 ### Encoder
 The encoder used is [Alps EC11E18244A5](https://octopart.com/ec11e18244a5-alps-757484?r=sp), the same one used on the Satisfaction75. Other EC11-style encoders may work, but may need changes to various QMK parameters (ENCODER_RESOLUTION in config.h, and possibly reversing ENCODERS_PAD_A and ENCODERS_PAD_B) to work correctly.
@@ -343,37 +347,92 @@ The encoder used is [Alps EC11E18244A5](https://octopart.com/ec11e18244a5-alps-7
 ### LED spacer
 For the lock LEDs, you will need to 3D print a [small spacer](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Case/STL%20(3D%20print)). Units are in mm.  You can use an online printing service like [Shapeways](https://www.shapeways.com/) or [Craftcloud](https://craftcloud3d.com/), find a friend with a 3D printer, or purchase your own 3D printer to print this with. Your local library may have a 3D printer that may be available to use. The machine shop you use for the case may also offer 3D printing services. The spacer is designed to be printed using FDM printing, but other printing methods (SLA, SLS) probably also work. On my prototype I printed this out of PLA on a cheap $250 Ender 3 printer, with 0.2mm layer height.
 
+Note that this spacer is different from the one on the 3D-printed version of Boston.
+
 ### Lock LEDs and resistors
-Most standard 3mm LEDs should work, and are available in several different colors. A 1KΩ resistor is a pretty safe resistor size for the LEDs, but depending on the LED forward voltage, current draw, and desired brightness, you may want to adjust this up or down. Standard 1/4W resistors are suitable.
+Most standard 3mm LEDs should work, and are available in several different colors. 
+
+If you are using the soldered PCB, you will need through-hole resistors for the lock LEDs. A 1KΩ resistor is a pretty safe resistor size for the LEDs, but depending on the LED forward voltage, current draw, and desired brightness, you may want to adjust this up or down. Standard 1/4W resistors are suitable.
 
 Be aware that LEDs only work in one direction - the longer leg on LEDs is positive (+) - match this to the + markings on the PCB. 
 
 These need to be soldered through the LED spacer discussed above. 
 
+# Hardware
+
+## Screws 
+
+You will need the following screws for all variants. Part numbers for [McMaster-Carr](https://www.mcmaster.com) are provided, though you can easily find fasteners off other sources. McMaster also may not ship outside the United States.
+
+| Description                                                           | Qty per board | McMaster-Carr P/N    | Note                                                                                                                                          | 
+| --------------------------------------------------------------------- | ------------- | -------------------- |---------------------------------------------------------------------------------------------------------------------------------------------- |
+| M3x0.5, 5mm long ISO 4762 socket head cap screw, stainless steel      | 12            | 91292A110 100-pack)  | Available from numerous other suppliers. Used to attach the plate to the case top, and to attach the daughterboard  to the case bottom.        |
+| M3x0.5, 10mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A113 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
+| M3x0.5, 16mm long ISO 4762 socket head cap screw, stainless steel     | 4             | 91292A115 (100-pack) | Available from numerous other suppliers. Used for the front 4 case screws attaching the case top to the case bottom.                          |
+
+## Additional screws for the hotswap variant 
+If you are putting together a hotswap board, standoffs to hold the PCB and plate together are strongly recommended, though you might be fine just relying on the switches to hold the plate and PCB together. The only known regular source of these is from KBDfans, unless you get them custom made with a standoff manufacturer.
+
+| Description                                            | Qty per board                                | Link or Part Number                                                                            | Notes                                               |
+| -----------------------------------------------------  | -------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| M2x0.4 3.5mm standoffs                                 | 10                                           | [KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit) (13-pack) | KBDfans kit comes with other screws                 |  
+| M2x0.4 3mm long DIN 7985 pan head screw                | 10 (countersunk plate) or 20 (regular plate) | McMaster-Carr 95836A103 (100-pack)                                                             | Above KBDfans kit comes with 13 of them             |
+| M2x0.4 3mm long DIN 965 flat-head screw                | 10 (countersunk plate) or 0 (regular plate)  | McMaster-Carr 92010A784 (100-pack)                                                             | Above KBDfans kit comes with 13 of them             |
+
+If you are countersinking your hotswap plate, you should only need to buy a single 13-pack of the KBDfans standoff kit as it comes with all the required screws. If you are not countersinking the plate, you will need to buy some additional M2x0.4 3mm long pan head screws.
+
+## Rubber feet 
+Boston uses standard circular, dome-shaped rubber feet. The smaller feet go in the front while the larger feet go in the back. These are available in a few colors.
+
+| Description                         | Qty per board | McMaster-Carr P/N | Other Compatible parts                                                                                    | 
+| ----------------------------------  | ------------- | ----------------- | --------------------------------------------------------------------------------------------------------- |
+| 3/4" dia x 3/8" tall rubber feet    | 2             | 95495K73          | 3M SJ5017 (black, gray, or white), 3M SJ5317 (clear)                                                      |
+| 3/8" dia x 5/32" tall rubber feet   | 2             | 95495K39          | 3M SJ5406 (white), 3M SJ5306 (clear), Essentra RBS-12BK (black), Essentra RBS-12 (clear)                  |
+
+
+## Light Pipe
+Boston uses a clear light pipe to transmit the RGBLED indicator light next to the knob. These use the following parts, which are available off numerous electronics distributors (Digi-key, Mouser, Newark, etc.). Links are provided to Octopart, which compiles all the websites you can buy the parts from (such as Digi-key, Mouser, Newark, and so on).
+
+| Description                                                                             | Qty per board |  Notes     | 
+| --------------------------------------------------------------------------------------- | ------------- | ---------- |
+| [VCC LFC037CTP Light Pipe](https://octopart.com/lfc037ctp-vcc-54190594?r=sp)            | 1             |            |
+| [VCC RTN125 Light Pipe Retainer](https://octopart.com/rtn125-vcc-54190599?r=sp)         | 1             |            |
+
+The light pipe goes through the hole next to the knob. The retainer (which is a smaller rubber ring) is stuck on via the back to prevent the light pipe from falling off. If you so desire, you could also glue the light pipe in.
+
+## Knobs
+The Alps EC11E18244A5 rotary encoder used for the knob takes a 6mm knob with either a D-shaft or a set screw. This is a common size for guitars and audio equipment. 1/4" knobs can work but may be loose. 1/4" to 6mm adapters available from various sources if you want to use a 1/4" knob. 
+
+The knob needs to be smaller than 23mm in diameter or it will hit the Esc key. 
+
+I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have very grippy knurling and can be easily rotated with one finger. They can be found on Digi-key, Newark, and other electronics parts vendors. If you use that knob, you want to 3D print a [small spacer](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/3D%20printed%20version/STLs/Kilo-OEDNI-75-knob-spacer.stl) to place into the shaft hole on the knob, as otherwise the knob can sit too low and bump into the case. 
+
+| Kilo P/N     | Finish              |
+| ------------ | ------------------- |
+| OEDNI-75-1-7 | Silver, satin gloss |
+| OEDNI-75-2-7 | Black, satin gloss  |
+| OEDNI-75-3-7 | Silver, matte       |
+| OEDNI-75-4-7 | Black, matte        |
+
 ## Daughterboard
-Like many other custom keyboards that use a daughterboard, the CNC version of Boston uses the [C3 Unified Daughterboard](https://github.com/ai03-2725/Unified-Daughterboard), . Files for that are available on their GitHub repo. Note the C3 PCB is too small for JLCPCB's SMT assembly service, unless you panelize it. 
 
-Several vendors also sell the C3 Daughterboard (e.g. [Cannonkeys](https://cannonkeys.com/products/unified-daughterboard-and-jst-cable), [Charue Designs](https://charue-design.com/products/unified-daughterboard-and-jst-cable), [Senseless Clay](https://senselessclay.com/products/usb-type-c-daughterboard), and others). 
+The CNC version of Boston now uses the [S-series Unified Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s), and is meant for use with PCB revisions V0.8 and newer. Various vendors sell this daughterboard, such as [Cannonkeys](https://cannonkeys.com/products/unified-s1-daughterboard-and-molex-cable) and [RNDKBD](https://rndkbd.com/products/unified-daughterboard?variant=42772031242474). You can also find manufacturing files for it on their website. 
 
-### JST Cable 
-To connect the daughterboard and the main PCB, you will need a 4-pin JST-SH capable that matches the [specifications laid out on ai03's C3 daughterboard GitHub repo](https://github.com/ai03-2725/Unified-Daughterboard/tree/master/Design%20Resources/C3). Sparkfun's Qwiic and Adafruit's Stemm QT cables (which are available in several lengths) match the specifications and work just fine. A minimum length of 75mm is recommended - both [Adafruit](https://www.adafruit.com/product/4210) and [Sparkfun](https://www.sparkfun.com/products/14427) offer 100mm long cables (and are also sold on Digi-key and Mouser). Some sellers of C3 Daughterboards (such as Cannonkeys) also include a cable with their daughterboards. 
+Note that older PCBs (V0.6.1D and older) were meant to be used with the the older C3 Daughterboard, which as a different connector (a JST SM connector instead of a Molex PicoEZmate connector). You may need to find or make an adapter cable if you are using a V0.6.1D or older PCB with a case meant for the S1 Daughterboard. You can buy a 
 
-## Daughterboard holder
+### Unified Daughterboard Cable
 
-![Daughterboard Holder](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/daughterboard-holder.JPG?raw=true)
+To connect the daughterboard and the main PCB, you will need a Molex PicoEZmate cable with [the correct pinout](https://unified-daughterboard.github.io/#/info-consumer?id=pinout) for Unified Daughterboards and that is at least 75mm long. The cables sold by keyboard vendors that come with their daughterboards should be the correct ones.
 
-To mount the daughterboard low on the board, the daughterboard is screwed onto a daughterboard holder that then mounts onto the case bottom. This allows the daughterboard to be held upside down, which allows for it to be mounted much lower. 
+**Note that the PicoEZmate cables that Molex sells (part numbers 36920-04xx) do not have the correct pinout for use with Unified Daughterboards, and may damage your PCB**
 
-The daughterboard holder is a bare PCB that can be ordered from JLCPCB, Elecrow, PCBway, or another PCB manufacturing service using the Gerber files available [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Daughterboard%20holder/Daughterboard-holder-gerbers.zip).  It does not need any SMT assembly. 
+If you need to make a cable, the Unified Daughterboard Project [suggests](https://unified-daughterboard.github.io/#/info-vendor?id=prototype-cables) buying pre-crimped wires and cable housings and making your own cables with the correct pinouts. You will need the following to make a cable; this will result in a long 300mm cable. Simply insert the pre-crimped wire ends into the connector housing until it clicks. 
 
-The daughterboard holder is 1.6mm thick. 
-
-Note - on JLCPCB, make sure that "Specify A Location" for "Remove Order number" is selected so that the order number doesn't get printed somewhere you don't want. The Gerber files have the requisite "JLCJLCJLCJLC" text on them and placed in an unobstrusive location.
-
-![Remove Order Number](https://github.com/bluepylons/Boston/blob/main/graphics/Ordering%20guide/Remove-Order-Number.png?raw=true) 
-
-Four PEM KF2-M2-ET threaded inserts are pressed in and soldered into the holes on the daughterboard holder. Four M2x5 screws are then used to screw the daughterboard in, and the assembly is screwed into the case bottom using M3x5 screws. 
+| Molex P/N  | Qty needed | Description             | Link | 
+| ---------- | ---------- | ----------------------- | ---- |
+| 079758101  | 4          | Pre-crimped wire        | [Octopart](https://octopart.com/search?q=0797581010&currency=USD&specs=0) |
+| 0781720004 | 2          | 4-pin connector housing | [Octopart](https://octopart.com/search?q=0781720004&currency=USD&specs=0) |
 
 # Build instructions
 
-[See here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md). The text is complete, though some photographes still need to be taken.
+Build instructions are currently [a work in progress](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide-S1-DB.md).

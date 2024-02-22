@@ -1,4 +1,4 @@
-# Assembly guide for S1 DB variants (work in progress) 
+# Assembly guide (work in progress) 
 
 # Before You Start 
 * Please read the entirety of this guide before you begin.
@@ -36,14 +36,16 @@ screw-in stabilizers are recommended, but PCB snap-in will work. For the fixed-l
 | Description                                                                                                  |  Used for                                                           |
 | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------- |
 | 2.5mm hex key or bit ("Allen key")                                                                           | All M3 screws                                                       |
+| T6 Torx, #1 Philips, 1.3mm, or 1.5mm hex key or bit                                                          | M2x5 screws (depends on what screws you buy) for the daughterboard  |
 | Soldering iron and solder                                                                                    | For soldering everything                                            |
 | Flush cutters                                                                                                | For cutting legs off soldered LEDs and resistors                    |
-| Tweezer, metal keycap puller, wire, or unbent paperclip                                                      | Testing the PCB without switches                                    |
+| A vise, a C-clamp, a hammer, locking pliers ("Vise grips"), large pliers, or oversized (~7mm dia) M2 washer  | For pressing the PEM threaded inserts into the daughterboard holder | 
+
 
 # Part 1 - Preparing the PCB 
 
 ## 1.1 - Basic ESD and safety precautions 
-As the PCB lacks ESD protection when the daughterboard is not connected, observe basic ESD protection procedures. Otherwise, you risk damaging the PCB. 
+As the PCB lacks any ESD protection when the daughterboard is not connected, observe basic ESD protection procedures. Otherwise, you risk damaging the PCB. 
 
 * Wear a properly grounded metal ESD strap when handling the PCB and when assembling the keyboard 
 * Avoid wearing clothing (such as thick wool sweaters or socks) or working on surfaces (e.g. carpet) that are prone to generating static electricity. 
@@ -57,7 +59,15 @@ Solder the reset switch onto the top side of the PCB, next to Right Shift.
 
 [picture of the reset switch soldered on]
 
-## 1.3 - Installing software for flashing the firmware
+## 1.3 - Soldering on the RGBLED
+
+If you ordered your PCB from JLCPCB, you will also need to solder on the RGBLED. This is soldered to the bottom side of the PCB, but the LED faces up (through the hole in the PCB). 
+
+As this is surface mount, you may find applying flux to the LED legs and pads to be helpful with soldering it on.
+
+Make sure the notch on the RGBLED lines up with the arrow on the hole where it goes.
+
+## 1.4 - Installing software for flashing the firmware
 
 If you ordered the PCB directly from a PCB fab, it likely won't have the firmware installed on it. 
 
@@ -83,7 +93,7 @@ f.) After Zadig is installed, install [QMK Toolbox](https://github.com/qmk/qmk_t
 
 g.) Download the .bin Vial firmware file [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/boston_vial.bin) 
  
-## 1.4 - Flashing the Firmware 
+## 1.5 - Flashing the Firmware 
 
 a.) Connect the USB-C daughterboard to the PCB using the JST cable. Remove any metal or other conductive objects from the vicinity to reduce the risk of the PCB getting shorted, and be careful to avoid letting the daughterboard touch the PCB (as that can also cause a short circuit). 
 
@@ -102,18 +112,18 @@ f.) Press the Flash button. Do not disconnect the keyboard until it is done flas
 ![QMK Toolbox Step 3](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/QMK-Toolbox-3.PNG?raw=true)
 
 
-## 1.5 - Testing your PCB 
+## 1.6 - Testing your PCB 
 Use a tweezer, metal keycap puller, wire, or unbent paperclip to short the switch opening pins, and a program such as [Aquakeytest](https://geekhack.org/index.php?topic=34670.0) to ensure that each key works. 
 
 Disconnect the daughterboard from the PCB once you're done.
 
-## 1.6 - Soldering on the lock LEDs and resistors 
+## 1.7 - Soldering on the lock LEDs and resistors 
 
-If you have a soldered PCB, solder on the 3 1KΩ resistors onto the positions for R200, R201, and R202. 1KΩ is a comfortable value, but if you want your LEDs brighter or dimmer you may wish to use different resistors. Resistors are not directional and will work soldered in either direction. The hotswap PCB has these pre-soldered on so you will not need to solder on the resistors.
+First, solder on the 3 1KΩ resistors onto the positions for R200, R201, and R202. 1KΩ is a comfortable value, but if you want your LEDs brighter or dimmer you may wish to use different resistors. Resistors are not directional and will work soldered in either direction.
 
 ![Resistors](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Resistors.JPG?raw=true)
 
-Next up, we want to do the lock LEDs (on both the hotswap and soldered PCBs). Note that LEDs are directional and will not light up if soldered in backwards. The longer leg on an LED is +. Make sure this matches up with the + symbols on the PCBs.
+Next up, we want to do the lock LEDs. Note that LEDs are directional and will not light up if soldered in backwards. The longer leg on an LED is +. Make sure this matches up with the + symbols on the PCBs.
 ![LED-legs-labelled](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/LED-legs-labelled.JPG?raw=true)
 
 Solder the lock LEDs through the LED spacer as shown - the LED spacer only fits on one way. 
@@ -121,7 +131,7 @@ Solder the lock LEDs through the LED spacer as shown - the LED spacer only fits 
 ![LEDs soldered on](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/LEDS-installed.JPG?raw=true)
 
 
-## 1.7 - Soldering on the rotary encoder 
+## 1.8 - Soldering on the rotary encoder 
 
 Solder on the rotary encoder on the upper left of the PCB. Make sure you solder this to the top side of the PCB. 
 
@@ -142,13 +152,66 @@ b.) Flip the case top over. Slip the rubber light pipe retainer onto the back of
 
 ![Light pipe retainer installed](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Light-pipe-retainer-installed.JPG?raw=true)
 
-# Part 3 - Installing the Daughterboard 
+# Part 3 - Preparing the daughterboard and daughterboard holder
 
-a.) Plug the daughterboard cable into the daughterboard. 
-[image]
+## 3.1 - Installing the threaded inserts into the daughterboard holder 
 
-b.) Using M3x5 screws, screw the daugherboard into the bottom case. 
-[image] 
+The PEM KF2-M2-ET threaded inserts need to be pressed into and then soldered to the daughterboard holder PCB. There are a couple of methods to press in the threaded inserts. 
+
+Note that the threaded inserts should be pressed into the side with the silver rings around the holes for them. If you press them in the wrong side you won't be able to solder them in place.
+![Pressed in threaded insert](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-pressed-in.jpg?raw=true)
+
+### Method 1 - C-clamp or vise 
+a.) Using a C-clamp or vise, press the threaded inserts into the daughterboard holder. Ensure that they are fully seated. 
+
+[picture of C-clamp method]
+
+### Method 2 - Using an M2 screw and large M2 washer to pull the threaded insert in 
+To do this, you will need an oversize M2 washer with at least 7mm diameter (such as McMaster-Carr P/N 91116A240), and an M2x5 screw. Using a Torx-head M2 screw is strongly recommended, as Philips and hex heads strip far more easily. 
+
+a.) Place the oversize M2 washer underneath the head of the M2x5 screw.
+
+b.) Press the threaded insert into the side it should go on. Thread the screw and washer in from the other side, and tighten the screw until the threaded insert is pulled into the hole and fully seated.
+
+[picture]
+
+c.) Remove the screw and washer. 
+
+### Method 3 - Vise grip (locking pliers)
+This method tends to mar and scratch the daughterboard holder, but it does work. 
+
+a.) Set the knob on the back vise grip such that it will forcefully press the threaded insert all the way into the part. 
+
+b.) Place the threaded inserts in, and press them in with the vise grip. 
+
+[picture]
+
+### Method 4 - Hammer 
+a.) A soft hammer is ideal to avoid damaging or denting the threaded insert - otherwise, if you're using a regular hammer with a metal head, place a small sacrificial piece of wood or cardboard in between the insert and the hammer to soften the blow a bit. Hammer the insert in until it is fully seated. 
+
+## 3.2 - Soldering on the threaded inserts
+
+a.) Make sure that the inserts are fully seated:
+![Check that the insert is fully seated](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-flushness-check.jpg?raw=true)
+
+b.) Temporarily screw the M2x5 screws into the threaded inserts to protect the threads. This is to prevent solder from entering the threads. 
+![With screws temporarily in place](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-with-screws.jpg?raw=true) 
+
+c.) Solder the threaded inserts. You only need enough solder on so that the threaded inserts won't twist or come off. 
+
+d.) Remove the screws.
+![Soldered](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/PEM-nut-soldered.jpg?raw=true) 
+
+## 3.3 - Installing the daughterboard onto the daughterboard holder
+
+Screw the daughterboard onto the daughterboard holder using the M2x5 screws - the daughterboard goes on the side *opposite* the side you pressed the threaded inserts from.
+
+## 3.4 - Installing the daughterboard onto the bottom case 
+a.) Plug the JST cable into the daughterboard. 
+![Daughterboard with cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Daughterboard-w-cable.JPG?raw=true) 
+
+b.) Using M3x5 screws, screw the daugherboard holder into the bottom case. 
+![Daughterboard and daughterboard holder installation](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Daughterboard-installation.JPG?raw=true)
 
 # Part 4 - Switches and stabilizers 
 
@@ -182,13 +245,12 @@ Screw the plate to the top case using the M3 x 5mm screws.
 
 With the top case and PCB near the bottom case (avoid accidentally tugging on the daughterboard cable as this can damage the cable or rip the connector off the daughterboard or PCB) - connect the daughterboard cable to the PCB. 
 
-[image] 
+![Connecting the JST cable](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Plugging-in.JPG?raw=true)
 
-## 5.3 - Screwing everything together
+## 5.3 - Screwing together
 
 Again, being careful to avoid tugging on the daughterboard cable - set the case top onto the case bottom. Flip everything over. Place M3x10 screws on the front four screw holes, and M3x16 screws on the rear four screw holes. Tighten those screws to screw the top and bottom cases together. 
 ![Screwing case together](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-CNC/Screwing-case-together.JPG?raw=true)
-
 ## 5.4 - Installing your knob and keycaps. 
 
 Next, flip the keyboard back over and install your keycaps and knob. 
