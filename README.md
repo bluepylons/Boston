@@ -48,7 +48,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 ### CNC Version:
 * 2-piece CNC machined case (no weight)
 * Traditional top mount 
-* Uses a Unified S1 daughterboard (older versions use the C3 daughterboard)
+* Uses a Unified S1/S2 daughterboard with Molex Pico-EZmate connector (older versions use the C3 daughterboard with a JST-SH connector)
 * Low USB-C port parallel to desk 
 
 ## Current Errata
