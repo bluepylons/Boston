@@ -31,7 +31,7 @@ V0.8 is the next version that's currently being worked on. On the daughterboard 
 
 ### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
 
-* V0.8J - March 28, 2023. Soldered PCB. The reset button has been moved to the top side of the board, underneath the right shift key (just like on the CNC version). Design is done and is awaiting prototyping. 
+* V0.8J - March 28, 2023. Soldered PCB. The reset button has been moved to the top side of the board, underneath the right shift key (just like on the CNC version). 
 
 * V0.8.2JHA - May 19, 2023. ANSI hotswap variant for the 3D printed version. This does not support backlight LEDs. Flipped the spacebar stab footprints so that the stab wire no longer hits the plate. Fixed some minor silkscreen issues.
 
