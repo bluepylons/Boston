@@ -53,11 +53,11 @@ For a standard ANSI build (using the fixed layout plate) you need 121 switches, 
 
 ## Additional parts recommended for the hotswap variant 
 
-| Description                                            | Qty per board | Type          | Notes                                                                                                                                           |
-| ------------------------------------------------------ | ------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| M2x0.4 3.5mm threaded standoff for hotswap boards      | 10            | Off-the-shelf | Available as a [13-pack from KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit)                                |
-| M2x0.4 3mm Philips-head pan head screws                | 10-20         | Off-the-shelf | The KBDfans kit comes with 13 of them, but you will need another 7 if you aren't countersinking the plate                                       |
-| M2x0.4 3mmm flat head screw                            | 0-10          | Off-the-shelf | Only needed if you're countersinking the plate, and the KBDfans comes with enough, so you shouldn't need to buy these if buying the KBDfans kit |
+| Description                                            | Qty per board | Type          | Notes                                                                                                                                               |
+| ------------------------------------------------------ | ------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| M2x0.4 3.5mm threaded standoff for hotswap boards      | 10            | Off-the-shelf | Available as a [13-pack from KBDfans](https://kbdfans.com/products/kbdfans-m2-3-countersunk-flat-head-screw-kit)                                    |
+| M2x0.4 3mm Philips-head pan head screws                | 10-20         | Off-the-shelf | The KBDfans kit comes with 13 of them, but you will need another 7 if you aren't countersinking the plate                                           |
+| M2x0.4 3mmm flat head screw                            | 0-10          | Off-the-shelf | Only needed if you're countersinking the plate, and the KBDfans kit comes with enough, so you shouldn't need to buy these if buying the KBDfans kit |
 
 These are recommended for the hotswap variant for holding the plate and PCB together, though you might be fine just relying on the switches to hold the plate and PCB together.
 
@@ -137,7 +137,7 @@ In addition to the material, you want to pick a surface finish. There are two pa
 * **Polished** - this involves buffing out the case using either a polishing wheel or a tumbling process. I'm not very familiar with this, but you can ask your machine shop.
 
 ### Coatings:
-* **Anodized** - almost all aluminum on consumer electronics (including custom keyboards) are anodized, usually over a fine bead-blasted finish. Anodizing generates a protective layer of aluminum oxide on the outside of the part, which is much harder than the underlying raw aluminum. This significantly improves the scratch resistance, and also protects the aluminum from corrosion. This layer of aluminum oxide can be clear (showing the underlying silver aluminum), or be dyed a wide range of different colors ([except for white](https://www.bluebuddhaboutique.com/blog/2011/09/no-white-anodized-aluminum/)). However, if you're going for a shiny as-machined or polished finish, it can dull the aluminum a bit. There are a couple of types of anodizing, but Type II (cosmetic anodizing) is the most common, and what you probably want as it is inexpensive, and available in a wide variety of colors. Type III (Hard Anodizing) is occasionally done but uncommon in consumer electronics - Type III generates a much thicker layer of aluminum oxide than Type II, resulting in a dark gray, black, or bronze-brown color. This results in very good wear and scratch resistance, but costs more, can interfere with threaded holes, and is generally unnecessary for keyboards. Note that many machine shops outsource their anodizing, though some (e.g. Dadesin) anodize in-house. If you want to read up more on anodizing, [this](http://www.omwcorp.com/wp-content/uploads/2018/02/Understanding-and-Specifying-Anodizing-1.pdf) is a good document to go over (thanks to Croktopus for finding the document). 
+* **Anodized** - almost all aluminum on consumer electronics (including custom keyboards) are anodized, usually over a fine bead-blasted finish. Anodizing generates a protective layer of aluminum oxide on the outside of the part, which is much harder than the underlying raw aluminum. This significantly improves the scratch resistance, and also protects the aluminum from corrosion. This layer of aluminum oxide can be clear (showing the underlying silver aluminum), or be dyed a wide range of different colors ([except for white](https://www.bluebuddhaboutique.com/blog/2011/09/no-white-anodized-aluminum/)). However, if you're going for a shiny as-machined or polished finish, it can dull the aluminum a bit. There are a couple of types of anodizing, but Type II (cosmetic anodizing) is the most common, and what you probably want as it is inexpensive, and available in a wide variety of colors. Type III (Hard Anodizing) is occasionally done but uncommon in consumer electronics - Type III generates a much thicker layer of aluminum oxide than Type II, resulting in a dark gray, black, or bronze-brown color. This results in very good wear and scratch resistance, but costs more, can interfere with threaded holes, and is generally unnecessary for keyboards. Note that many machine shops outsource their anodizing, though some (e.g. Dadesin) anodize in-house. If you want to read up more on anodizing, [this](https://omwcorp.com/understanding-and-specifying-anodizing-2/) is a good document to go over (thanks to Croktopus for finding the document). 
 * **Raw aluminum** - this means not using any coating whatsoever and leaving the bare metal exposed. Note that raw aluminum is easily scratched (and will most likely arrive from the machine shop with scratches from shipping and handling), so this is a fairly uncommon finish. It may also discolor from corrosion. However, paired with an as-machined or polished finish texture, it can be extremely shiny and reflective. All of my prototypes had a raw finish.   
 * **E-coat**, **paint**, **powder coat**, or **Cerakote** - I am not familiar with ordering these finishes, but they show up on keyboards from time to time, and are available in a wide variety of colors. Your machine shop might not be able to handle these, and you may need to find a third party painter, powder coater, or Cerakote applicator. 
 
@@ -153,7 +153,7 @@ There are several variants of the plate, and different plates for the hotswap an
 
 ## Plate Variants 
 
-** Hotswap ANSI **
+### Hotswap ANSI
 
 ![KLE of the hotswap ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ANSI-KLE.png?raw=true) 
 
@@ -165,20 +165,20 @@ If you are getting the plate CNC machined, there is a version of the hotswap ANS
 
 All of the files for the hotswap ANSI plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Hotswap-ANSI). 
 
-** Hotswap ISO **
+### Hotswap ISO
 ![KLE of the hotswap ISO layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ISO-KLE.png?raw=true) 
 
 The hotswap ISO plate supports all the layouts supported on the hotswap ISO PCB [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI). (note this PCB is not yet done)
 
 Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
 
-** Soldered plate (universal layout) **
+### Soldered plate (universal layout)
 
 The soldered universal layout plate supports all the [layouts supported](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE.png?raw=true) on the soldered PCB ([V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D))
 
 All of the files for the soldered universal layout plate are [here](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version/Plate/Soldered-universal).
 
-** Soldered plate (ANSI fixed layout) ** 
+### Soldered plate (ANSI fixed layout) 
 
 This accommodates only the [standard ANSI layout](https://github.com/bluepylons/Boston/blob/main/graphics/bostonKLE-ANSI-fixed-layout-plate-support.PNG?raw=true) (with a non-stepped Caps Lock key). This results in easier asseembly and an easier-to-clean plate  over the universal plate.
 
@@ -196,7 +196,7 @@ Virtually all metals (aluminum, brass, steel, titanium, etc.) can be cut using a
 For the hotswap plate, some laser-cutting services offer countersinking. They may either offer it through their web interface, or you may have to manually request it. Attach the countersinking instructions for the respective plate file. 
 
 #### Waterjet cutting
-This is rarely used for keyboard plates as it's not as cost effective as laser-cutting, but is also an option as well if you have access to one. This uses the same DXF (.dxf) file.
+This is rarely used for keyboard plates as it's not as cost effective as laser-cutting, but is also an option as well if you have access to one. This supports more materials than laser cutting. This uses the same DXF (.dxf) file.
 
 ### CNC machining
 CNC machining is preferred for some materials like polycarbonate and carbon fiber, which cannot be laser cut. You can ask the same manufacturer as the case to CNC machine the plate for you. 
