@@ -41,8 +41,8 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 
 ### 3D Printed Version:
 * Printable on cheap hobby printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on a Bambu P1S or X1C, Ender 3, Biqu B1, Prusa i3, etc.) 
-* Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG).
-* Technically top mount, though an unusual implementation (screws come in from the top of the case and screw into threaded inserts on the plate - load path is identical to top mount)
+* Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG)
+* Technically top mount, though an unusual implementation (screws come in from the top of the case and screw into threaded inserts on the plate) - load path is identical to traditional top mount
 * Designed around an FR4 plate with soldered-in threaded inserts 
 
 ### CNC Version:
@@ -53,10 +53,10 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 
 ## Current Errata
 
-For all PCB versions - if you use the 1u numpad + and = key options instead of 2u numpad +, the 1u + and 1u = keys are swapped in firmware and on the PCB compared to the KLE (physically pressing the upper 1u key actuates the lower 1u key in firmware and vice-versa). For now, just swap the key assignments in Vial and you should be good. I may fix this eventually in the QMK and Vial files but it's a low priority for me.
+For all PCB versions - if you use the 1u numpad + and = key options instead of 2u numpad +, the 1u + and 1u = keys are swapped in firmware and on the PCB compared to the KLE (physically pressing the upper 1u key actuates the lower 1u key in firmware and vice-versa). For now, just swap the key assignments in Vial and you should be good. I may fix this eventually in the QMK and Vial files, or fix the PCB routing, but it's a low priority for me.
 
 ## Status
-Due to [complications around electromagnetic compatibility testing regulations](https://www.keebtalk.com/t/your-custom-keyboard-is-probably-illegal-a-long-post-on-radio-interference-testing-regulations-and-keyboards/16104), and my current personal circumstances, I decided to open-source the files for the project rather than running a group buy or sale. You can use the files to make one for yourself, as long as you comply with the CERN OHL-W license. 3rd-party group buys or sales are permitted under the license (I will not be directly involved in any 3rd party sales). [RNDKBD](https://rndkbd.com/) currently sells the 3D printed version as an in-stock item (printed to order in a variety of different colors). There has also been at least one small 3rd-party private buy for the CNC version.
+For various reasons I decided to open-source the files for the project rather than running a group buy or sale. You can use the files to make one for yourself, as long as you comply with the CERN OHL-W license. 3rd-party group buys or sales are permitted under the license (I will not be directly involved in any 3rd party sales). [RNDKBD](https://rndkbd.com/) currently sells the 3D printed version as an in-stock item (printed to order in a variety of different colors), and previously ran the CNC version (both as a GB and in-stock). There has also been at least one small 3rd-party private buy for the CNC version.
 
 Note that under the terms of the CERN OHL-W license, if you modify the design or make derivative works from the design, you are required to open-source them under a compatible license. 
 
@@ -70,7 +70,7 @@ Cases:
 
 PCB:
 
-**V0.8 series** - PCB has been prototyped and tested by Andy of RNDKBD.
+**V0.8 series** - PCB has been prototyped and tested by Andy of RNDKBD, except for the ISO hotswap version (V0.8.2DHI), which has not been prototyped. 
 
 **V0.7J** (3DP version) - prototyped and working (except optional backlight LED feature has not been tested)
 
@@ -126,7 +126,6 @@ Technofrikus designed an alternative 3D-printed case derived from the files of t
 
 DatGameh designed a 0.5° version of the 3D printed case, using parts for the 3DP version. The files are [available on DatGameh's Github](https://github.com/DatGameh/Pretty-Flat-Boston-Case). 
 
-
 ## Acknowledgements
 
 Many thanks to:
@@ -137,5 +136,6 @@ Many thanks to:
 * [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/), where I designed the layout. 
 * [Swill's plate generator](http://builder.swillkb.com/) and [Ai03's plate generator](https://kbplate.ai03.com/), which I used for making the plate.
 * [Maperitive](http://maperitive.net/) and [OpenStreetMap](https://www.openstreetmap.org/#map=4/38.01/-95.84), which was used to generate the map artwork on the bottom of the 3D-printed/FR4 case. 
+* [RNDKBD](https://rndkbd.com/), for testing the V0.8-series PCBs and for making the keyboard available for sale.
 
 
