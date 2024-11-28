@@ -1,4 +1,3 @@
-# WORK IN PROGRESS - DO NOT REFER TO THIS GUIDE YET. REFER TO THE MAIN README.MD FOR NOW
 # Boston CNC Version
 
 ![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0395_01.JPG?raw=true)
@@ -168,7 +167,7 @@ All of the files for the hotswap ANSI plate are [here](https://github.com/bluepy
 ### Hotswap ISO
 ![KLE of the hotswap ISO layout](https://github.com/bluepylons/Boston/blob/main/graphics/boston-hotswap-ISO-KLE.png?raw=true) 
 
-The hotswap ISO plate supports all the layouts supported on the hotswap ISO PCB [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI). (note this PCB is not yet done)
+The hotswap ISO plate supports all the layouts supported on the hotswap ISO PCB [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI). **Note neither this plate nor the hotswap ISO PCB have been prototyped or tested.**
 
 Note that the hotswap layout reverses the 2.75u and 2.25u split space layout compared to the soldered layout (this was necessary to accommodate those layouts with hotswap sockets). This is reflected in the hotswap plate. The hotswap plate can be used with the soldered PCB if you are not using split space though. 
 
@@ -225,7 +224,7 @@ Note that **the CNC version of Boston does not use the same PCBs as the 3D print
 The current hotswap ANSI PCB is [V0.8.2DHA](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHA)
 
 ## Hotswap ISO PCB 
-The current hotswap ANSI PCB is [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI)
+The current hotswap ANSI PCB is [V0.8.2DHI](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8.2DHI). **Note this PCB has not been prototyped or tested**
 
 ## Soldered PCB
 The current soldered PCB is [V0.8D](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/PCB/V0.8D)
