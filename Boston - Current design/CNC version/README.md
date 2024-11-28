@@ -417,7 +417,7 @@ I personally recommend Kilo International's OEDNI-75-X-7 lineup - these have ver
 
 The CNC version of Boston now uses the [S-series Unified Daughterboard](https://unified-daughterboard.github.io/#/db-spec-s), and is meant for use with PCB revisions V0.8 and newer. Various vendors sell this daughterboard, such as [Cannonkeys](https://cannonkeys.com/products/unified-s1-daughterboard-and-molex-cable) and [RNDKBD](https://rndkbd.com/products/unified-daughterboard?variant=42772031242474). You can also find manufacturing files for it on their website. 
 
-Note that older PCBs (V0.6.1D and older) were meant to be used with the the older C3 Daughterboard, which as a different connector (a JST SM connector instead of a Molex PicoEZmate connector). You may need to find or make an adapter cable if you are using a V0.6.1D or older PCB with a case meant for the S1 Daughterboard. You can buy a 
+Note that older PCBs (V0.6.1D and older) were meant to be used with the the older C3 Daughterboard, which as a different connector (a JST SM connector instead of a Molex PicoEZmate connector). You may need to find or make an adapter cable if you are using a V0.6.1D or older PCB with a case meant for the S1 Daughterboard. Cannonkeys includes a Molex to JST adapter cable with their Unified S1 daughterboard.
 
 ### Unified Daughterboard Cable
 
