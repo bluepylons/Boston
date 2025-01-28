@@ -4,7 +4,7 @@
 ![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0317.JPG?raw=true)
 
 ## Introduction 
-Boston is a compact battleship with a complement of 18 programmable keys, in a footprint 2u narrower than a full-size, and only about 1.5u wider than a 96%. There is a 3D printed version and a CNC aluminum version. Hotswap PCBs for both are in development. All are open source. 
+Boston is a compact battleship with a complement of 18 programmable keys, in a footprint 2u narrower than a full-size, and only about 1.5u wider than a 96%. There is a 3D printed version and a CNC aluminum version. Hotswap ANSI PCBs are available for both. All are open source. 
 
 The immediate inspiration for Boston was the DriftMechanics [Austin](https://github.com/Gondolindrim/Austin), as well as the [7-row Thinkpad keyboards](https://cdn.mos.cms.futurecdn.net/ZgDSnno6WfhXMf8u8fsBv7-970-80.jpg) found on Thinkpads of the T420 generation and older. The general idea was to make a narrower full-size that retained both the 2u numpad "0" and traditional 2x3 Ins/Del/Home/End/PgUp/PgDn nav block, by expanding vertically. 
 
@@ -18,7 +18,7 @@ Soldered PCB:
 ANSI hotswap PCB: (note the split space 2.75u and 2.25u keys are flipped around compared to the soldered version - this was necessary to split both split space and standard 6.25u space on the same PCB with hotswap sockets)
 ![Boston ANSI hotswap layouts](https://github.com/bluepylons/Boston/raw/main/graphics/boston-hotswap-ANSI-KLE.png)
 
-ISO hotswap PCB: TBD
+ISO hotswap PCB: TBD (still in development)
 
 Click [this link](http://www.keyboard-layout-editor.com/#/gists/75e63e00e1acc52cdb8eeda7f8ac4ba6) for the KLE file for the soldered PCBs.
 
