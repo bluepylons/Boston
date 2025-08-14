@@ -434,4 +434,4 @@ If you need to make a cable, the Unified Daughterboard Project [suggests](https:
 
 # Build instructions
 
-Build instructions are currently [a work in progress]([https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide-S1-DB.md](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md)).
+Build instructions are currently [a work in progress](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md).
