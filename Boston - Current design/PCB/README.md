@@ -26,7 +26,7 @@ V0.8 is the next version that's currently being worked on. On the daughterboard 
 | --------- | -------- | ----------------- | --------------------- | ----------------------------- | ----------------------        | -------------------- |
 | V0.7J     | Soldered | All               | Bottom                | Done and prototyped           | Done and prototyped           | Done and prototyped  | 
 | V0.8J     | Soldered | All               | Top                   | Done and prototyped by RNDKBD | Done and prototyped by RNDKBD | Not yet started      | 
-| V0.8.2JHA | Hotswap  | ANSI              | Top                   | Done and prototyped by RNDKBD | Done and prototyped by RNDKBD | Not yet started      | 
+| V0.8.2JHA | Hotswap  | ANSI              | Top                   | Done and prototyped by RNDKBD | Done and prototyped by RNDKBD | Done, not prototyped | 
 | V0.8.2JHI | Hotswap  | ISO               | Top                   | Not yet started               | Not yet started               | Not yet started      | 
 
 ### J-variant (integrated USB port, JLCPCB SMT-assemblable, used on the 3D-printed version)
