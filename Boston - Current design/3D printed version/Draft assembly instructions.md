@@ -1,6 +1,6 @@
 # Boston (3D-printed/FR4 version) Assembly Instructions, including 3D printing 
 
-## Draft. work-in-progress, incomplete (August 7, 2023)
+## Draft. Mostly complete; missing a few images (January 10, 2026)
 
 ## To Do
 
@@ -231,7 +231,7 @@ Next, solder on the rotary encoder onto the top left corner of the PCB.
 ![Rotary encoder](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/PCB-encoder.jpg?raw=true)
 
 # 3.5 - Soldering on the Reset Switch 
-If your PCB did not come with the reset switch soldered on, solder it onto the bottom side of the PCB near the numpad (if you have PCB V0.7 or older), or to the top side of the PCB to the left right shift (on PCB V0.8 and newer). 
+If your PCB did not come with the reset switch soldered on, solder it onto the bottom side of the PCB near the numpad (if you have PCB V0.7 or older), or to the top side of the PCB just to the left of right shift (on PCB V0.8 and newer). 
 
 ![Reset switch](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/PCB-reset-switch.jpg?raw=true)
 
