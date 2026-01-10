@@ -40,7 +40,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 * Approximately 6.5° typing angle 
 
 ### 3D Printed Version:
-* Printable on cheap hobby printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on a Bambu P1S or X1C, Ender 3, Biqu B1, Prusa i3, etc.) 
+* Printable on cheap hobbyist printers - 200mm x 150mm (X/Y) x 210mm (Z) bed size needed to print all the case parts (doable on a Bambu P1S or X1C, Ender 3, Biqu B1, Prusa i3, etc.) 
 * Bottom panel with [artwork of Boston's maze-like street network](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-bottom.JPG)
 * Technically top mount, though an unusual implementation (screws come in from the top of the case and screw into threaded inserts on the plate) - load path is identical to traditional top mount
 * Designed around an FR4 plate with soldered-in threaded inserts 
