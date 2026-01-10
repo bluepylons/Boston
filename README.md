@@ -1,7 +1,7 @@
 # Boston Keyboard 
 
 ![3D-printed/FR4 version](https://github.com/bluepylons/Boston/raw/main/graphics/3D-printed-prototype.JPG)
-![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_0317.JPG?raw=true)
+![CNC version](https://github.com/bluepylons/Boston/blob/main/graphics/CNC/DSC_8885.JPG?raw=true)
 
 ## Introduction 
 Boston is a compact battleship with a complement of 18 programmable keys, in a footprint 2u narrower than a full-size, and only about 1.5u wider than a 96%. There is a 3D printed version and a CNC aluminum version. Hotswap ANSI PCBs are available for both. All are open source. 
@@ -80,7 +80,7 @@ PCB:
 
 A draft ordering guide for the 3D printed version is available on the README under [the folder for the 3D printed version](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/3D%20printed%20version). 
 
-A draft ordering guide for the CNC version is available on the README under [the folder for the CNC version](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version). Assembly instructions for the CNC version are still being worked on.
+A draft ordering guide for the CNC version is available on the README under [the folder for the CNC version](https://github.com/bluepylons/Boston/tree/main/Boston%20-%20Current%20design/CNC%20version). An assembly guide is [here](https://github.com/bluepylons/Boston/blob/main/Boston%20-%20Current%20design/CNC%20version/Assembly-guide.md).
 
 ## PCB Renders 
 
