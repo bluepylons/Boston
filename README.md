@@ -32,7 +32,7 @@ Click [this link](http://www.keyboard-layout-editor.com/##@@_x:1.5%3B&=P1&=P2&=P
 * Uses keys found in GMK base kits (except for the programmable keys)
 * RGBLED layer-status indicator light 
 * ISO enter key, ISO left shift, split backspace, split numpad 0, split space, and WKL bottom row support 
-* Optional through-hole LED backlight (dimmable as a single block only) - soldered version only. This hasn't been tested in the newer PCBs but probably still work. 
+* Optional through-hole LED backlight (dimmable as a single block only) - soldered version only. This hasn't been tested in the newer PCBs but probably still works. 
 * USB-C
 * STM32F072 controller running QMK. Circuitry is derived from the Austin. 
 * Uses Gondolindrim/Acheron's [single-button reset circuit](http://acheronproject.com/images/reset_article/reset2_tighter.svg)
