@@ -12,15 +12,15 @@
 
 # Table of Contents
 
-Before You Start
-What’s in the box:
-Part 1: 3D-printing the case parts
-Part 2: Putting Together The Plate and Key Separators
-Part 3: Soldering Additional Parts on the PCB
-Part 4: installing stabilizers and switches
-Part 5 - Case Prep and Assembly
-Part 6: Flashing Firmware
-Appendix:
+* Before You Start
+* What’s in the box:
+* Part 1: 3D-printing the case parts
+* Part 2: Putting Together The Plate and Key Separators
+* Part 3: Soldering Additional Parts on the PCB
+* Part 4: installing stabilizers and switches
+* Part 5 - Case Prep and Assembly
+* Part 6: Flashing Firmware
+* Appendix:
 
 # Before You Start 
 * Boston is an open-source keyboard project. Follow these assembly instructions at your own risk. 
