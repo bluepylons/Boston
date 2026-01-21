@@ -52,8 +52,31 @@ A complete parts needed bill-of-materials table is below:
 | M3x0.5 8mm long button head screw  | 2, but ideally 4     | Fasterner  | 2 is the bare minimum; 4 replaces the other M3x10 screws for consistency  | 
 | M3x0.5 hex nut                     | 12                   | Fasterner  | Only if you cannot salvage the hex nuts from your old case                |
 
+## Assembly 
 
-## If you are using your existing key separators 
+Remove all 11 screws on the top side:
+![Top side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-bottom-panel-install.jpg?raw=true)
+
+Remove all 12 screws from the bottom side:
+![Bottom side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-bottom-panel-install.jpg?raw=true)
+
+Remove the bottom panel, and slide the old halves off. For the right half you will have to pull the front side towards you a bit to get it to slide past the arrow keys. 
+![Sliding halves off](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-half-install-1.jpg?raw=true)
+
+If you are replacing your key separators, flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws, and remove the key separators.
+[image]
 
 If you are using your existing key separators, use a pair of flusher cutters or a blade to trim off the overhang off these parts of left-key-separator and right-key-separator until they are flush:
-[picture]
+[image]
+
+Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of each half. Gluing these in with super glue is recommended to prevent them from falling out during assembly - you can two drops to the inside corners of the hexagonal pocket.
+[image] 
+
+If you are installing new key separators, install the new key separators but leave the screws about a half turn loose:
+
+
+
+### If you are using your existing key separators 
+
+
+
