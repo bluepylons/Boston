@@ -63,20 +63,40 @@ Remove all 12 screws from the bottom side:
 Remove the bottom panel, and slide the old halves off. For the right half you will have to pull the front side towards you a bit to get it to slide past the arrow keys. 
 ![Sliding halves off](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-half-install-1.jpg?raw=true)
 
-If you are replacing your key separators, flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws, and remove the key separators.
+Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of each of the new case halves. Gluing these in with super glue is recommended to prevent them from falling out during assembly - you can two drops to the inside corners of the hexagonal pocket.
+[image] 
+
+### If you are installing new key separators:
+If you are replacing your key separators, flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws, and remove the old key separators:
 [image]
+
+Install the new key separators using the 14 M2 self-tapping screws, but leave the screws about a half turn too loose.
+[image]
+
+Temporarily install the new left and right case halves:
+[image]
+
+Adjust the separator pieces so tha the gaps between the separators and the case halves (marked in orange) are minimal when the plate is slid into the very end of the case halves. 
+[image]
+
+Flip the assembly over, and tighten the screws that are accessible. Remember to not overtighten the screws or you may strip the 3D-printed plastic.
+[image] 
+
+Remove the left and right case halves, and tighten the remaining screws: 
+[image] 
+
+### If you are using your existing key separators 
 
 If you are using your existing key separators, use a pair of flusher cutters or a blade to trim off the overhang off these parts of left-key-separator and right-key-separator until they are flush:
 [image]
 
-Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of each half. Gluing these in with super glue is recommended to prevent them from falling out during assembly - you can two drops to the inside corners of the hexagonal pocket.
-[image] 
+## Assembly continued
 
-If you are installing new key separators, install the new key separators but leave the screws about a half turn loose:
+Slide on the left and right case halves. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
+[image]
 
+Install the screws, though leave them about a half turn loose.
+[image]
 
-
-### If you are using your existing key separators 
-
-
-
+Install the bottom panel and rubber feet holders:
+[image]
