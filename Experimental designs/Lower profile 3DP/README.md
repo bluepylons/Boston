@@ -64,7 +64,8 @@ Remove the bottom panel, and slide the old halves off. For the right half you wi
 ![Sliding halves off](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-half-install-1.jpg?raw=true)
 
 Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of each of the new case halves. Gluing these in with super glue is recommended to prevent them from falling out during assembly - you can two drops to the inside corners of the hexagonal pocket.
-[image] 
+![Suergluing](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/supergluing-hex-pocket.JPG?raw=true)
+![Hex nut in pocket](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/hex-nut-pocket.JPG?raw=true)
 
 ### If you are installing new key separators:
 If you are replacing your key separators, first remove the knob from the rotary encoder.
