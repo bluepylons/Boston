@@ -55,7 +55,7 @@ A complete parts needed bill-of-materials table is below:
 ## Assembly 
 
 Remove all 11 screws on the top side:
-![Top side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-bottom-panel-install.jpg?raw=true)
+![Top side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-half-install-3.jpg?raw=true)
 
 Remove all 12 screws from the bottom side:
 ![Bottom side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-bottom-panel-install.jpg?raw=true)
