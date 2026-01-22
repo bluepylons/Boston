@@ -1,4 +1,4 @@
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-gray-3.JPG?raw=true)
+![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-gray-3.JPG?raw=true)
 
 This is a prototype 3D-printed case with the following improvements:
 * Reduces front height by ~2mm
@@ -9,8 +9,8 @@ This is a prototype 3D-printed case with the following improvements:
 
 This is intended to be backwards compatible with existing 3DP Bostons. The far right and far left bottom screws switch to shorter M3x8 screws. 
 
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-navy-front.JPG?raw=true)
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-navy-rear.JPG?raw=true)
+![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-front.JPG?raw=true)
+![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
 
 # Upgrade guide (WIP)
 
@@ -67,7 +67,9 @@ Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of eac
 [image] 
 
 ### If you are installing new key separators:
-If you are replacing your key separators, flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws, and remove the old key separators:
+If you are replacing your key separators, first remove the knob from the rotary encoder.
+
+Flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws, and remove the old key separators:
 [image]
 
 Install the new key separators using the 14 M2 self-tapping screws, but leave the screws about a half turn too loose.
