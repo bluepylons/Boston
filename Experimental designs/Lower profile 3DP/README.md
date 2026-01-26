@@ -67,6 +67,14 @@ Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of eac
 ![Suergluing](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/supergluing-hex-pocket.JPG?raw=true)
 ![Hex nut in pocket](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/hex-nut-pocket.JPG?raw=true)
 
+### If you are using your existing key separators 
+
+If you are using your existing key separators, use a pair of flusher cutters or a blade to trim off the overhang off these parts of left-key-separator and right-key-separator until they are flush:
+[image]
+[image]
+
+Do this for both the left and right sides.
+
 ### If you are installing new key separators:
 If you are replacing your key separators, first remove the knob from the rotary encoder.
 
@@ -89,10 +97,7 @@ Flip the assembly over, and tighten the screws that are accessible. Remember to 
 Remove the left and right case halves, and tighten the remaining screws: 
 [image] 
 
-### If you are using your existing key separators 
 
-If you are using your existing key separators, use a pair of flusher cutters or a blade to trim off the overhang off these parts of left-key-separator and right-key-separator until they are flush:
-[image]
 
 ## Assembly continued
 
