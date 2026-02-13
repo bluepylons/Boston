@@ -11,7 +11,6 @@ This is intended to be backwards compatible with existing 3DP Bostons. The far r
 
 ![Front view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-front.JPG?raw=true)
 ![Rear view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-gray-3.JPG?raw=true)
 ![Right key separator](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/right-key-separator-arrow-keys.JPG?raw=true)
 
 # Upgrade guide (WIP)
