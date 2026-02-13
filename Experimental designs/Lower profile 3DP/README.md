@@ -9,8 +9,10 @@ This is a prototype 3D-printed case with the following improvements:
 
 This is intended to be backwards compatible with existing 3DP Bostons. The far right and far left bottom screws switch to shorter M3x8 screws. 
 
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-front.JPG?raw=true)
-![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
+![Front view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-front.JPG?raw=true)
+![Rear view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
+![Side view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-gray-3.JPG?raw=true)
+![Right key separator](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/right-key-separator-arrow-keys.JPG?raw=true)
 
 # Upgrade guide (WIP)
 
@@ -78,25 +80,24 @@ Do this for both the left and right sides.
 ### If you are installing new key separators:
 If you are replacing your key separators, first remove the knob from the rotary encoder.
 
-Flip the PCB over. Use a Torx T6 bit to remove all 14 of the M2 self-tapping screws (circled in orange below), and remove the old key separators:
+Flip the PCB over. Get a Torx T6 bit (a magnetic one is strongly recommended), and use it to remove all 14 of the M2 self-tapping screws (circled in orange below), and remove the old key separators:
 ![Remove these screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/PCB-underside-labelled.JPG?raw=true)
 ![Removing screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/unscrewing-key-separators.JPG?raw=true)
+![Key separators removed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/key-separators-removed.JPG?raw=true)
 
-Install the new key separators using the 14 M2 self-tapping screws, but leave the screws about a half turn too loose.
+Install the new key separators (install the left one first), using the 14 M2 self-tapping screws, but leave the screws about a half turn too loose.
 [image]
 
-Temporarily install the new left and right case halves:
+Temporarily install the new left and right case halves using a few M3x10 countersunk screws to screw it to the plate. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
 [image]
 
 Adjust the separator pieces so tha the gaps between the separators and the case halves (marked in orange) are minimal when the plate is slid into the very end of the case halves. 
-[image]
 
-Flip the assembly over, and tighten the screws that are accessible. Remember to not overtighten the screws or you may strip the 3D-printed plastic.
+Flip the assembly over, and fully tighten the screws that are accessible. Remember to not overtighten the screws or you may strip the 3D-printed plastic.
 [image] 
 
 Remove the left and right case halves, and tighten the remaining screws: 
 [image] 
-
 
 
 ## Assembly continued
@@ -107,5 +108,5 @@ Slide on the left and right case halves. For the right case half, you will have 
 Install the screws, though leave them about a half turn loose.
 [image]
 
-Install the bottom panel and rubber feet holders:
+Install the bottom panel and rubber feet holders. Use M3 6mm long screws on the middle 8 screw holes, and M3 8mm long screws on the corners. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws should be M3 8mm long). 
 [image]
