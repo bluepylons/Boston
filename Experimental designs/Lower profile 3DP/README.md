@@ -37,9 +37,9 @@ In addition, you will need additional screws:
 
 If you cannot salvage the M3 hex nuts from your old case, you will also need 12 new M3 hex nuts:
 
-| Hardware description                | Quantity | McMaster-Carr P/N | Notes                                                                          |
-| ----------------------------------- | -------- | ------------      | ------------------------------------------------------------------------------ |
-| M3x0.5 DIN 934 hex nut, zinc plated | 12       | 90591A250         | Also available from Bel-Metric as NR3CLZ. Do not use stainless due to galling. |
+| Hardware description                | Quantity | McMaster-Carr P/N | Notes                                                                               |
+| ----------------------------------- | -------- | ------------      | ----------------------------------------------------------------------------------- |
+| M3x0.5 DIN 934 hex nut, zinc plated | 12       | 90591A250         | Also available from Bel-Metric as NR3CLZ. Do not use stainless due to galling risk. |
 
 A complete parts needed bill-of-materials table is below:
 
@@ -85,15 +85,15 @@ Flip the PCB over. Get a Torx T6 bit (a magnetic one is strongly recommended), a
 ![Key separators removed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/key-separators-removed.JPG?raw=true)
 
 Install the new key separators (install the left one first), using the 14 M2 self-tapping screws, but leave the screws about a half turn too loose.
-[image]
+![Key separators installed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/new-key-separators-installed.JPG?raw=true)
 
 Temporarily install the new left and right case halves using a few M3x10 countersunk screws to screw it to the plate. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
-[image]
+![Key separators installed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/halves-temporarily-installed.JPG?raw=true)
 
-Adjust the separator pieces so tha the gaps between the separators and the case halves (marked in orange) are minimal when the plate is slid into the very end of the case halves. 
+Adjust the separator pieces so that the gaps between the separators and the case halves are minimized when the plate is slid into the very end of the case halves. 
 
 Flip the assembly over, and fully tighten the screws that are accessible. Remember to not overtighten the screws or you may strip the 3D-printed plastic.
-[image] 
+![Key separators installed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-key-separators.JPG?raw=true)
 
 Remove the left and right case halves, and tighten the remaining screws: 
 [image] 
