@@ -13,9 +13,9 @@ This is intended to be backwards compatible with existing 3DP Bostons, though so
 ![Rear view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
 ![Right key separator](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/right-key-separator-arrow-keys.JPG?raw=true)
 
-# Upgrade guide (WIP)
+# Upgrade guide (draft)
 
-## What parts do you need? 
+## What parts will I need? 
 What parts you will need will depend on which PCB version you have (the PCB version is written on the bottom left of the PCB, roughly near the F3 key):
 
 | PCB version       | Right-half needed                            | Can you easily install new key separators ? |
