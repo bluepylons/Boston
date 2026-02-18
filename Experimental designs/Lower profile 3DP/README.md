@@ -7,7 +7,7 @@ This is a prototype 3D-printed case with the following improvements:
 * Changes side profile a bit so that the top and bottom bezels are more even
 * Revised Right-key separator so that it transitions better into Right-half near the arrow keys
 
-This is intended to be backwards compatible with existing 3DP Bostons. The far right and far left bottom screws switch to shorter M3x8 screws. 
+This is intended to be backwards compatible with existing 3DP Bostons, though some of the fasteners change.
 
 ![Front view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-front.JPG?raw=true)
 ![Rear view](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP/3DP-LP-navy-rear.JPG?raw=true)
@@ -33,7 +33,7 @@ In addition, you will need additional screws:
 | Hardware description                                                   | Quantity     | McMaster-Carr P/N       | Notes                                                                                                                                               |
 | ---------------------------------------------------------------------- | ------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | M3x0.5 10mm long countersunk screw ISO 14581 (Torx) or ISO 10642 (hex) | 11           | 92125A130 (hex, silver) | McMaster does not sell stainless 10mm in Torx; [Bel-Metric](https://belmetric.com) SF3X10TXSS (silver) or SF3X10TXBLKSS (black) recommended instead |
-| M3x0.5 8mm long button head screw, ISO 7380 (Torx)                     | 2, ideally 4 | 90991A113               | Also available from Bel-Metric as SB3X10TXSS (silver) or SB3X10TXBLKSS (black)                                                                      |
+| M3x0.5 8mm long button head screw, ISO 7380 (Torx)                     | 2, ideally 4 | 90991A113               | Also available from Bel-Metric as SB3X8TXSS (silver) or SB3X8TXBLKSS (black)                                                                      |
 
 If you cannot salvage the M3 hex nuts from your old case, you will also need 12 new M3 hex nuts:
 
