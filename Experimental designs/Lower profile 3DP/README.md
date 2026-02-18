@@ -46,9 +46,9 @@ A complete parts needed bill-of-materials table is below:
 | Part description                   | Quantity (if needed) | Type       | Notes                                                                     | 
 | ---------------------------------- | -------------------- | ---------- | ------------------------------------------------------------------------- |
 | New left half                      | 1                    | 3D printed |                                                                           |
-| New right half                     | 1                    | 3D printed | With reset hole if PCB V0.7J or older                                     |
-| New left key separator             | 1                    | 3D printed | Only if PCB V0.7J or newer if keyboard is already built                   |
-| New right key separator            | 1                    | 3D printed | Only if PCB V0.7J or newer if keyboard is already built                   |
+| New right half                     | 1                    | 3D printed | Use "-with-reset-hole" variant if PCB V0.7J or older                      |
+| New left key separator             | 1                    | 3D printed | If keyboard is already built, only use if PCB is V0.7J or newer           |
+| New right key separator            | 1                    | 3D printed | If keyboard is already built, only use if PCB is V0.7J or newer           |
 | M3x0.5 10mm long countersunk screw | 11                   | Fastener   |                                                                           |
 | M3x0.5 8mm long button head screw  | 2, but ideally 4     | Fastener   | 2 is the bare minimum; 4 replaces the other M3x10 screws for consistency  | 
 | M3x0.5 hex nut                     | 12                   | Fastener   | Only if you cannot salvage the hex nuts from your old case                |
