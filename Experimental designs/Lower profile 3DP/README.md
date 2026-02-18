@@ -68,13 +68,6 @@ Insert M3x0.5 hex nuts into each of the 6 hexagonal pockets on the bottom of eac
 ![Suergluing](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/supergluing-hex-pocket.JPG?raw=true)
 ![Hex nut in pocket](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/hex-nut-pocket.JPG?raw=true)
 
-### If you are using your existing key separators 
-
-If you are using your existing key separators, use a pair of flusher cutters or a blade to trim off the overhang off these parts of left-key-separator and right-key-separator until they are flush:
-[image]
-[image]
-
-Do this for both the left and right sides.
 
 ### If you are installing new key separators:
 If you are replacing your key separators, first remove the knob from the rotary encoder.
@@ -91,12 +84,17 @@ Temporarily install the new left and right case halves using a few M3x10 counter
 ![Key separators installed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/halves-temporarily-installed.JPG?raw=true)
 
 Adjust the separator pieces so that the gaps between the separators and the case halves are minimized when the plate is slid into the very end of the case halves. 
+![Key separators gaps](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/halves-temporarily-installed-with-arrows.JPG?raw=true)
 
 Flip the assembly over, and fully tighten the screws that are accessible. Remember to not overtighten the screws or you may strip the 3D-printed plastic.
 ![Key separators installed](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-key-separators.JPG?raw=true)
 
-Remove the left and right case halves, and tighten the remaining screws: 
-[image] 
+Remove the left and right case halves, and fully tighten the remaining screws on the key separators.
+
+### If you are re-using your existing key separators
+Do a test fit with the left and right case halves. You may need to trim off this lip between the F-row and main block on the left and right key separators with a pair of flush cutters, though only do this if the fit between this and the case halves is poor. You will ***not*** need to trim the similar lip near the knob.
+![Lip](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/lip.JPG?raw=true)
+![Lip removal](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/lip-removal.JPG?raw=true)
 
 
 ## Assembly continued
@@ -104,8 +102,8 @@ Remove the left and right case halves, and tighten the remaining screws:
 Slide on the left and right case halves. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
 [image]
 
-Install the screws, though leave them about a half turn loose.
+Install the M3x10 countersunk screws, though leave them about a half turn loose.
 [image]
 
-Install the bottom panel and rubber feet holders. Use M3 6mm long screws on the middle 8 screw holes, and M3 8mm long screws on the corners. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws should be M3 8mm long). 
+Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the middle 8 screw holes, and M3x8mm long screws on the 4 corners csrew holes. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws must be M3x8mm long). 
 [image]
