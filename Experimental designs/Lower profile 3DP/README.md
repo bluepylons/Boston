@@ -41,7 +41,7 @@ If you cannot salvage the M3 hex nuts from your old case, you will also need 12 
 | ----------------------------------- | -------- | ------------      | ----------------------------------------------------------------------------------- |
 | M3x0.5 DIN 934 hex nut, zinc plated | 12       | 90591A250         | Also available from Bel-Metric as NR3CLZ. Do not use stainless due to galling risk. |
 
-A complete parts needed bill-of-materials table is below:
+A summary bill-of-materials table is below:
 
 | Part description                   | Quantity (if needed) | Type       | Notes                                                                     | 
 | ---------------------------------- | -------------------- | ---------- | ------------------------------------------------------------------------- |
