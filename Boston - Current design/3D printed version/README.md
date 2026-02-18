@@ -189,7 +189,7 @@ Despite being through-hole, this is also a bit tricky to solder as the pins are 
 ### Reset switch 
 The reset switch uses a 5mm tall 6x6mm SPST NO through-hole tact switch. This is a generic part widely available from several vendors - I have used Wealth Metal [TC-0103](https://www.taydaelectronics.com/tact-switch-6x6mm-5mm-through-hole-spst-no.html), but TE 1825910-6, E-switch TL1105AF100Q, Omron B3F-1022, C&K PTS645SK50-2 LFS and numerous other parts should work (though it has not been tested). 
 
-Remember to solder this on the bottom of the PCB and not the top.  
+On PCB V0.7J and older this is soldered on the bottom. For PCB V0.8 and newer, when used with a plate with a cutout next to right shift, it is soldered on the top. 
 
 ### Encoder
 The encoder used is Alps EC11E18244A5, the same one used on the Satisfaction75. Other EC11-style encoders may work, but may need changes to various QMK parameters (ENCODER_RESOLUTION in config.h, and possibly reversing ENCODERS_PAD_A and ENCODERS_PAD_B) to work correctly.
