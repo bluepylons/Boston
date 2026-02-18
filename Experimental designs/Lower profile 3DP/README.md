@@ -100,10 +100,19 @@ Do a test fit with the left and right case halves. You may need to trim off this
 ## Assembly continued
 
 Slide on the left and right case halves. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
-[image]
+![Case halves slid on](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/case-halves-no-screws.JPG?raw=true)
 
-Install the M3x10 countersunk screws, though leave them about a half turn loose.
-[image]
+Install the 11 M3x10 countersunk screws into the top, though leave them about a half turn loose.
+![Screwing in top screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-top-screws.JPG?raw=true)
 
-Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the middle 8 screw holes, and M3x8mm long screws on the 4 corners csrew holes. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws must be M3x8mm long). 
-[image]
+Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the middle 8 screw holes, and M3x8mm long screws on the 4 corners screw holes. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws must be M3x8mm long). 
+![Labelled bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/labelled-bottom-screws.JPG?raw=true)
+![Screwing in bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-bottom-screws.JPG?raw=true)
+
+Place the keyboard on a rigid, flat surface. Push down gently on the middle of the keyboard while using your other hand to fully tighten the screws; this is to help make sure the keyboard is built flat and will not wobble:
+![Fully tightening top screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/pressing-down-while-tightening.JPG?raw=true)
+
+Flip the keyboard over, and fully tighten all the screws on the bottom.
+
+Reinstall the knob. You are done!
+![Done!](![Lip removal](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/built-with-knob.JPG?raw=true)
