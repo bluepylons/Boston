@@ -99,7 +99,7 @@ Do a test fit with the left and right case halves. You may need to trim off this
 
 ## Assembly continued
 
-Slide on the left and right case halves. For the right case half, you will have to bend the front portion slightly to get it to slide past the arrow keys.
+Slide on the left and right case halves. For the right case half, you will have to bend the front portion out slightly to get it to slide past the arrow keys.
 ![Case halves slid on](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/case-halves-no-screws.JPG?raw=true)
 
 Install the 11 M3x10 countersunk screws into the top, though leave them about a half turn loose.
@@ -109,7 +109,7 @@ Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the 
 ![Labelled bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/labelled-bottom-screws.JPG?raw=true)
 ![Screwing in bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-bottom-screws.JPG?raw=true)
 
-Place the keyboard on a rigid, flat surface. Push down gently on the middle of the keyboard while using your other hand to fully tighten the screws; this is to help make sure the keyboard is built flat and will not wobble:
+Place the keyboard on a rigid, flat surface. Push down gently on the middle of the keyboard while using your other hand to fully tighten the top screws; this is to help make sure the keyboard is built flat and will not wobble:
 ![Fully tightening top screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/pressing-down-while-tightening.JPG?raw=true)
 
 Flip the keyboard over, and fully tighten all the screws on the bottom.
