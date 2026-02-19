@@ -115,4 +115,4 @@ Place the keyboard on a rigid, flat surface. Push down gently on the middle of t
 Flip the keyboard over, and fully tighten all the screws on the bottom.
 
 Reinstall the knob. You are done!
-![Done!](![Lip removal](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/built-with-knob.JPG?raw=true)
+![Done!](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/built-with-knob.JPG?raw=true)
