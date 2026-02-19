@@ -105,7 +105,7 @@ Slide on the left and right case halves. For the right case half, you will have 
 Install the 11 M3x10 countersunk screws into the top, though leave them about a half turn loose.
 ![Screwing in top screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-top-screws.JPG?raw=true)
 
-Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the middle 8 screw holes, and M3x8mm long screws on the 4 corners screw holes. (if necessary, the 2 rear corner screws can be M3 10mm, but the front 2 corner screws must be M3x8mm long). 
+Install the bottom panel and rubber feet holders. Use M3x6mm long screws on the middle 8 screw holes, and M3x8mm long screws on the 4 corners screw holes. (if necessary, the 2 rear corner screws can be M3x10mm, but the front 2 corner screws must be M3x8mm long). 
 ![Labelled bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/labelled-bottom-screws.JPG?raw=true)
 ![Screwing in bottom screws](https://github.com/bluepylons/Boston/blob/main/graphics/3DP-LP-specific-assembly/screwing-in-bottom-screws.JPG?raw=true)
 
