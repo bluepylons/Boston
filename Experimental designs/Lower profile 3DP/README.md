@@ -55,6 +55,8 @@ A summary bill-of-materials table is below:
 
 ## Assembly 
 
+Use an ESD wrist strap and observe other basic electrostatic-discharge precautions. 
+
 Remove all 11 screws on the top side:
 ![Top side screws](https://github.com/bluepylons/Boston/blob/main/graphics/Assembly-guide-3DP/Case-half-install-3.jpg?raw=true)
 
